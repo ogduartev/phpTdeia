@@ -1,0 +1,13 @@
+NAME	DESCRIPTION	NATURE	WEIGHT	THETA	MIN	MAX	LABEL	L0	R0	L1	R1	LABEL	L0	R0	L1	R1	LABEL	L0	R0	L1	R1	LABEL	L0	R0	L1	R1	LABEL	L0	R0	L1	R1
+Intensidad	Sin descripción	1	9	2	0	1	Baja	0	0.222	0	0.111	Media	0.111	0.444	0.222	0.333	Alta	0.333	0.667	0.444	0.556	Muy Alta	0.556	0.889	0.667	0.778	Total	0.778	1	0.889	1
+Extensión	Sin descripción	1	4	2	0	1	Puntual	0	0.286	0	0.143	Parcial	0.143	0.571	0.286	0.429	Extensa	0.429	0.857	0.571	0.714	Total	0.714	1	0.857	1					
+Extensión crítica	Sin descripción	1	2	2	0	1	Bajo	0	0.4	0	0.2	Medio	0.2	0.8	0.4	0.6	Alto	0.6	1	0.8	1										
+Momento	Sin descripción	-1	1	2	0	1	Inmediato	0	0.125	0	0.075	Medio Plazo	0.075	0.6	0.125	0.4	Largo Plazo	0.4	1	0.5	1										
+Momento crítico	Sin descripción	1	1	2	0	1	Bajo	0	0.4	0	0.2	Medio	0.2	0.8	0.4	0.6	Alto	0.6	1	0.8	1										
+Persistencia	Sin descripción	1	1	2	0	1	Fugaz	0	0.083	0	0.05	Temporal	0.05	0.8	0.083	0.533	Permanente	0.6	1	0.8	1										
+Reversibilidad	Sin descripción	1	1	2	0	1	Corto Plazo	0	0.083	0	0.05	Medio Plazo	0.05	0.8	0.083	0.533	Irreversible	0.533	1	0.8	1										
+Sinergía	Sin descripción	1	1	2	0	1	Sin sinergismo (simple)	0	0.4	0	0.2	Sinérgico	0.2	0.8	0.4	0.6	Muy Sinérgico	0.6	1	0.8	1										
+Acumulación	Sin descripción	1	1	2	0	1	Bajo	0	0.4	0	0.2	Medio	0.2	0.8	0.4	0.6	Alto	0.6	1	0.8	1										
+Efecto	Sin descripción	1	1	2	0	1	Indirecto (secundario)	0	0.667	0	0.333	Directo	0.333	1	0.667	1															
+Periodicidad	Sin descripción	1	1	2	0	1	Irregular o aperiódico y discontinuo	0	0.4	0	0.2	Periódico	0.2	0.8	0.4	0.6	Continuo	0.6	1	0.8	1										
+Recuperabilidad	Sin descripción	1	2	2	0	1	Recuparable de manera inmediata	0	0.286	0	0.143	Recuperable a medio plazo	0.143	0.571	0.286	0.429	Mitigable	0.429	0.857	0.571	0.714	Irrecuperable	0.714	1	0.857	1					

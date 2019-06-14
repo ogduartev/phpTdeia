@@ -1,0 +1,32 @@
+<?php
+//require_once('input.php');
+
+class propierty
+{
+
+  function create($effect_id,$effect_propierty_id)
+  {
+    $variable_id=0;
+    $sql="SELECT id FROM variables WHERE effect_propierty_id='".$effect_propierty_id."'";
+    $result=mysql_query($sql) or die(mysql_error()."error : ".$sql);
+    if($result and mysql_num_rows($result)>0)
+    {
+      $linea=mysql_fetch_array($result,MYSQL_ASSOC);
+      $variable_id=$linea['id'];
+    }
+    
+    if($variable_id<1){return;}
+    
+    $sql="INSERT INTO propierties(effect_id,effect_propierty_id)
+                      VALUES('".$effect_id."','".$effect_propierty_id."','".$input_id."')";                  
+    mysql_query($sql) or die(mysql_error()."error : ".$sql);
+    $propierty_id=mysql_insert_id();
+
+    $IN=new input();
+    $input_id=$IN->create($variable_id,$propierty_id);
+    
+    return $propierty_id;
+  }
+}
+
+?>

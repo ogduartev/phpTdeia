@@ -1,0 +1,7 @@
+sed -i 's/mysql_query(/mysqli_query($this->link,/g' *.php
+sed -i 's/mysql_error(/mysqli_error($this->link/g' *.php
+sed -i 's/mysql_fetch_array/mysqli_fetch_array/g' *.php
+sed -i 's/mysql_num_rows/mysqli_num_rows/g' *.php
+sed -i 's/mysql_insert_id(/mysqli_insert_id($this->link/g' *.php
+sed -i 's/MYSQL_ASSOC/MYSQLI_ASSOC/g' *.php
+

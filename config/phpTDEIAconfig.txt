@@ -1,0 +1,22 @@
+# Default configuration file for TDEIA
+:locale = es
+:theme = tdeiabasic
+:plotWidth = 300
+:plotHeight = 200
+:longtextWidth = 800
+:longtextHeight = 400
+:weightsWidth = 600
+:weightsHeight = 400
+:propiertyWeightsWidth = 500
+:propiertyWeightsHeight = 600
+:DBserver = localhost
+:DBname = tdeia
+:DBuser = tdeiavisitor
+:DBuserpass = tdeiavisitor
+:DBadmin = tdeiaadmin
+:DBadminpass = tdeiaadmin
+:TDEIAadmin = adminTDEIA
+:TDEIAadminpass = adminpassword
+:URLbase = localhost/phpTdeia
+:tdeiaDir = /home/ogduartev/public_html/phpTdeia
+

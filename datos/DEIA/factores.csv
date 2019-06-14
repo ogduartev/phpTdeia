@@ -1,0 +1,31 @@
+Entorno	Fisico	Geoforma	Morfología	150
+Entorno	Fisico	Geoforma	Morfodinámica	150
+Entorno	Fisico	Paisaje	Estetica caracteristica	300
+Entorno	Fisico	Suelo	Uso del suelo	450
+Entorno	Fisico	Suelo	Calidad	450
+Entorno	Fisico	Agua	Volumen de agua	180
+Entorno	Fisico	Agua	Calidad físico-química	90
+Entorno	Fisico	Agua	Calidad bacteriologica	180
+Entorno	Fisico	Agua	Aguas subterraneas	180
+Entorno	Fisico	Agua	Nivel freatico	180
+Entorno	Fisico	Atmosfera	Calidad del aire	240
+Entorno	Fisico	Atmosfera	Clima y microclimas	180
+Entorno	Fisico	Atmosfera	Ruido	180
+Entorno	Biotico	Flora	Cobertura vegetal	1000
+Entorno	Biotico	Flora	Diversidad vegetal	1000
+Entorno	Biotico	Fauna	Diversidad fauna	500
+Entorno	Biotico	Fauna	Fuentes de alimentación	500
+Entorno	Biotico	Fauna	Habitad	500
+Entorno	Biotico	Fauna	Población	500
+Entorno	Social	Comunidad	Población	480
+Entorno	Social	Comunidad	Valores ciuadadanos	120
+Entorno	Social	Comunidad	Participacion ciudadana	240
+Entorno	Social	Comunidad	Demanda de bienestar social	360
+Entorno	Social	Infraestructura	Trasporte	300
+Entorno	Social	Infraestructura	Servicios públicos	300
+Entorno	Social	Cultura	Valores y prácticas culturales	180
+Entorno	Social	Cultura	Uso y manejo del entorno	240
+Entorno	Social	Cultura	Arqueología	180
+Entorno	Social	Economia	Estructura de la propiedad	240
+Entorno	Social	Economia	Procesos productivos y tecnologicos	180
+Entorno	Social	Economia	Mercado laboral	180

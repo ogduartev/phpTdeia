@@ -1,0 +1,348 @@
+\newcommand{\tdeiaWriteAllActions}
+{
+ \tdeiaWriteMyAction{1}
+ \tdeiaWriteMyAction{2}
+ \tdeiaWriteMyAction{3}
+ \tdeiaWriteMyAction{4}
+ \tdeiaWriteMyAction{5}
+ \tdeiaWriteMyAction{6}
+ \tdeiaWriteMyAction{7}
+ \tdeiaWriteMyAction{8}
+ \tdeiaWriteMyAction{9}
+ \tdeiaWriteMyAction{10}
+ \tdeiaWriteMyAction{11}
+ \tdeiaWriteMyAction{12}
+ \tdeiaWriteMyAction{13}
+ \tdeiaWriteMyAction{14}
+ \tdeiaWriteMyAction{15}
+ \tdeiaWriteMyAction{16}
+ \tdeiaWriteMyAction{17}
+ \tdeiaWriteMyAction{18}
+ \tdeiaWriteMyAction{19}
+}
+
+\newcommand{\tdeiaPaintMyActionTree}
+{
+  \tdeiaPaintActionTree{3}{19}
+}
+
+\newcommand{\tdeiaPaintMyActionAllNodes}
+{
+ \tdeiaPaintActionNode{1}{Proyecto}{0}
+ \tdeiaPaintActionNode{2}{A 1.}{1}
+ \tdeiaPaintActionNode{3}{A 1.1.}{2}
+ \tdeiaPaintActionNode{4}{A 1.1.1.}{3}
+ \tdeiaPaintActionNode{5}{A 1.1.2.}{3}
+ \tdeiaPaintActionNode{6}{A 1.1.3.}{3}
+ \tdeiaPaintActionNode{7}{A 1.1.4.}{3}
+ \tdeiaPaintActionNode{8}{A 1.2.}{2}
+ \tdeiaPaintActionNode{9}{A 1.2.1.}{3}
+ \tdeiaPaintActionNode{10}{A 1.2.2.}{3}
+ \tdeiaPaintActionNode{11}{A 2.}{1}
+ \tdeiaPaintActionNode{12}{A 2.1.}{2}
+ \tdeiaPaintActionNode{13}{A 2.1.1.}{3}
+ \tdeiaPaintActionNode{14}{A 2.1.2.}{3}
+ \tdeiaPaintActionNode{15}{A 2.1.3.}{3}
+ \tdeiaPaintActionNode{16}{A 2.1.4.}{3}
+ \tdeiaPaintActionNode{17}{A 2.2.}{2}
+ \tdeiaPaintActionNode{18}{A 2.2.1.}{3}
+ \tdeiaPaintActionNode{19}{A 2.2.2.}{3}
+ \tdeiaPaintActionConnection{1}{2}
+ \tdeiaPaintActionConnection{1}{11}
+ \tdeiaPaintActionConnection{2}{3}
+ \tdeiaPaintActionConnection{2}{8}
+ \tdeiaPaintActionConnection{3}{4}
+ \tdeiaPaintActionConnection{3}{5}
+ \tdeiaPaintActionConnection{3}{6}
+ \tdeiaPaintActionConnection{3}{7}
+ \tdeiaPaintActionConnection{8}{9}
+ \tdeiaPaintActionConnection{8}{10}
+ \tdeiaPaintActionConnection{11}{12}
+ \tdeiaPaintActionConnection{11}{17}
+ \tdeiaPaintActionConnection{12}{13}
+ \tdeiaPaintActionConnection{12}{14}
+ \tdeiaPaintActionConnection{12}{15}
+ \tdeiaPaintActionConnection{12}{16}
+ \tdeiaPaintActionConnection{17}{18}
+ \tdeiaPaintActionConnection{17}{19}
+}
+
+\newcommand{\tdeiaWriteMyAction}[1]
+{
+ \ifthenelse{\equal{#1}{1}}
+ {
+ \tdeiaWriteAction{1}{Proyecto}{0}
+ }{}
+ \ifthenelse{\equal{#1}{2}}
+ {
+ \tdeiaWriteAction{2}{A 1.}{1}
+ }{}
+ \ifthenelse{\equal{#1}{3}}
+ {
+ \tdeiaWriteAction{3}{A 1.1.}{2}
+ }{}
+ \ifthenelse{\equal{#1}{4}}
+ {
+ \tdeiaWriteAction{4}{A 1.1.1.}{3}
+ }{}
+ \ifthenelse{\equal{#1}{5}}
+ {
+ \tdeiaWriteAction{5}{A 1.1.2.}{3}
+ }{}
+ \ifthenelse{\equal{#1}{6}}
+ {
+ \tdeiaWriteAction{6}{A 1.1.3.}{3}
+ }{}
+ \ifthenelse{\equal{#1}{7}}
+ {
+ \tdeiaWriteAction{7}{A 1.1.4.}{3}
+ }{}
+ \ifthenelse{\equal{#1}{8}}
+ {
+ \tdeiaWriteAction{8}{A 1.2.}{2}
+ }{}
+ \ifthenelse{\equal{#1}{9}}
+ {
+ \tdeiaWriteAction{9}{A 1.2.1.}{3}
+ }{}
+ \ifthenelse{\equal{#1}{10}}
+ {
+ \tdeiaWriteAction{10}{A 1.2.2.}{3}
+ }{}
+ \ifthenelse{\equal{#1}{11}}
+ {
+ \tdeiaWriteAction{11}{A 2.}{1}
+ }{}
+ \ifthenelse{\equal{#1}{12}}
+ {
+ \tdeiaWriteAction{12}{A 2.1.}{2}
+ }{}
+ \ifthenelse{\equal{#1}{13}}
+ {
+ \tdeiaWriteAction{13}{A 2.1.1.}{3}
+ }{}
+ \ifthenelse{\equal{#1}{14}}
+ {
+ \tdeiaWriteAction{14}{A 2.1.2.}{3}
+ }{}
+ \ifthenelse{\equal{#1}{15}}
+ {
+ \tdeiaWriteAction{15}{A 2.1.3.}{3}
+ }{}
+ \ifthenelse{\equal{#1}{16}}
+ {
+ \tdeiaWriteAction{16}{A 2.1.4.}{3}
+ }{}
+ \ifthenelse{\equal{#1}{17}}
+ {
+ \tdeiaWriteAction{17}{A 2.2.}{2}
+ }{}
+ \ifthenelse{\equal{#1}{18}}
+ {
+ \tdeiaWriteAction{18}{A 2.2.1.}{3}
+ }{}
+ \ifthenelse{\equal{#1}{19}}
+ {
+ \tdeiaWriteAction{19}{A 2.2.2.}{3}
+ }{}
+}
+
+\newcommand{\tdeiaWriteMyActionDown}[1]
+{
+ \ifthenelse{\equal{#1}{1}}
+ {
+ \tdeiaWriteActionDown{2}{A 1.}
+ \tdeiaWriteActionDown{11}{A 2.}
+ }{}
+ \ifthenelse{\equal{#1}{2}}
+ {
+ \tdeiaWriteActionDown{3}{A 1.1.}
+ \tdeiaWriteActionDown{8}{A 1.2.}
+ }{}
+ \ifthenelse{\equal{#1}{3}}
+ {
+ \tdeiaWriteActionDown{4}{A 1.1.1.}
+ \tdeiaWriteActionDown{5}{A 1.1.2.}
+ \tdeiaWriteActionDown{6}{A 1.1.3.}
+ \tdeiaWriteActionDown{7}{A 1.1.4.}
+ }{}
+ \ifthenelse{\equal{#1}{4}}
+ {
+ \tdeiaWriteActionNoChildren{}
+ }{}
+ \ifthenelse{\equal{#1}{5}}
+ {
+ \tdeiaWriteActionNoChildren{}
+ }{}
+ \ifthenelse{\equal{#1}{6}}
+ {
+ \tdeiaWriteActionNoChildren{}
+ }{}
+ \ifthenelse{\equal{#1}{7}}
+ {
+ \tdeiaWriteActionNoChildren{}
+ }{}
+ \ifthenelse{\equal{#1}{8}}
+ {
+ \tdeiaWriteActionDown{9}{A 1.2.1.}
+ \tdeiaWriteActionDown{10}{A 1.2.2.}
+ }{}
+ \ifthenelse{\equal{#1}{9}}
+ {
+ \tdeiaWriteActionNoChildren{}
+ }{}
+ \ifthenelse{\equal{#1}{10}}
+ {
+ \tdeiaWriteActionNoChildren{}
+ }{}
+ \ifthenelse{\equal{#1}{11}}
+ {
+ \tdeiaWriteActionDown{12}{A 2.1.}
+ \tdeiaWriteActionDown{17}{A 2.2.}
+ }{}
+ \ifthenelse{\equal{#1}{12}}
+ {
+ \tdeiaWriteActionDown{13}{A 2.1.1.}
+ \tdeiaWriteActionDown{14}{A 2.1.2.}
+ \tdeiaWriteActionDown{15}{A 2.1.3.}
+ \tdeiaWriteActionDown{16}{A 2.1.4.}
+ }{}
+ \ifthenelse{\equal{#1}{13}}
+ {
+ \tdeiaWriteActionNoChildren{}
+ }{}
+ \ifthenelse{\equal{#1}{14}}
+ {
+ \tdeiaWriteActionNoChildren{}
+ }{}
+ \ifthenelse{\equal{#1}{15}}
+ {
+ \tdeiaWriteActionNoChildren{}
+ }{}
+ \ifthenelse{\equal{#1}{16}}
+ {
+ \tdeiaWriteActionNoChildren{}
+ }{}
+ \ifthenelse{\equal{#1}{17}}
+ {
+ \tdeiaWriteActionDown{18}{A 2.2.1.}
+ \tdeiaWriteActionDown{19}{A 2.2.2.}
+ }{}
+ \ifthenelse{\equal{#1}{18}}
+ {
+ \tdeiaWriteActionNoChildren{}
+ }{}
+ \ifthenelse{\equal{#1}{19}}
+ {
+ \tdeiaWriteActionNoChildren{}
+ }{}
+}
+
+\newcommand{\tdeiaWriteMyActionUp}[1]
+{
+ \ifthenelse{\equal{#1}{1}}
+ {
+ \tdeiaWriteActionNoParent{}
+ }{}
+ \ifthenelse{\equal{#1}{2}}
+ {
+ \tdeiaWriteActionUp{1}{Proyecto}
+ }{}
+ \ifthenelse{\equal{#1}{3}}
+ {
+ \tdeiaWriteActionUp{1}{Proyecto}
+ \tdeiaWriteActionUp{2}{A 1.}
+ }{}
+ \ifthenelse{\equal{#1}{4}}
+ {
+ \tdeiaWriteActionUp{1}{Proyecto}
+ \tdeiaWriteActionUp{2}{A 1.}
+ \tdeiaWriteActionUp{3}{A 1.1.}
+ }{}
+ \ifthenelse{\equal{#1}{5}}
+ {
+ \tdeiaWriteActionUp{1}{Proyecto}
+ \tdeiaWriteActionUp{2}{A 1.}
+ \tdeiaWriteActionUp{3}{A 1.1.}
+ }{}
+ \ifthenelse{\equal{#1}{6}}
+ {
+ \tdeiaWriteActionUp{1}{Proyecto}
+ \tdeiaWriteActionUp{2}{A 1.}
+ \tdeiaWriteActionUp{3}{A 1.1.}
+ }{}
+ \ifthenelse{\equal{#1}{7}}
+ {
+ \tdeiaWriteActionUp{1}{Proyecto}
+ \tdeiaWriteActionUp{2}{A 1.}
+ \tdeiaWriteActionUp{3}{A 1.1.}
+ }{}
+ \ifthenelse{\equal{#1}{8}}
+ {
+ \tdeiaWriteActionUp{1}{Proyecto}
+ \tdeiaWriteActionUp{2}{A 1.}
+ }{}
+ \ifthenelse{\equal{#1}{9}}
+ {
+ \tdeiaWriteActionUp{1}{Proyecto}
+ \tdeiaWriteActionUp{2}{A 1.}
+ \tdeiaWriteActionUp{8}{A 1.2.}
+ }{}
+ \ifthenelse{\equal{#1}{10}}
+ {
+ \tdeiaWriteActionUp{1}{Proyecto}
+ \tdeiaWriteActionUp{2}{A 1.}
+ \tdeiaWriteActionUp{8}{A 1.2.}
+ }{}
+ \ifthenelse{\equal{#1}{11}}
+ {
+ \tdeiaWriteActionUp{1}{Proyecto}
+ }{}
+ \ifthenelse{\equal{#1}{12}}
+ {
+ \tdeiaWriteActionUp{1}{Proyecto}
+ \tdeiaWriteActionUp{11}{A 2.}
+ }{}
+ \ifthenelse{\equal{#1}{13}}
+ {
+ \tdeiaWriteActionUp{1}{Proyecto}
+ \tdeiaWriteActionUp{11}{A 2.}
+ \tdeiaWriteActionUp{12}{A 2.1.}
+ }{}
+ \ifthenelse{\equal{#1}{14}}
+ {
+ \tdeiaWriteActionUp{1}{Proyecto}
+ \tdeiaWriteActionUp{11}{A 2.}
+ \tdeiaWriteActionUp{12}{A 2.1.}
+ }{}
+ \ifthenelse{\equal{#1}{15}}
+ {
+ \tdeiaWriteActionUp{1}{Proyecto}
+ \tdeiaWriteActionUp{11}{A 2.}
+ \tdeiaWriteActionUp{12}{A 2.1.}
+ }{}
+ \ifthenelse{\equal{#1}{16}}
+ {
+ \tdeiaWriteActionUp{1}{Proyecto}
+ \tdeiaWriteActionUp{11}{A 2.}
+ \tdeiaWriteActionUp{12}{A 2.1.}
+ }{}
+ \ifthenelse{\equal{#1}{17}}
+ {
+ \tdeiaWriteActionUp{1}{Proyecto}
+ \tdeiaWriteActionUp{11}{A 2.}
+ }{}
+ \ifthenelse{\equal{#1}{18}}
+ {
+ \tdeiaWriteActionUp{1}{Proyecto}
+ \tdeiaWriteActionUp{11}{A 2.}
+ \tdeiaWriteActionUp{17}{A 2.2.}
+ }{}
+ \ifthenelse{\equal{#1}{19}}
+ {
+ \tdeiaWriteActionUp{1}{Proyecto}
+ \tdeiaWriteActionUp{11}{A 2.}
+ \tdeiaWriteActionUp{17}{A 2.2.}
+ }{}
+}
+

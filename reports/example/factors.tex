@@ -1,0 +1,348 @@
+\newcommand{\tdeiaWriteAllFactors}
+{
+ \tdeiaWriteMyFactor{1}
+ \tdeiaWriteMyFactor{2}
+ \tdeiaWriteMyFactor{3}
+ \tdeiaWriteMyFactor{4}
+ \tdeiaWriteMyFactor{5}
+ \tdeiaWriteMyFactor{6}
+ \tdeiaWriteMyFactor{7}
+ \tdeiaWriteMyFactor{8}
+ \tdeiaWriteMyFactor{9}
+ \tdeiaWriteMyFactor{10}
+ \tdeiaWriteMyFactor{11}
+ \tdeiaWriteMyFactor{12}
+ \tdeiaWriteMyFactor{13}
+ \tdeiaWriteMyFactor{14}
+ \tdeiaWriteMyFactor{15}
+ \tdeiaWriteMyFactor{16}
+ \tdeiaWriteMyFactor{17}
+ \tdeiaWriteMyFactor{18}
+ \tdeiaWriteMyFactor{19}
+}
+
+\newcommand{\tdeiaPaintMyFactorTree}
+{
+  \tdeiaPaintFactorTree{3}{19}
+}
+
+\newcommand{\tdeiaPaintMyFactorAllNodes}
+{
+ \tdeiaPaintFactorNode{1}{Ambiente}{0}{1.000}{0.000}
+ \tdeiaPaintFactorNode{2}{F 1.}{1}{0.556}{0.556}
+ \tdeiaPaintFactorNode{3}{F 1.1.}{2}{0.296}{0.533}
+ \tdeiaPaintFactorNode{4}{F 1.1.1.}{3}{0.074}{0.250}
+ \tdeiaPaintFactorNode{5}{F 1.1.2.}{3}{0.074}{0.250}
+ \tdeiaPaintFactorNode{6}{F 1.1.3.}{3}{0.074}{0.250}
+ \tdeiaPaintFactorNode{7}{F 1.1.4.}{3}{0.074}{0.250}
+ \tdeiaPaintFactorNode{8}{F 1.2.}{2}{0.259}{0.467}
+ \tdeiaPaintFactorNode{9}{F 1.2.1.}{3}{0.074}{0.286}
+ \tdeiaPaintFactorNode{10}{F 1.2.2.}{3}{0.185}{0.714}
+ \tdeiaPaintFactorNode{11}{F 2.}{1}{0.444}{0.444}
+ \tdeiaPaintFactorNode{12}{F 2.1.}{2}{0.296}{0.667}
+ \tdeiaPaintFactorNode{13}{F 2.1.1.}{3}{0.074}{0.250}
+ \tdeiaPaintFactorNode{14}{F 2.1.2.}{3}{0.074}{0.250}
+ \tdeiaPaintFactorNode{15}{F 2.1.3.}{3}{0.074}{0.250}
+ \tdeiaPaintFactorNode{16}{F 2.1.4.}{3}{0.074}{0.250}
+ \tdeiaPaintFactorNode{17}{F 2.2.}{2}{0.148}{0.333}
+ \tdeiaPaintFactorNode{18}{F 2.2.1.}{3}{0.074}{0.500}
+ \tdeiaPaintFactorNode{19}{F 2.2.2.}{3}{0.074}{0.500}
+ \tdeiaPaintFactorConnection{1}{2}
+ \tdeiaPaintFactorConnection{1}{11}
+ \tdeiaPaintFactorConnection{2}{3}
+ \tdeiaPaintFactorConnection{2}{8}
+ \tdeiaPaintFactorConnection{3}{4}
+ \tdeiaPaintFactorConnection{3}{5}
+ \tdeiaPaintFactorConnection{3}{6}
+ \tdeiaPaintFactorConnection{3}{7}
+ \tdeiaPaintFactorConnection{8}{9}
+ \tdeiaPaintFactorConnection{8}{10}
+ \tdeiaPaintFactorConnection{11}{12}
+ \tdeiaPaintFactorConnection{11}{17}
+ \tdeiaPaintFactorConnection{12}{13}
+ \tdeiaPaintFactorConnection{12}{14}
+ \tdeiaPaintFactorConnection{12}{15}
+ \tdeiaPaintFactorConnection{12}{16}
+ \tdeiaPaintFactorConnection{17}{18}
+ \tdeiaPaintFactorConnection{17}{19}
+}
+
+\newcommand{\tdeiaWriteMyFactor}[1]
+{
+ \ifthenelse{\equal{#1}{1}}
+ {
+ \tdeiaWriteFactor{1}{Ambiente}{0}{1}{0}
+ }{}
+ \ifthenelse{\equal{#1}{2}}
+ {
+ \tdeiaWriteFactor{2}{F 1.}{1}{0.555555}{0.555555}
+ }{}
+ \ifthenelse{\equal{#1}{3}}
+ {
+ \tdeiaWriteFactor{3}{F 1.1.}{2}{0.296296}{0.533334}
+ }{}
+ \ifthenelse{\equal{#1}{4}}
+ {
+ \tdeiaWriteFactor{4}{F 1.1.1.}{3}{0.0740741}{0.25}
+ }{}
+ \ifthenelse{\equal{#1}{5}}
+ {
+ \tdeiaWriteFactor{5}{F 1.1.2.}{3}{0.0740741}{0.25}
+ }{}
+ \ifthenelse{\equal{#1}{6}}
+ {
+ \tdeiaWriteFactor{6}{F 1.1.3.}{3}{0.0740741}{0.25}
+ }{}
+ \ifthenelse{\equal{#1}{7}}
+ {
+ \tdeiaWriteFactor{7}{F 1.1.4.}{3}{0.0740741}{0.25}
+ }{}
+ \ifthenelse{\equal{#1}{8}}
+ {
+ \tdeiaWriteFactor{8}{F 1.2.}{2}{0.259259}{0.466666}
+ }{}
+ \ifthenelse{\equal{#1}{9}}
+ {
+ \tdeiaWriteFactor{9}{F 1.2.1.}{3}{0.0740741}{0.285714}
+ }{}
+ \ifthenelse{\equal{#1}{10}}
+ {
+ \tdeiaWriteFactor{10}{F 1.2.2.}{3}{0.185185}{0.714286}
+ }{}
+ \ifthenelse{\equal{#1}{11}}
+ {
+ \tdeiaWriteFactor{11}{F 2.}{1}{0.444445}{0.444445}
+ }{}
+ \ifthenelse{\equal{#1}{12}}
+ {
+ \tdeiaWriteFactor{12}{F 2.1.}{2}{0.296296}{0.666667}
+ }{}
+ \ifthenelse{\equal{#1}{13}}
+ {
+ \tdeiaWriteFactor{13}{F 2.1.1.}{3}{0.0740741}{0.25}
+ }{}
+ \ifthenelse{\equal{#1}{14}}
+ {
+ \tdeiaWriteFactor{14}{F 2.1.2.}{3}{0.0740741}{0.25}
+ }{}
+ \ifthenelse{\equal{#1}{15}}
+ {
+ \tdeiaWriteFactor{15}{F 2.1.3.}{3}{0.0740741}{0.25}
+ }{}
+ \ifthenelse{\equal{#1}{16}}
+ {
+ \tdeiaWriteFactor{16}{F 2.1.4.}{3}{0.0740741}{0.25}
+ }{}
+ \ifthenelse{\equal{#1}{17}}
+ {
+ \tdeiaWriteFactor{17}{F 2.2.}{2}{0.148148}{0.333333}
+ }{}
+ \ifthenelse{\equal{#1}{18}}
+ {
+ \tdeiaWriteFactor{18}{F 2.2.1.}{3}{0.0740741}{0.5}
+ }{}
+ \ifthenelse{\equal{#1}{19}}
+ {
+ \tdeiaWriteFactor{19}{F 2.2.2.}{3}{0.0740741}{0.5}
+ }{}
+}
+
+\newcommand{\tdeiaWriteMyFactorDown}[1]
+{
+ \ifthenelse{\equal{#1}{1}}
+ {
+ \tdeiaWriteFactorDown{2}{F 1.}
+ \tdeiaWriteFactorDown{11}{F 2.}
+ }{}
+ \ifthenelse{\equal{#1}{2}}
+ {
+ \tdeiaWriteFactorDown{3}{F 1.1.}
+ \tdeiaWriteFactorDown{8}{F 1.2.}
+ }{}
+ \ifthenelse{\equal{#1}{3}}
+ {
+ \tdeiaWriteFactorDown{4}{F 1.1.1.}
+ \tdeiaWriteFactorDown{5}{F 1.1.2.}
+ \tdeiaWriteFactorDown{6}{F 1.1.3.}
+ \tdeiaWriteFactorDown{7}{F 1.1.4.}
+ }{}
+ \ifthenelse{\equal{#1}{4}}
+ {
+ \tdeiaWriteFactorNoChildren{}
+ }{}
+ \ifthenelse{\equal{#1}{5}}
+ {
+ \tdeiaWriteFactorNoChildren{}
+ }{}
+ \ifthenelse{\equal{#1}{6}}
+ {
+ \tdeiaWriteFactorNoChildren{}
+ }{}
+ \ifthenelse{\equal{#1}{7}}
+ {
+ \tdeiaWriteFactorNoChildren{}
+ }{}
+ \ifthenelse{\equal{#1}{8}}
+ {
+ \tdeiaWriteFactorDown{9}{F 1.2.1.}
+ \tdeiaWriteFactorDown{10}{F 1.2.2.}
+ }{}
+ \ifthenelse{\equal{#1}{9}}
+ {
+ \tdeiaWriteFactorNoChildren{}
+ }{}
+ \ifthenelse{\equal{#1}{10}}
+ {
+ \tdeiaWriteFactorNoChildren{}
+ }{}
+ \ifthenelse{\equal{#1}{11}}
+ {
+ \tdeiaWriteFactorDown{12}{F 2.1.}
+ \tdeiaWriteFactorDown{17}{F 2.2.}
+ }{}
+ \ifthenelse{\equal{#1}{12}}
+ {
+ \tdeiaWriteFactorDown{13}{F 2.1.1.}
+ \tdeiaWriteFactorDown{14}{F 2.1.2.}
+ \tdeiaWriteFactorDown{15}{F 2.1.3.}
+ \tdeiaWriteFactorDown{16}{F 2.1.4.}
+ }{}
+ \ifthenelse{\equal{#1}{13}}
+ {
+ \tdeiaWriteFactorNoChildren{}
+ }{}
+ \ifthenelse{\equal{#1}{14}}
+ {
+ \tdeiaWriteFactorNoChildren{}
+ }{}
+ \ifthenelse{\equal{#1}{15}}
+ {
+ \tdeiaWriteFactorNoChildren{}
+ }{}
+ \ifthenelse{\equal{#1}{16}}
+ {
+ \tdeiaWriteFactorNoChildren{}
+ }{}
+ \ifthenelse{\equal{#1}{17}}
+ {
+ \tdeiaWriteFactorDown{18}{F 2.2.1.}
+ \tdeiaWriteFactorDown{19}{F 2.2.2.}
+ }{}
+ \ifthenelse{\equal{#1}{18}}
+ {
+ \tdeiaWriteFactorNoChildren{}
+ }{}
+ \ifthenelse{\equal{#1}{19}}
+ {
+ \tdeiaWriteFactorNoChildren{}
+ }{}
+}
+
+\newcommand{\tdeiaWriteMyFactorUp}[1]
+{
+ \ifthenelse{\equal{#1}{1}}
+ {
+ \tdeiaWriteFactorNoParent{}
+ }{}
+ \ifthenelse{\equal{#1}{2}}
+ {
+ \tdeiaWriteFactorUp{1}{Ambiente}
+ }{}
+ \ifthenelse{\equal{#1}{3}}
+ {
+ \tdeiaWriteFactorUp{1}{Ambiente}
+ \tdeiaWriteFactorUp{2}{F 1.}
+ }{}
+ \ifthenelse{\equal{#1}{4}}
+ {
+ \tdeiaWriteFactorUp{1}{Ambiente}
+ \tdeiaWriteFactorUp{2}{F 1.}
+ \tdeiaWriteFactorUp{3}{F 1.1.}
+ }{}
+ \ifthenelse{\equal{#1}{5}}
+ {
+ \tdeiaWriteFactorUp{1}{Ambiente}
+ \tdeiaWriteFactorUp{2}{F 1.}
+ \tdeiaWriteFactorUp{3}{F 1.1.}
+ }{}
+ \ifthenelse{\equal{#1}{6}}
+ {
+ \tdeiaWriteFactorUp{1}{Ambiente}
+ \tdeiaWriteFactorUp{2}{F 1.}
+ \tdeiaWriteFactorUp{3}{F 1.1.}
+ }{}
+ \ifthenelse{\equal{#1}{7}}
+ {
+ \tdeiaWriteFactorUp{1}{Ambiente}
+ \tdeiaWriteFactorUp{2}{F 1.}
+ \tdeiaWriteFactorUp{3}{F 1.1.}
+ }{}
+ \ifthenelse{\equal{#1}{8}}
+ {
+ \tdeiaWriteFactorUp{1}{Ambiente}
+ \tdeiaWriteFactorUp{2}{F 1.}
+ }{}
+ \ifthenelse{\equal{#1}{9}}
+ {
+ \tdeiaWriteFactorUp{1}{Ambiente}
+ \tdeiaWriteFactorUp{2}{F 1.}
+ \tdeiaWriteFactorUp{8}{F 1.2.}
+ }{}
+ \ifthenelse{\equal{#1}{10}}
+ {
+ \tdeiaWriteFactorUp{1}{Ambiente}
+ \tdeiaWriteFactorUp{2}{F 1.}
+ \tdeiaWriteFactorUp{8}{F 1.2.}
+ }{}
+ \ifthenelse{\equal{#1}{11}}
+ {
+ \tdeiaWriteFactorUp{1}{Ambiente}
+ }{}
+ \ifthenelse{\equal{#1}{12}}
+ {
+ \tdeiaWriteFactorUp{1}{Ambiente}
+ \tdeiaWriteFactorUp{11}{F 2.}
+ }{}
+ \ifthenelse{\equal{#1}{13}}
+ {
+ \tdeiaWriteFactorUp{1}{Ambiente}
+ \tdeiaWriteFactorUp{11}{F 2.}
+ \tdeiaWriteFactorUp{12}{F 2.1.}
+ }{}
+ \ifthenelse{\equal{#1}{14}}
+ {
+ \tdeiaWriteFactorUp{1}{Ambiente}
+ \tdeiaWriteFactorUp{11}{F 2.}
+ \tdeiaWriteFactorUp{12}{F 2.1.}
+ }{}
+ \ifthenelse{\equal{#1}{15}}
+ {
+ \tdeiaWriteFactorUp{1}{Ambiente}
+ \tdeiaWriteFactorUp{11}{F 2.}
+ \tdeiaWriteFactorUp{12}{F 2.1.}
+ }{}
+ \ifthenelse{\equal{#1}{16}}
+ {
+ \tdeiaWriteFactorUp{1}{Ambiente}
+ \tdeiaWriteFactorUp{11}{F 2.}
+ \tdeiaWriteFactorUp{12}{F 2.1.}
+ }{}
+ \ifthenelse{\equal{#1}{17}}
+ {
+ \tdeiaWriteFactorUp{1}{Ambiente}
+ \tdeiaWriteFactorUp{11}{F 2.}
+ }{}
+ \ifthenelse{\equal{#1}{18}}
+ {
+ \tdeiaWriteFactorUp{1}{Ambiente}
+ \tdeiaWriteFactorUp{11}{F 2.}
+ \tdeiaWriteFactorUp{17}{F 2.2.}
+ }{}
+ \ifthenelse{\equal{#1}{19}}
+ {
+ \tdeiaWriteFactorUp{1}{Ambiente}
+ \tdeiaWriteFactorUp{11}{F 2.}
+ \tdeiaWriteFactorUp{17}{F 2.2.}
+ }{}
+}
+

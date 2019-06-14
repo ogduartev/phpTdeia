@@ -1,0 +1,14 @@
+#!/bin/bash 
+COUNTER=1
+while [  $COUNTER -lt 10 ]; do
+   echo Proyecto $COUNTER
+   bash ./topdf.txt 0$COUNTER doc0$COUNTER
+   let COUNTER=COUNTER+1 
+done
+let COUNTER=10
+while [  $COUNTER -lt 31 ]; do
+   echo Proyecto $COUNTER
+   bash ./topdf.txt $COUNTER doc$COUNTER
+   let COUNTER=COUNTER+1 
+done
+

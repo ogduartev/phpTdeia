@@ -1,0 +1,22 @@
+por hacer:
+  OJO:
+    falta editar las variables de aggregator y effect_propierties
+    falta la edición de effect_propierties
+
+  íconos de los nodos de los árboles
+  
+  ícono de la aplicación
+  
+  nombre de la aplicación ('eia' suena a sufijo griego) (Leia, on Line Environmentel Impact Assessment)
+  
+  todo  administración de grupos y usuarios
+
+
+ideas:
+
+   pintar variables como svg
+   matriz: usar herencia para evitar los switch-case : implica modificar login.php
+   edición de importancia: mostrar taba con todas las propiedades asociadas
+   funciones setXXX . implica modificar edit_YYY.php
+   
+   

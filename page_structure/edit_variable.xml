@@ -1,0 +1,13 @@
+<block id="tdeia" type="body" class="tdeia">
+  <block id="body" type="div" class="body">
+    <block id="logo" type="div" class="logo" action="logo"></block>
+    <block id="title_frame" type="div" class="title_frame">
+      <block id="title" type="div" class="title" action="title"></block>
+      <block id="user" type="div" class="user" action="user">
+        <block id="adminlogout" type="div" class="admin_logout" action="adminlogout"></block>
+      </block>
+    </block>
+    <block id="edit_variable" type="div" class="edit_variable" action="edit_variable"></block>
+  </block>
+</block>
+

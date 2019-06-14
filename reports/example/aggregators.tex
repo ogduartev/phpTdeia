@@ -1,0 +1,28 @@
+\newcommand{\tdeiaWriteMyImportanceEquation}
+{
+ \tdeiaWriteAggregator{linear_combination}{1}
+}
+
+\newcommand{\tdeiaWriteAllAggregatorsSummary}
+{
+  \begin{tdeiaAggregatorsSummary}
+ \tdeiaWriteMyAggregatorInSummary{Importancia media}{simple_average}{2}
+ \tdeiaWriteMyAggregatorInSummary{Importancia ponderada}{weighted_average}{3}
+ \tdeiaWriteMyAggregatorInSummary{Importancia máxima}{maximum}{4}
+ \tdeiaWriteMyAggregatorInSummary{Importancia mínima}{minimum}{5}
+  \end{tdeiaAggregatorsSummary}
+}
+
+\newcommand{\tdeiaWriteAllAggregatorsTableImp}
+{
+ \tdeiaWriteMyAggregatorInTableImp{1}{Importancia}{linear_combination}{Importancia de un efecto}{13}{Importancia}{Importancia de un efecto}{-1}{1}
+}
+
+\newcommand{\tdeiaWriteAllAggregatorsTableAgg}
+{
+ \tdeiaWriteMyAggregatorInTableAgg{2}{Importancia media}{simple_average}{Promedio de importancias}{14}{Importancia media}{Promedio de importancias}{-1}{1}
+ \tdeiaWriteMyAggregatorInTableAgg{3}{Importancia ponderada}{weighted_average}{Promedio de importancias ponderado por el peso del factor}{15}{Importancia ponderada}{Promedio de importancias ponderado por el peso del factor}{-1}{1}
+ \tdeiaWriteMyAggregatorInTableAgg{4}{Importancia máxima}{maximum}{Mayor importancia}{16}{Importancia máxima}{Mayor importancia}{-1}{1}
+ \tdeiaWriteMyAggregatorInTableAgg{5}{Importancia mínima}{minimum}{Mínima importancia}{17}{Importancia mínima}{Mínima importancia}{-1}{1}
+}
+

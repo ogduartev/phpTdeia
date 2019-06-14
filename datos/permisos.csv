@@ -1,0 +1,61 @@
+name	action	object	administrator	manager	leader	expert	viewer
+create_permissions	CREATE	permission	X				
+read_permissions	READ	permission	X				
+update_permissions	UPDATE	permission	X				
+delete_permissions	DELETE	permission	X				
+create_groups	CREATE	group	X				
+read_groups	READ	group	X	X	X	X	X
+update_groups	UPDATE	group	X				
+delete_groups	DELETE	group	X				
+create_users	CREATE	user	X	X	X		
+read_users	READ	user	X	X	X	X	X
+update_users	UPDATE	user	X	X	X		
+delete_users	DELETE	user	X	X	X		
+create_projects	CREATE	project	X	X			
+read_projects	READ	project	X	X	X	X	X
+update_projects	UPDATE	project	X	X			
+delete_projects	DELETE	project	X	X			
+create_effect_propierties	CREATE	effect_propierty	X	X			
+read_effect_propierties	READ	effect_propierty	X	X	X	X	X
+update_effect_propierties	UPDATE	effect_propierty	X	X			
+delete_effect_propierties	DELETE	effect_propierty	X	X			
+create_aggregators	CREATE	aggregator	X	X			
+read_aggregators	READ	aggregator	X	X	X	X	X
+update_aggregators	UPDATE	aggregator	X	X			
+delete_aggregators	DELETE	aggregator	X	X			
+create_factors	CREATE	factor	X	X	X		
+read_factors	READ	factor	X	X	X	X	X
+update_factors	UPDATE	factor	X	X	X	X	
+delete_factors	DELETE	factor	X	X	X		
+create_actions	CREATE	action	X	X	X		
+read_actions	READ	action	X	X	X	X	X
+update_actions	UPDATE	action	X	X	X	X	
+delete_actions	DELETE	action	X	X	X		
+create_effects	CREATE	effect	X	X	X	X	
+read_effects	READ	effect	X	X	X	X	X
+update_effects	UPDATE	effect	X	X	X	X	
+delete_effects	DELETE	effect	X	X	X	X	
+create_propierties	CREATE	propierty	X	X	X	X	
+read_propierties	READ	propierty	X	X	X	X	X
+update_propierties	UPDATE	propierty	X	X	X	X	
+delete_propierties	DELETE	propierty	X	X	X	X	
+create_variables	CREATE	variable	X	X			
+read_variables	READ	variable	X	X	X	X	X
+update_variables	UPDATE	variable	X	X			
+delete_variables	DELETE	variable	X	X			
+create_sets	CREATE	set	X	X	X		
+read_sets	READ	set	X	X	X	X	X
+update_sets	UPDATE	set	X	X	X	X	
+delete_sets	DELETE	set	X	X	X		
+create_cuts	CREATE	cut	X	X	X	X	
+read_cuts	READ	cut	X	X	X	X	X
+update_cuts	UPDATE	cut	X	X	X	X	
+delete_cuts	DELETE	cut	X	X	X	X	
+create_inputs	CREATE	input	X	X	X		
+read_inputs	READ	input	X	X	X	X	X
+update_inputs	UPDATE	input	X	X	X	X	
+delete_inputs	DELETE	input	X	X	X		
+create_input_cuts	CREATE	input_cut	X	X	X	X	
+read_input_cuts	READ	input_cut	X	X	X	X	X
+update_input_cuts	UPDATE	input_cut	X	X	X	X	
+delete_input_cuts	DELETE	input_cut	X	X	X	X	

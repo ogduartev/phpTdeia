@@ -1,0 +1,85 @@
+\newcommand{\tdeiaWriteMyEffectPropierty}[1]
+{
+ \ifthenelse{\equal{#1}{1}}
+ {
+  \tdeiaWriteEffectPropierty{1}{Intensidad}{1}{0.36}{2}{1}
+ }{}
+ \ifthenelse{\equal{#1}{2}}
+ {
+  \tdeiaWriteEffectPropierty{2}{Extensión}{1}{0.16}{2}{2}
+ }{}
+ \ifthenelse{\equal{#1}{3}}
+ {
+  \tdeiaWriteEffectPropierty{3}{Extensión crítica}{1}{0.08}{2}{3}
+ }{}
+ \ifthenelse{\equal{#1}{4}}
+ {
+  \tdeiaWriteEffectPropierty{4}{Momento}{-1}{0.04}{2}{4}
+ }{}
+ \ifthenelse{\equal{#1}{5}}
+ {
+  \tdeiaWriteEffectPropierty{5}{Momento crítico}{1}{0.04}{2}{5}
+ }{}
+ \ifthenelse{\equal{#1}{6}}
+ {
+  \tdeiaWriteEffectPropierty{6}{Persistencia}{1}{0.04}{2}{6}
+ }{}
+ \ifthenelse{\equal{#1}{7}}
+ {
+  \tdeiaWriteEffectPropierty{7}{Reversibilidad}{1}{0.04}{2}{7}
+ }{}
+ \ifthenelse{\equal{#1}{8}}
+ {
+  \tdeiaWriteEffectPropierty{8}{Sinergía}{1}{0.04}{2}{8}
+ }{}
+ \ifthenelse{\equal{#1}{9}}
+ {
+  \tdeiaWriteEffectPropierty{9}{Acumulación}{1}{0.04}{2}{9}
+ }{}
+ \ifthenelse{\equal{#1}{10}}
+ {
+  \tdeiaWriteEffectPropierty{10}{Efecto}{1}{0.04}{2}{10}
+ }{}
+ \ifthenelse{\equal{#1}{11}}
+ {
+  \tdeiaWriteEffectPropierty{11}{Periodicidad}{1}{0.04}{2}{11}
+ }{}
+ \ifthenelse{\equal{#1}{12}}
+ {
+  \tdeiaWriteEffectPropierty{12}{Recuperabilidad}{1}{0.08}{2}{12}
+ }{}
+}
+
+\newcommand{\tdeiaWriteAllEffectPropierties}
+{
+ \tdeiaWriteMyEffectPropierty{1}
+ \tdeiaWriteMyEffectPropierty{2}
+ \tdeiaWriteMyEffectPropierty{3}
+ \tdeiaWriteMyEffectPropierty{4}
+ \tdeiaWriteMyEffectPropierty{5}
+ \tdeiaWriteMyEffectPropierty{6}
+ \tdeiaWriteMyEffectPropierty{7}
+ \tdeiaWriteMyEffectPropierty{8}
+ \tdeiaWriteMyEffectPropierty{9}
+ \tdeiaWriteMyEffectPropierty{10}
+ \tdeiaWriteMyEffectPropierty{11}
+ \tdeiaWriteMyEffectPropierty{12}
+}
+
+\newcommand{\tdeiaWriteAllEffectPropiertiesSummary}
+{
+  \begin{tdeiaEffectPropiertiesSummary}
+ \tdeiaWriteMyEffectPropiertyInSummary{1}{Intensidad}{1}{0.36}{2}
+ \tdeiaWriteMyEffectPropiertyInSummary{2}{Extensión}{1}{0.16}{2}
+ \tdeiaWriteMyEffectPropiertyInSummary{3}{Extensión crítica}{1}{0.08}{2}
+ \tdeiaWriteMyEffectPropiertyInSummary{4}{Momento}{-1}{0.04}{2}
+ \tdeiaWriteMyEffectPropiertyInSummary{5}{Momento crítico}{1}{0.04}{2}
+ \tdeiaWriteMyEffectPropiertyInSummary{6}{Persistencia}{1}{0.04}{2}
+ \tdeiaWriteMyEffectPropiertyInSummary{7}{Reversibilidad}{1}{0.04}{2}
+ \tdeiaWriteMyEffectPropiertyInSummary{8}{Sinergía}{1}{0.04}{2}
+ \tdeiaWriteMyEffectPropiertyInSummary{9}{Acumulación}{1}{0.04}{2}
+ \tdeiaWriteMyEffectPropiertyInSummary{10}{Efecto}{1}{0.04}{2}
+ \tdeiaWriteMyEffectPropiertyInSummary{11}{Periodicidad}{1}{0.04}{2}
+ \tdeiaWriteMyEffectPropiertyInSummary{12}{Recuperabilidad}{1}{0.08}{2}
+  \end{tdeiaEffectPropiertiesSummary}
+}

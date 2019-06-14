@@ -1,0 +1,2320 @@
+body.tdeia
+{
+  background-color:#f0f0f0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:.8em;
+  text-align:left;
+  overflow-x: scroll;
+  overflow-y: scroll;
+}
+
+div.body,div.body_longtext
+{
+  padding:10px;
+  background-color:#c0c0ff;
+  position: relative;
+  float:center;
+  width:1200px;
+  height: 100%;
+  border:1px solid #000000;
+  color: inherit;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.logo
+{
+  background-color:inherit;
+  position: absolute;
+  top: 10px;
+  left:0px;
+  width:209px;
+  height:30px;
+}
+
+a.logo
+{
+  background-color:inherit;
+  background:url('img/logo.svg');
+  position: absolute;
+  top: 0px;
+  left:0px;
+  width:209px;
+  height:30px;
+}
+
+div.title_frame
+{
+  background-color:inherit;
+/*  border:1px solid #000000;*/
+  position: absolute;
+  top: 10px;
+  width:980px;
+  height:30px;
+  margin-left: 220;
+  margin-right: auto;
+}
+
+div.title
+{
+  position: absolute;
+  left:0px;
+  text-align:center;
+  border:0px solid #000000;
+  width:750px;
+  height:30px;
+  background-color:inherit;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+input.title_project
+{
+  background-color:inherit;
+  border:0px solid #000000;
+  width:100%;
+  height:100%;
+  font-size:1.8em;
+  text-align:center;  
+  color: #000000;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+div.user
+{
+  background-color:transparent;
+  border:0px solid #000000;
+  position:absolute;
+  right:10px;
+  top:0px;
+  width:200px;
+  height:40px;
+  text-align:center;
+}
+
+div.admin_logout
+{
+  background-color:transparent;
+  border:0px solid #000000;
+  position:absolute;
+  right:0px;
+  bottom:2px;
+  width:50%;
+  height:20px;
+  text-align:center;
+}
+
+input.logout_button
+{
+  background-color:#dddddd;
+  border: solid 1px #000000;
+  position:relative;
+  float:center;
+  color:#000000;
+  margin-left:auto;
+  margin-right:auto;
+  width:100%;
+  height:20px;
+  font-size:1.0em;
+}
+
+select.projects
+{
+  background-color:#FFFFFF;
+  position:absolute;
+  width:50%;
+  height:20px;
+  left:0px;
+  bottom:2px;
+  font-size:.8em;
+}
+
+
+/*----------------------
+Menú
+-----------------------*/
+
+div.menu_factors
+{
+  font-size:1.1em;
+  border: solid 1px #000000;
+  position:absolute;
+  left:10px;
+  top:50px;
+  background-color:#ffffff;
+  width:209px;
+  height:380px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+div.menu_actions
+{
+  font-size:1.1em;
+  border: solid 1px #000000;
+  position:absolute;
+  right:10px;
+  top:50px;
+  background-color:#ffffff;
+  width:209px;
+  height:380px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+div.section_name
+{
+  color:#000000;
+  position:relative;
+  left:10px;
+}
+
+a.section_name
+{
+  color:#000000;
+  position:relative;
+  left:0px;
+}
+
+a
+{
+  color:inherit;
+}
+
+div.inner-tree
+{
+  font-size:1.1em;
+  border: solid 0px #000000;
+  position:absolute;
+  left:0px;
+  top:0px;
+  background-color:#ffffff;
+  width:209px;
+  height:340px;
+  overflow-x: scroll;
+  overflow-y: scroll;
+}
+
+/* ojo: temporal para pruebas/menu.html */
+
+div.node_tree
+{
+  position:absolute;
+  margin-left:0px;
+  margin-top:0px;
+  height:20px;
+  width:500px;
+  background-color: transparent;
+}
+
+img.node_tree_icon
+{
+  background:url('img/fo.gif');
+  position:absolute;
+  margin-left:0px;
+  margin-top:0px;
+  height:20px;
+}
+
+div.node_tree_icon
+{
+  background:url('img/fo.gif');
+  position:absolute;
+  margin-left:0px;
+  margin-top:0px;
+  width:18px;
+  height:18px;
+}
+
+div.node_tree_content
+{
+  position:absolute;
+  margin-left:20px;
+  margin-right:auto;
+  margin-top:0px;
+  padding-top:3px;
+  height:20px;
+  background-color: inherit;
+  vertical-align: middle;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:.8em;
+}
+
+/* level_factors level_actions */
+
+div.levels
+{
+  background-color: inherit;
+  position:absolute;
+  left:55;
+  top:340px;
+  width:100px;
+  height:35px;
+}
+label.level
+{
+  background-color: inherit;
+  position:absolute;
+  right:26%;
+  top:5px
+  color: #00ff00;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:.8em;
+  width:75px;
+}
+input.level
+{
+  -webkit-appearance: none;
+  background-color: inherit;
+  position:relative;
+  float:center;
+  top:15px;
+  margin-left:auto;
+  margin-right:auto;
+  width:100px;
+}
+output.level
+{
+  background-color: inherit;
+  position:absolute;
+  left:76%;
+  top:5px
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:.8em;
+  width:25px;
+}
+
+
+
+/* MATRIX */ 
+
+div.matriz
+{
+  font-size:1.1em;
+  border: solid 1px #000000;
+  position:absolute;
+  left:250px;
+  top:50px;
+  background-color:#ffffff;
+  width:720px;
+  height:380px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+
+/* styleMatrix.css*/
+
+/* Showvar */
+
+div.showvar
+{
+  font-size:1.1em;
+  border: solid 1px #000000;
+  position:absolute;
+  left:250px;
+  top:440px;
+  background-color:#ffffff;
+  width:720px;
+  height:200px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+iframe.showvar
+{
+  width:720px;
+  height:200px;
+}
+
+/* matrix selector*/
+
+div.matrixselector
+{
+  font-size:0.8em;
+  border: solid 1px #000000;
+  position:absolute;
+  left:10px;
+  top:10px;
+  background-color:inherit;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+select.matrixselector
+{
+  background-color:inherit;
+  width:100%;
+  height:50%;
+  font-size:.8em;
+}
+
+option.matrixselector
+{
+  background-color:inherit;
+  width:100%;
+  height:50%;
+}
+
+/*analysis*/
+div.analysis
+{
+  font-size:1.1em;
+  border: solid 1px #000000;
+  position:absolute;
+  right:10px;
+  top:440px;
+  background-color:#ffffff;
+  width:209px;
+  height:200px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+input.analysis_description
+{
+  display:block;
+  position:relative;
+  top:5px;
+  float: center;
+  margin-left:auto;
+  margin-right:auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:.8em;
+  width:45%;
+}
+
+
+/*  edit_input  */
+
+div.edit_input
+{
+  font-size:1.1em;
+  border: solid 1px #000000;
+  position:absolute;
+  right:10px;
+  top:440px;
+  background-color:#ffffff;
+  width:209px;
+  height:200px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+div.edit_input_title
+{
+  background-color:inherit;
+  margin-top:5px;
+  width:100%;
+  height:10px;
+  font-size:.8em;
+  text-align:center; 
+}
+
+div.edit_input_type
+{
+  position:absolute;
+  background-color:inherit;
+  margin-top:20px;
+  width:100%;
+  height:20px;
+  font-size:.8em;
+  text-align:center; 
+}
+
+div.edit_input_label
+{
+  position:absolute;
+  background-color:inherit;
+  margin-top:50px;
+  width:100%;
+  height:45px;
+  font-size:.8em;
+  text-align:center; 
+}
+
+div.edit_input_fuzzy
+{
+  position:absolute;
+  background-color:inherit;
+  margin-top:50px;
+  width:100%;
+  height:45px;
+  font-size:.8em;
+  text-align:center; 
+}
+
+div.edit_input_type_label,div.edit_input_crisp_label,div.edit_input_interval_label,div.edit_input_label_label,div.edit_input_modifier_label
+{
+  position:absolute;
+  background-color:inherit;
+  margin-top:0px;
+  margin-right:0px;
+  top:5px;
+  left:0px;
+  width:35%;
+  height:20px;
+  font-size:.8em;
+  text-align:right; 
+}
+
+div.edit_input_modifier_label
+{
+  top:25px;
+}
+edit_input_fuzzy_label
+{
+  position:relative;
+  background-color:inherit;
+  margin-top:0px;
+  float: center;
+  margin-left:auto;
+  margin-right:auto;
+  width:100%;
+  font-size:1em;
+  text-align:center; 
+}
+
+select.edit_input_type,select.edit_input_label,select.edit_input_modifier
+{
+  position:absolute;
+  background-color:inherit;
+  margin-left:0px;
+  margin-top:0px;
+  top:0px;
+  left:40%;
+  right:5px;
+  width:50%;
+  height:20px;
+  font-size:.8em;
+}
+
+select.edit_input_modifier
+{
+  top:20px;
+}
+
+div.edit_input_crisp
+{
+  position:absolute;
+  background-color:inherit;
+  margin-top:50px;
+  width:100%;
+  height:20px;
+  font-size:.8em;
+  text-align:center; 
+}
+
+input.edit_input_crisp,input.edit_input_interval_L,input.edit_input_interval_R,input.edit_input_fuzzy_a,input.edit_input_fuzzy_b,input.edit_input_fuzzy_c,input.edit_input_fuzzy_d
+{
+  position:absolute;
+  background-color:inherit;
+  margin-left:0px;
+  margin-top:0px;
+  top:0px;
+  width:20%;
+  height:20px;
+  font-size:.8em;
+}
+
+input.edit_input_fuzzy_a
+{
+  top:20px;
+  left:10px;
+}
+
+input.edit_input_fuzzy_b
+{
+  top:20px;
+  left:60px;
+}
+
+input.edit_input_fuzzy_c
+{
+  top:20px;
+  left:110px;
+}
+
+input.edit_input_fuzzy_d
+{
+  top:20px;
+  left:160px;
+}
+
+div.edit_input_interval
+{
+  position:absolute;
+  background-color:inherit;
+  margin-top:50px;
+  width:100%;
+  height:20px;
+  font-size:.8em;
+  text-align:center; 
+}
+
+input.edit_input_crisp
+{
+  left:40%;
+}
+
+input.edit_input_interval_L
+{
+  left:40%;
+}
+
+input.edit_input_interval_R
+{
+  left:70%;
+}
+
+input.edit_input_submit
+{
+  position:absolute;
+  bottom:5px;
+  left:50%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:.8em;
+  width:45%;
+}
+
+input.edit_input_description
+{
+  position:absolute;
+  bottom:5px;
+  right:50%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:.8em;
+  width:45%;
+}
+
+/* edit_longtext */
+
+div.body_longtext
+{
+  width:95%;
+  height:95%;
+}
+
+div.longtext_title
+{
+  width:100%;
+  height:20px;
+  bottom:5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:1.0em;
+  text-align:center; 
+}
+
+input.longtext_submit
+{
+  display:block;
+  position:relative;
+  float:center;
+  top:5px;
+  margin-left:auto;
+  margin-right:auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:.8em;
+  width:75px;
+}
+
+/* edit_effects */
+
+div.edit_effects
+{
+  font-size:1.1em;
+  border: solid 1px #000000;
+  position:absolute;
+  left:250px;
+  top:440px;
+  background-color:#ffffff;
+  width:720px;
+  height:200px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+div.effect_title
+{
+  display:block;
+  position:relative;
+  float:center;
+  top:5px;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:1em;
+  width:100%;
+}
+
+div.effect_subtitle
+{
+  display:block;
+  position:relative;
+  float:center;
+  top:5px;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:0.8em;
+  width:100%;
+}
+
+div.effect_single
+{
+  position:absolute;
+  background-color:inherit;
+  margin-left:0px;
+  margin-top:0px;
+  top:40px;
+  left:1%;
+  width:98%;
+  height:20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:.8em;
+  text-align:left;
+}
+
+div.effect_name_label,div.effect_nature_label,input.effect_name,select.effect_nature,input.effect_description,input.effect_submit,input.effect_delete,input.effect_new
+{
+  margin-top:0px;
+  top:0px;
+  position:absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:.8em;
+  width:17%;
+}
+
+div.effect_name_label,div.effect_nature_label
+{
+  text-align:center;
+}
+
+div.effect_name_label,input.effect_name,input.effect_new
+{
+  left:1%;
+}
+
+div.effect_nature_label,select.effect_nature
+{
+  left:21%;
+}
+
+input.effect_description
+{
+  left: 41%;
+}
+
+input.effect_submit
+{
+  left: 61%;
+}
+
+input.effect_delete
+{
+  left: 81%;
+}
+
+/* Tree */
+
+div.treeview
+{
+  display:block;
+  position:absolute;
+  top:0px;
+  left:0px;
+  width: 100%;
+  height:85%;
+  border: solid 1px #000000;
+  background: -webkit-linear-gradient(left, #aaaaaa , #dddddd); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #aaaaaa , #dddddd); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #aaaaaa,  #dddddd); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #aaaaaa , #dddddd); /* Standard syntax */
+  overflow:auto;
+  font-size: 0.9em;
+}
+
+ul {
+}
+
+.item {
+  cursor: pointer;
+}
+
+ul.open_list,ul.closed_list
+{
+  padding-left: 1em;
+  line-height: 1.5em;
+  list-style-type: none;
+}
+
+ul.open_list
+{
+  display:block;
+}
+
+ul.closed_list
+{
+  display:none;
+}
+
+div.open_click,div.closed_click
+{
+  width:10px;
+  height:10px;
+  margin:0px 0px 0px 0px;
+  top:0px;
+  left:0px;
+}
+div.open_click
+{
+  background-color:blue;
+/*  background:url('img/fo.gif');*/
+}
+div.closed_click
+{
+  background-color:red;
+}
+div.node_text
+{
+  margin:-14px 0px 0px 15px;
+}
+
+/*  edit_action  */
+
+div.edit_action
+{
+  font-size:1.1em;
+  border: solid 1px #000000;
+  position:absolute;
+  right:10px;
+  top:440px;
+  background-color:#ffffff;
+  width:209px;
+  height:200px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+div.edit_action_name,div.edit_action_title,div.edit_action_parent,div.edit_action_new,div.edit_action_delete
+{
+  position:absolute;
+  background-color:inherit;
+  margin-top:0px;
+  margin-right:0px;
+  left:0px;
+  width:100%;
+  height:20px;
+}
+
+div.edit_action_title
+{
+  top:5px;
+  text-align:center;
+}
+
+div.edit_action_name
+{
+  top:30px;
+}
+
+div.edit_action_parent
+{
+  top:55px;
+}
+
+div.edit_action_new
+{
+  top:80px;
+}
+
+div.edit_action_delete
+{
+  top:105px;
+}
+
+div.edit_action_name_label,div.edit_action_parent_label
+{
+  position:absolute;
+  background-color:inherit;
+  margin-top:0px;
+  margin-right:0px;
+  top:5px;
+  left:0px;
+  width:35%;
+  height:20px;
+  font-size:.8em;
+  text-align:right; 
+}
+
+input.edit_action_name,select.edit_action_parent,input.edit_action_new,input.edit_action_delete
+{
+  position:absolute;
+/*  background-color:inherit;*/
+  margin-top:0px;
+  margin-right:0px;
+  top:5px;
+  left:38%;
+  width:50%;
+  height:20px;
+  font-size:.8em;
+  text-align:left; 
+
+}
+
+input.edit_action_description
+{
+  position:absolute;
+  bottom:5px;
+  right:50%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:.8em;
+  width:45%;
+}
+
+input.edit_action_submit
+{
+  position:absolute;
+  bottom:5px;
+  left:50%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:.8em;
+  width:45%;
+}
+
+input.edit_action_new,input.edit_action_delete
+{
+  text-align:center;
+}
+
+/*  edit_factor  */
+
+div.edit_factor
+{
+  font-size:1.1em;
+  border: solid 1px #000000;
+  position:absolute;
+  left:10px;
+  top:440px;
+  background-color:#ffffff;
+  width:209px;
+  height:200px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+div.edit_factor_name,div.edit_factor_title,div.edit_factor_parent,div.edit_factor_weight,div.edit_factor_new,div.edit_factor_delete
+{
+  position:absolute;
+  background-color:inherit;
+  margin-top:0px;
+  margin-right:0px;
+  left:0px;
+  width:100%;
+  height:20px;
+}
+
+div.edit_factor_title
+{
+  top:5px;
+  text-align:center;
+}
+
+div.edit_factor_name
+{
+  top:30px;
+}
+
+div.edit_factor_parent
+{
+  top:55px;
+}
+
+div.edit_factor_weight
+{
+  top:80px;
+}
+
+div.edit_factor_new
+{
+  top:105px;
+}
+
+div.edit_factor_delete
+{
+  top:130px;
+}
+
+div.edit_factor_name_label,div.edit_factor_parent_label,div.edit_factor_weight_label
+{
+  position:absolute;
+  background-color:inherit;
+  margin-top:0px;
+  margin-right:0px;
+  top:5px;
+  left:0px;
+  width:35%;
+  height:20px;
+  font-size:.8em;
+  text-align:right; 
+}
+
+input.edit_factor_name,select.edit_factor_parent,input.edit_factor_weight,span.edit_factor_weight,input.edit_factor_new,input.edit_factor_delete
+{
+  position:absolute;
+/*  background-color:inherit;*/
+  margin-top:0px;
+  margin-right:0px;
+  top:5px;
+  left:38%;
+  width:50%;
+  height:20px;
+  font-size:.8em;
+  text-align:left; 
+
+}
+
+input.edit_factor_description
+{
+  position:absolute;
+  bottom:5px;
+  right:50%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:.8em;
+  width:45%;
+}
+
+input.edit_factor_submit
+{
+  position:absolute;
+  bottom:5px;
+  left:50%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:.8em;
+  width:45%;
+}
+
+input.edit_factor_new,input.edit_factor_delete
+{
+  text-align:center;
+}
+
+
+/* edit_weights */
+
+div.body_weights
+{
+  padding:10px;
+  background-color:#c0c0ff;
+  position: relative;
+  float:center;
+  width:95%;
+  height: 95%;
+  margin:auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:.8em;
+  text-align:left;
+  overflow-x: scroll;
+  overflow-y: scroll;
+}
+
+table.weights
+{
+  top:10px;
+  left:10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:1.0em;
+  text-align:left; 
+  border: solid 1px #000000;
+  border-collapse: collapse;
+}
+
+tr.weights
+{
+  height:35px;
+  border: solid 0px #000000;
+}
+
+td.weights_label,td.weights_range,td.weights_weight,th.weights_label,th.weights_title,th.weights_range,th.weights_weight
+{
+  text-align:right;
+  border: solid 1px #000000;
+}
+td.weights_label,th.weights_label
+{
+  width:100px;
+}
+td.weights_range,td.weights_range
+{
+  text-align:center;
+  width:100px;
+}
+td.weights_weight,td.weights_weight
+{
+  width:75px;
+  border: solid 1px #000000;
+}
+th.weights_label,th.weights_range,th.weights_weight
+{
+ font-weight: bold;
+}
+th.weights_title,td.weights_submit
+{
+  text-align:center;
+  border: solid 0px #000000;
+}
+
+th.weights_homogeneus
+{
+  text-align:center;
+  border: solid 1px #000000;
+}
+
+input.weights_submit
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:.8em;
+  width:75px;
+}
+
+input.weights_weight
+{
+  width:75px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:1em;
+}
+
+input.weights_homogeneus
+{
+  width:150px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:1em;
+}
+
+/* edit_project */
+
+div.edit_project
+{
+  position: absolute;
+  left:1%;
+  top:50px;
+  text-align:left;
+  border:1px solid #000000;
+  width:23%;
+  height:150px;
+  background-color:#FFFFFF;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+div.edit_project_name,div.edit_project_title,div.edit_project_new,div.edit_project_delete
+{
+  position:absolute;
+  background-color:inherit;
+  margin-top:0px;
+  margin-right:0px;
+  left:0px;
+  width:100%;
+  height:20px;
+}
+
+div.edit_project_title
+{
+  top:5px;
+  text-align:center;
+}
+
+div.edit_project_name
+{
+  top:30px;
+}
+
+div.edit_project_new
+{
+  top:55px;
+}
+
+div.edit_project_delete
+{
+  top:80px;
+}
+
+div.edit_project_name_label
+{
+  position:absolute;
+  background-color:inherit;
+  margin-top:0px;
+  margin-right:0px;
+  top:5px;
+  left:0px;
+  width:35%;
+  height:20px;
+  font-size:.8em;
+  text-align:right; 
+}
+
+input.edit_project_name,input.edit_project_new,input.edit_project_delete
+{
+  position:absolute;
+/*  background-color:inherit;*/
+  margin-top:0px;
+  margin-right:0px;
+  top:5px;
+  left:38%;
+  width:50%;
+  height:20px;
+  font-size:.8em;
+  text-align:left; 
+
+}
+
+
+input.edit_project_description
+{
+  position:absolute;
+  bottom:5px;
+  right:50%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:.8em;
+  width:45%;
+}
+
+input.edit_project_submit
+{
+  position:absolute;
+  bottom:5px;
+  left:50%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:.8em;
+  width:45%;
+  text-align:center; 
+}
+
+input.edit_project_new,input.edit_project_delete
+{
+  text-align:center;
+}
+
+
+/* edit_users */
+
+div.edit_users
+{
+  position: absolute;
+  left:26%;
+  top:50px;
+  text-align:left;
+  border:1px solid #000000;
+  width:23%;
+  height:150px;
+  background-color:#FFFFFF;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+/* edit_aggregators */
+
+div.edit_aggregators
+{
+  position: absolute;
+  left:1%;
+  top:210px;
+  text-align:left;
+  border:1px solid #000000;
+  width:48%;
+  height:410px;
+  background-color:#FFFFFF;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+div.edit_aggregator_name,div.edit_aggregator_equation,div.edit_aggregator_description,div.edit_aggregator_submit,div.edit_aggregator_variable_edit,div.edit_aggregator_delete,div.edit_aggregator_new,div.edit_aggregator_available_schemes
+{
+  position: relative;
+  background-color:inhertit;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:.8em;
+  top:0px;
+  width:100%;
+  height:32px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+div.edit_aggregator_name_label,div.edit_aggregator_equation_label
+{
+  position: absolute;
+  font-size:1.1em;
+  width:95%;
+  height:10px;
+  top:0px;
+  left:5%;
+  text-align:left;
+}
+div.edit_aggregator_description,div.edit_aggregator_submit,div.edit_aggregator_variable_edit,div.edit_aggregator_delete,div.edit_aggregator_new
+{
+  height:20px;
+}
+div.edit_aggregator_available_schemes
+{
+  display:inline;
+  position:relative;
+  font-size:1.1em;
+  top:0px;
+  left:5px;
+  width:150px;
+}
+input.edit_aggregator_name,select.edit_aggregator_equation,div.edit_aggregator_equation_name,input.edit_aggregator_description,input.edit_aggregator_submit,input.edit_aggregator_variable_edit,input.edit_aggregator_delete,input.edit_aggregator_new,input.edit_aggregator_scheme,select.edit_aggregator_available_schemes
+{
+  position: absolute;
+  width:95%;
+  height:15px;
+  top: 12px;
+  left:5%;
+  text-align:left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:1.1em;
+}
+
+select.edit_aggregator_equation
+{
+  height:20px;
+}
+
+input.edit_aggregator_description,input.edit_aggregator_submit,input.edit_aggregator_variable_edit,input.edit_aggregator_delete,input.edit_aggregator_new
+{
+  height:20px;
+  text-align:center;
+  top:0px;
+}
+
+select.edit_aggregator_available_schemes
+{
+  position:relative;
+  display:inline;
+  top:0px;
+  height:20px;
+  width:120px;
+  left:10px;
+}
+input.edit_aggregator_scheme
+{
+  position:relative;
+  display:inline;
+  top:0px;
+  height:20px;
+  width:120px;
+  left:10px;
+}
+
+/* edit_effect_propierties */
+
+div.edit_effect_propierties
+{
+  position: absolute;
+  right:1%;
+  top:50px;
+  text-align:left;
+  border:1px solid #000000;
+  width:48%;
+  height:570px;
+  background-color:#FFFFFF;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+div.edit_effect_propierty_name,div.edit_effect_propierty_nature,div.edit_effect_propierty_theta,div.edit_effect_propierty_description,div.edit_effect_propierty_submit,div.edit_effect_propierty_weight,div.edit_effect_propierty_variable_edit,div.edit_effect_propierty_delete,div.edit_effect_propierty_new,div.edit_effect_propierty_available_schemes
+{
+  position: relative;
+  background-color:inhertit;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:.8em;
+  top:0px;
+  width:100%;
+  height:32px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+div.edit_effect_propierty_nature
+{
+  height:15px;
+}
+
+div.edit_effect_propierty_theta
+{
+  height:20px;
+}
+
+div.edit_effect_propierty_name_label,div.edit_effect_propierty_theta_label
+{
+  position: absolute;
+  font-size:1.1em;
+  width:95%;
+  height:10px;
+  top:0px;
+  left:5%;
+  text-align:left;
+}
+div.edit_effect_propierty_nature_label
+{
+  position: absolute;
+  font-size:1.1em;
+  width:95%;
+  height:10px;
+  top:5px;
+  left:25px;
+  text-align:left;
+}
+div.edit_effect_propierty_theta_label
+{
+  position: absolute;
+  font-size:1.1em;
+  width:95%;
+  height:10px;
+  top:5px;
+  left:5%;
+  text-align:left;
+}
+div.edit_effect_propierty_nature,div.edit_effect_propierty_description,div.edit_effect_propierty_submit,div.edit_effect_propierty_variable_edit,div.edit_effect_propierty_delete,div.edit_effect_propierty_new
+{
+  height:20px;
+}
+div.edit_effect_propierty_weight
+{
+  height:20px;
+  text-align:left;
+  font-size:1.1em;
+}
+
+div.edit_effect_propierty_available_schemes
+{
+  display:inline;
+  position:relative;
+  font-size:1.1em;
+  top:0px;
+  left:5px;
+  width:150px;
+}
+input.edit_effect_propierty_name,div.edit_effect_propierty_equation_name,input.edit_effect_propierty_theta,input.edit_effect_propierty_description,input.edit_effect_propierty_submit,input.edit_effect_propierty_variable_edit,input.edit_effect_propierty_weight_edit,input.edit_effect_propierty_delete,input.edit_effect_propierty_new,input.edit_effect_propierty_scheme,select.edit_effect_propierty_available_schemes
+{
+  position: absolute;
+  width:95%;
+  height:15px;
+  top: 12px;
+  left:5%;
+  text-align:left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:1.1em;
+}
+
+input.edit_effect_propierty_nature
+{
+  position: absolute;
+  width:10px;
+  height:10px;
+  top: 0px;
+  left:5%;
+  text-align:left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:1.1em;
+}
+
+select.edit_effect_propierty_equation
+{
+  height:20px;
+}
+
+input.edit_effect_propierty_description,input.edit_effect_propierty_submit,input.edit_effect_propierty_variable_edit,input.edit_effect_propierty_delete,input.edit_effect_propierty_new
+{
+  height:20px;
+  text-align:center;
+  top:0px;
+}
+
+select.edit_effect_propierty_available_schemes
+{
+  position:relative;
+  display:inline;
+  top:0px;
+  height:20px;
+  width:120px;
+  left:10px;
+}
+input.edit_effect_propierty_scheme
+{
+  position:relative;
+  display:inline;
+  top:0px;
+  height:20px;
+  width:120px;
+  left:10px;
+}
+
+input.edit_effect_propierty_theta
+{
+  position:relative;
+  display:inline;
+  top:0px;
+  height:20px;
+  width:30px;
+  left:60px;
+  text-align:left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:1em;
+}
+
+input.edit_effect_propierty_weight_edit
+{
+  width:75px;
+  height:20px;
+  position:absolute;
+  top:5px;
+  left:5px;
+  text-align:center;
+}
+
+/* variable_list */
+
+table.variable_list
+{
+  border:1px solid #000000;
+  border-collapse: collapse;
+  width:98%;
+  left:1%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:.8em;
+}
+
+
+tr.variable_list
+{
+  border:1px solid #000000;
+}
+
+td.variable_list_title
+{
+  border:0px solid #000000;
+  width:550px;
+  height:30px;
+  text-align:center;
+}
+
+td.variable_list_data
+{
+  border:0px solid #000000;
+  width:100px;
+  height:100px;
+}
+
+td.variable_list_var
+{
+  border:0px solid #000000;
+  width:360px;
+  height:100px;
+}
+
+td.variable_list_edit_var
+{
+  border:0px solid #000000;
+  width:95px;
+  height:100px;
+}
+
+td.variable_list_new_importance,td.variable_list_new_effect_propierty
+{
+  border:0px solid #000000;
+  width:100px;
+  height:20px;
+  text-align:center;
+}
+
+
+img.edit_variable
+{
+  width: 360px;
+  height: 100px;
+}
+
+/*  edit_variable*/
+
+div.edit_variable
+{
+  position: absolute;
+  left:1%;
+  top:50px;
+  text-align:left;
+  border:0px solid #000000;
+  width:98%;
+  height:550px;
+  background-color:inherit;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+div.edit_variable_data
+{
+  position: absolute;
+  left:10px;
+  top:0px;
+  text-align:left;
+  border:1px solid #000000;
+  width:456px;
+  height:200px;
+  background-color:#FFFFFF;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+}
+
+div.edit_variable_showvar
+{
+  position: absolute;
+  left:476px;
+  top:0px;
+  text-align:left;
+  border:1px solid #000000;
+  width:720px;
+  height:240px;
+  background-color:#FFFFFF;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+}
+
+div.edit_variable_return
+{
+  position: absolute;
+  left:0px;
+  bottom:0px;
+  text-align:left;
+  border:1px solid #000000;
+  width:100%;
+  height:40px;
+  background-color:#c0c0ff;
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+}
+
+div.edit_variable_sets
+{
+  position: absolute;
+  left:472px;
+  top:250px;
+  text-align:left;
+  border:1px solid #000000;
+  width:720px;
+  height:500px;
+  background-color:#FFFFFF;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+}
+
+div.edit_variable_data_title,div.edit_variable_data_limits,div.edit_variable_data_autodefine,div.edit_variable_data_description
+{
+  float:center;
+  margin:auto;
+  text-align:center;
+  width:100%;
+  height:20px;
+  top:10px;
+  margin-top:10px;
+}
+
+td.edit_variable_abcd
+{
+  width:75px;
+}
+
+input.edit_variable_abcd
+{
+  width:100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:.8em;
+  
+}
+
+td.edit_variable_label
+{
+  width:150px;
+}
+
+input.edit_variable_label
+{
+  width:150px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:.8em;
+}
+
+input.edit_variable_set
+{
+  width:75px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:.8em;
+}
+
+input.edit_variable_min,input.edit_variable_max,input.edit_variable_numsets
+{
+  width:50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:.8em;
+}
+
+input.edit_variable_update_limits,input.edit_variable_autodefine,input.edit_variable_description
+{
+  width:75px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:.8em;
+}
+
+input.edit_variable_return
+{
+  display:block;
+  position: relative;
+  float:center;
+  top:10px;
+  height:20px;
+  width:200px;
+  margin-left:auto;
+  margin-right:auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:.8em;
+}
+
+input.edit_variable_description
+{
+}
+
+/*------------------------------------------------------------------*/
+/*  About  */
+
+table.about
+{
+  text-align: left;
+  font-size:.8em;
+  border-collapse:collapse;
+}
+
+th.about_title
+{
+  text-align: center;
+  font-size:1.0em;
+  color:#000000;
+  border: solid 1px #000000;
+  background-color:#FFCCCC;  
+}
+
+td.about_name
+{
+  color:#000000;
+  width:150px;
+  border: solid 1px #000000;
+  background-color:#FFCCCC;
+}
+
+td.about_value
+{
+  color:#3333FF;
+  width:300px;
+  border: solid 1px #000000;
+  background-color:#FFEEEE;
+}
+
+td.about_video
+{
+  text-align: center;
+  color:#3333FF;
+  width:60px;
+  border: solid 1px #000000;
+  background-color:#FFEEEE;
+}
+
+/* documentation */
+
+div.documentation
+{
+  display: table;
+  padding:0px;
+  background-color:#ffffff;
+  position: absolute;
+  top:50px;
+  right:10px;
+  width:680px;
+  height:260px;
+  border:1px solid #000000;
+  color: inherit;
+}
+
+div.documentationEmbed
+{
+  padding:0px;
+  background-color:#ffffff;
+  position: absolute;
+  top:50px;
+  right:10px;
+  width:900px;
+  height:260px;
+  border:1px solid #000000;
+  color: inherit;
+}
+
+object.documentation
+{
+  width:100%;
+  height:100%;
+}
+
+div.messagenomodel
+{
+  background-color:#ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:2em;
+  text-align:center;
+  display: table-cell;
+  vertical-align:middle;
+}
+
+/* controls */
+
+div.controls
+{
+  position: absolute;
+  left:10px;
+  top: 320px;
+  background-color:#aaaaaa;
+  border: solid 1px #000000;
+  width:209px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+div.controlsEmbed
+{
+  position: absolute;
+  left:10px;
+  top: 50px;
+  background-color:#aaaaaa;
+  border: solid 1px #000000;
+  width:209px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+table.controls
+{
+  color:#0000ff;
+  font-size:1.0em;
+}
+
+th.controls
+{
+  color:#0000ff;
+  width:200px;
+  text-align:left;
+}
+
+td.controls
+{
+  color:#000000;
+  width:100px;
+  text-align:left;
+}
+
+input.controls
+{
+  width:100%;
+  height:20px;
+}
+
+div.controls_buttons
+{
+  text-align:center;
+}
+
+input.controls_button
+{
+  background-color:#dddddd;
+  border: solid 1px #000000;
+  width:70px;
+  height:25px;
+  font-size:0.8em;
+  padding:0px;
+/*  width:70px;
+  text-align:center;
+  margin-top:10px;*/
+}
+
+div.controls_change
+{
+  width: 90px;
+  height: 30px;
+  position:relative;
+  top:0px;
+}
+
+div.controls_change_plus
+{
+  background-image:url('img/mas.gif');
+  position:absolute;
+  top:2px;
+  left:0px;
+  width:20px;
+  height:10px;
+}
+
+div.controls_change_minus
+{
+  background-image:url('img/menos.gif');
+  position:absolute;
+  top:12px;
+  left:0px;
+  width:20px;
+  height:10px;
+}
+
+svg.controls
+{
+ width:100%;
+ height:8px;
+}
+
+rect.control_bar
+{
+ fill:#ff0000;
+ stroke:none;
+}
+
+rect.control_back
+{
+ fill:none;
+ stroke:none;
+}
+
+
+select.controls
+{
+  background-color:#ffffff;
+  width:100%;
+}
+/* OUTPUTS*/
+
+div.outputs
+{
+  padding:0px;
+  margin:0px;
+  position: absolute;
+  top: 320px;
+  right:10px;
+  width:682px;
+  height:220px;
+  color: inherit;
+}
+
+div.outputsEmbed
+{
+  padding:0px;
+  margin:0px;
+  position: absolute;
+  top: 50px;
+  right:10px;
+  width:682px;
+  height:220px;
+  color: inherit;
+}
+
+
+/* PLOTS */
+
+div.plots
+{
+  position: relative;
+  left:10px;
+  top: 0px;
+  background-color:inherit;
+  border: solid 0px #000000;
+  margin-left:10px;
+  margin-right:auto;
+}
+
+/*SVG*/
+
+/*Anim2d*/
+div.anim2d
+{
+  position: relative;
+  left:10px;
+  top: 0px;
+  background-color:inherit;
+  border: solid 0px #000000;
+  margin-left:10px;
+  margin-right:auto;
+}
+
+div.animation
+{
+  background-color:inherit;
+  border: solid 1px #000000;
+  width: 300px;
+}
+
+div.animationTitle
+{
+  position: relative;
+  float:center;
+  text-align:center;
+  font-weight:bold;
+}
+
+/*TABLES*/
+div.tables
+{
+  overflow: auto;
+  position: relative;
+  left:10px;
+  top: 0px;
+  background-color:inherit;
+  border: solid 0px #000000;
+  width:302px;
+  height:220px;
+  margin-left:10px;
+  margin-right:auto;
+  text-align:center;
+}
+
+table.outputs
+{
+  float:center;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:10px;
+  margin-bottom:10px;
+  border: solid 1px #000000;
+  color:#000000;
+  font-size:0.8em;
+  border-collapse:collapse;
+}
+
+tr.outputs:hover
+{
+  background-color: #88DDDD;
+} 
+
+td.outputsTitle
+{
+  border: solid 1px #000000;
+  font-weight: bold;
+  text-align:center;
+  width:40px;
+}
+
+td.outputs
+{
+  border: solid 1px #000000;
+  text-align:center;
+  width:40px;
+}
+
+div.downdata
+{
+  text-align:center;
+  margin-top:10px;
+}
+
+input.downdata
+{
+  background-color:#dddddd;
+  border: solid 1px #000000;
+  width:100px;
+  height:25px;
+  font-size:0.8em;
+  padding:0px;
+}
+
+/* ADMIN */
+
+
+body.unvl_admin
+{
+  background-color:#ff0000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:.8em;
+  text-align:left;
+  overflow-x: scroll;
+  overflow-y: scroll;
+  height:2000px;
+}
+
+div.body_admin
+{
+  padding:10px;
+  background-color:#ff7777;
+  position: relative;
+  float:center;
+  width:1200px;
+  height: 100%;
+  border:1px solid #000000;
+  color: inherit;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ADMIN GENERAL */
+
+div.admin_general
+{
+  background-color:#e0e0e0;
+  border:1px solid #000000;
+  position: absolute;
+  top: 10px;
+  right:10px;
+  width:981px;
+/*  height:30px; */
+}
+
+table.update
+{
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: 10px;
+  text-align: left;
+  font-size:.8em;
+  border-collapse:collapse;
+}
+
+th.update_title
+{
+  text-align: center;
+  font-size:1.0em;
+  width:150px;
+  color:#000000;
+  border: solid 1px #000000;
+  background-color:#FFCCCC;  
+}
+
+td.update_name
+{
+  color:#000000;
+  width:150px;
+  border: solid 1px #000000;
+  background-color:#FFCCCC;
+}
+
+td.update_value
+{
+  color:#3333FF;
+  width:300px;
+  border: solid 1px #000000;
+  background-color:#FFEEEE;
+}
+
+
+/* ADMIN MODELFILES */
+
+table.updatefile
+{
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: 10px;
+  text-align: left;
+  font-size:.8em;
+  border-collapse:collapse;
+  background-color:#FFEEEE;
+  width:200px;
+  border:solid 1px #000000;
+}
+
+td.updatefile_name
+{
+  width:120px;
+}
+
+td.updatefile_file
+{
+  width:30px;
+}
+
+td.updatefile_button
+{
+  width:55px;
+}
+
+div.admin_modelfiles
+{
+  background-color:transparent;
+  border:0px solid #000000;
+  position:absolute;
+  left:10px;
+  top:350px;
+  width:209px;
+}
+
+input.normalUpdate
+{
+  width:300px;
+}
+
+textarea.normalUpdate
+{
+  width:300px;
+  height:100px;
+}
+
+input.miniUpdate
+{
+  width:50px;
+}
+
+input.mediumUpdate
+{
+  width:100px;
+}
+
+select.normalUpdate
+{
+  width:300px;
+}
+
+select.miniUpdate
+{
+  width:100px;
+  text-align:center;
+}
+
+input.checkUpdate
+{
+  width:40px;
+}
+
+input.controls_button_file
+{
+  width:50px;
+  text-align:center;
+}
+
+input.color
+{
+  width:70px;
+}
+
+.SI-FILES-STYLIZED label.cabinet
+{
+    width: 25px;
+    height: 25px;
+    background: url(img/btn-choose-file.svg) 0 0 no-repeat;
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.SI-FILES-STYLIZED label.cabinet input.file
+{
+    position: relative;
+    height: 100%;
+    width: auto;
+    opacity: 0;
+    -moz-opacity: 0;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+}
+
+/* ANIM2D */
+
+div.anim2d
+{
+/*  position: absolute;*/
+  position: relative;
+  right:10px;
+  top: 0px;
+  background-color:inherit;
+  border: solid 0px #000000;
+/*  width:302px;*/
+  margin-left:10px; /*auto*/
+  margin-right:auto;
+}
+
+/*======================
+//     Wellcome       //
+======================*/
+div.wellcome_box
+{
+  border: solid 4px #000000;
+  background-color:#ffff99;
+  padding: 20px;
+  text-align:center;
+  color:#0000FF;
+  position:relative;
+  float:center;
+  width: 350px;
+  margin-left:auto;
+  margin-right:auto;
+  top:150px;
+}
+
+div.wellcome
+{
+  font-size:3em;
+}
+
+div.wellcome_sub
+{
+  font-size:2em;
+}
+
+div.wellcome_explain
+{
+  font-size:0.8em;
+}
+
+div.wellcome_buttons
+{
+  background-color:#inherit;
+  padding: 10px;
+  text-align:center;
+  color:#000000;
+  position:relative;
+  float:center;
+  width: 350px;
+  margin-left:auto;
+  margin-right:auto;
+  top:150px;
+}
+
+input.wellcome_button
+{
+  background-color:#dddddd;
+  border: solid 1px #000000;
+  position:relative;
+  float:center;
+  color:#000000;
+  margin-left:auto;
+  margin-right:auto;
+  width:150px;
+  height:25px;
+  font-size:1.0em;
+}
+
+input.login
+{
+}
+
+td.login_label
+{
+  text-align:right;
+}
+td.login_data
+{
+  text-align:left;
+}
+td.login_button
+{
+  text-align:center;
+}
+
+/* ADMIN LOGOUT */
+
+

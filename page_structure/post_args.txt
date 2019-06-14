@@ -1,0 +1,31 @@
+actionLevel             : Profundidad de Matriz en las columnas de acciones
+factorLevel             : Profundidad de Matriz en las filas de factores
+matrixType              : Tipo de contenido a desplegar en la matriz e indicador para calcularlo, según el formato
+                                 tipo-id   
+                                      tipo puede ser: 'aggregations','effects','propierties'
+                                      
+                                      aggregations: id es el indicador del agregador
+                                      effects: si id <0 es el núnmero de efectos, en caso contrario es el id del agregador de importancia
+                                      propierties: id es el id de la propiedad
+cellType                : Tipo de contenido de la celda de la matriz. Puede ser  'Short', 'Number', 'Number/Ambiguity', 'Color'
+varId                   : Id de la variable a ser desplegada. Este id puede corresponder a valriables de effect_propierties o de importances
+                             para el número de efectos es factorId-actionId
+
+///////// trees
+
+node_collapsed_factor_X  : determina si el nodo X del árbol está o no collapsado. puede ser 'open' o 'closed'
+node_collapsed_action_X  : determina si el nodo X del árbol está o no collapsado. puede ser 'open' o 'closed'
+
+
+///////// edit_input
+
+input_description
+input_type
+input_crisp
+input_interval_min
+input_interval_max
+input_fuzzy_a
+input_fuzzy_b
+input_fuzzy_c
+input_fuzzy_d
+input_submit

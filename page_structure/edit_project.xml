@@ -1,0 +1,16 @@
+<block id="tdeia" type="body" class="tdeia">
+  <block id="body" type="div" class="body">
+    <block id="logo" type="div" class="logo" action="logo"></block>
+    <block id="title_frame" type="div" class="title_frame">
+      <block id="title" type="div" class="title" action="title"></block>
+      <block id="user" type="div" class="user" action="user">
+        <block id="adminlogout" type="div" class="admin_logout" action="adminlogout"></block>
+      </block>
+    </block>
+    <block id="edit_project" type="div" class="edit_project" action="edit_project"></block>
+    <block id="edit_aggregators" type="div" class="edit_aggregators" action="edit_aggregators"></block>
+    <block id="edit_users" type="div" class="edit_users" action="nothing"></block>
+    <block id="edit_effect_propierties" type="div" class="edit_effect_propierties" action="edit_effect_propierties"></block>
+  </block>
+</block>
+

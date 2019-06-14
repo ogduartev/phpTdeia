@@ -1,0 +1,237 @@
+\newcommand{\tdeiaPaintMyVariable}[1]
+{
+ \ifthenelse{\equal{#1}{1}}
+ {
+  \tdeiaPaintVariable{Intensidad}{0.00}{0.20}{0.40}{0.60}{0.80}{1.00}
+  \tdeiaPaintSet{(0,0)(0,1)(0.111,1)(0.222,0)}
+  \tdeiaPaintSet{(0.111,0)(0.222,1)(0.333,1)(0.444,0)}
+  \tdeiaPaintSet{(0.333,0)(0.444,1)(0.556,1)(0.667,0)}
+  \tdeiaPaintSet{(0.556,0)(0.667,1)(0.778,1)(0.889,0)}
+  \tdeiaPaintSet{(0.778,0)(0.889,1)(1,1)(1,0)}
+  \tdeiaPaintLabel{0}{Baja}
+  \tdeiaPaintLabel{1}{Media}
+  \tdeiaPaintLabel{2}{Alta}
+  \tdeiaPaintLabel{3}{Muy Alta}
+  \tdeiaPaintLabel{4}{Total}
+ }{}
+ \ifthenelse{\equal{#1}{2}}
+ {
+  \tdeiaPaintVariable{Extensión}{0.00}{0.20}{0.40}{0.60}{0.80}{1.00}
+  \tdeiaPaintSet{(0,0)(0,1)(0.143,1)(0.286,0)}
+  \tdeiaPaintSet{(0.143,0)(0.286,1)(0.429,1)(0.571,0)}
+  \tdeiaPaintSet{(0.429,0)(0.571,1)(0.714,1)(0.857,0)}
+  \tdeiaPaintSet{(0.714,0)(0.857,1)(1,1)(1,0)}
+  \tdeiaPaintLabel{0}{Puntual}
+  \tdeiaPaintLabel{1}{Parcial}
+  \tdeiaPaintLabel{2}{Extensa}
+  \tdeiaPaintLabel{3}{Total}
+ }{}
+ \ifthenelse{\equal{#1}{3}}
+ {
+  \tdeiaPaintVariable{Extensión crítica}{0.00}{0.20}{0.40}{0.60}{0.80}{1.00}
+  \tdeiaPaintSet{(0,0)(0,1)(0.2,1)(0.4,0)}
+  \tdeiaPaintSet{(0.2,0)(0.4,1)(0.6,1)(0.8,0)}
+  \tdeiaPaintSet{(0.6,0)(0.8,1)(1,1)(1,0)}
+  \tdeiaPaintLabel{0}{Bajo}
+  \tdeiaPaintLabel{1}{Medio}
+  \tdeiaPaintLabel{2}{Alto}
+ }{}
+ \ifthenelse{\equal{#1}{4}}
+ {
+  \tdeiaPaintVariable{Momento}{0.00}{0.20}{0.40}{0.60}{0.80}{1.00}
+  \tdeiaPaintSet{(0,0)(0,1)(0.075,1)(0.125,0)}
+  \tdeiaPaintSet{(0.075,0)(0.125,1)(0.4,1)(0.6,0)}
+  \tdeiaPaintSet{(0.4,0)(0.5,1)(1,1)(1,0)}
+  \tdeiaPaintLabel{0}{Inmediato}
+  \tdeiaPaintLabel{1}{Medio Plazo}
+  \tdeiaPaintLabel{2}{Largo Plazo}
+ }{}
+ \ifthenelse{\equal{#1}{5}}
+ {
+  \tdeiaPaintVariable{Momento crítico}{0.00}{0.20}{0.40}{0.60}{0.80}{1.00}
+  \tdeiaPaintSet{(0,0)(0,1)(0.2,1)(0.4,0)}
+  \tdeiaPaintSet{(0.2,0)(0.4,1)(0.6,1)(0.8,0)}
+  \tdeiaPaintSet{(0.6,0)(0.8,1)(1,1)(1,0)}
+  \tdeiaPaintLabel{0}{Bajo}
+  \tdeiaPaintLabel{1}{Medio}
+  \tdeiaPaintLabel{2}{Alto}
+ }{}
+ \ifthenelse{\equal{#1}{6}}
+ {
+  \tdeiaPaintVariable{Persistencia}{0.00}{0.20}{0.40}{0.60}{0.80}{1.00}
+  \tdeiaPaintSet{(0,0)(0,1)(0.05,1)(0.083,0)}
+  \tdeiaPaintSet{(0.05,0)(0.083,1)(0.533,1)(0.8,0)}
+  \tdeiaPaintSet{(0.6,0)(0.8,1)(1,1)(1,0)}
+  \tdeiaPaintLabel{0}{Fugaz}
+  \tdeiaPaintLabel{1}{Temporal}
+  \tdeiaPaintLabel{2}{Permanente}
+ }{}
+ \ifthenelse{\equal{#1}{7}}
+ {
+  \tdeiaPaintVariable{Reversibilidad}{0.00}{0.20}{0.40}{0.60}{0.80}{1.00}
+  \tdeiaPaintSet{(0,0)(0,1)(0.05,1)(0.083,0)}
+  \tdeiaPaintSet{(0.05,0)(0.083,1)(0.533,1)(0.8,0)}
+  \tdeiaPaintSet{(0.533,0)(0.8,1)(1,1)(1,0)}
+  \tdeiaPaintLabel{0}{Corto Plazo}
+  \tdeiaPaintLabel{1}{Medio Plazo}
+  \tdeiaPaintLabel{2}{Irreversible}
+ }{}
+ \ifthenelse{\equal{#1}{8}}
+ {
+  \tdeiaPaintVariable{Sinergía}{0.00}{0.20}{0.40}{0.60}{0.80}{1.00}
+  \tdeiaPaintSet{(0,0)(0,1)(0.2,1)(0.4,0)}
+  \tdeiaPaintSet{(0.2,0)(0.4,1)(0.6,1)(0.8,0)}
+  \tdeiaPaintSet{(0.6,0)(0.8,1)(1,1)(1,0)}
+  \tdeiaPaintLabel{0}{Sin sinergismo (simple)}
+  \tdeiaPaintLabel{1}{Sinérgico}
+  \tdeiaPaintLabel{2}{Muy Sinérgico}
+ }{}
+ \ifthenelse{\equal{#1}{9}}
+ {
+  \tdeiaPaintVariable{Acumulación}{0.00}{0.20}{0.40}{0.60}{0.80}{1.00}
+  \tdeiaPaintSet{(0,0)(0,1)(0.2,1)(0.4,0)}
+  \tdeiaPaintSet{(0.2,0)(0.4,1)(0.6,1)(0.8,0)}
+  \tdeiaPaintSet{(0.6,0)(0.8,1)(1,1)(1,0)}
+  \tdeiaPaintLabel{0}{Bajo}
+  \tdeiaPaintLabel{1}{Medio}
+  \tdeiaPaintLabel{2}{Alto}
+ }{}
+ \ifthenelse{\equal{#1}{10}}
+ {
+  \tdeiaPaintVariable{Efecto}{0.00}{0.20}{0.40}{0.60}{0.80}{1.00}
+  \tdeiaPaintSet{(0,0)(0,1)(0.333,1)(0.667,0)}
+  \tdeiaPaintSet{(0.333,0)(0.667,1)(1,1)(1,0)}
+  \tdeiaPaintLabel{0}{Indirecto (secundario)}
+  \tdeiaPaintLabel{1}{Directo}
+ }{}
+ \ifthenelse{\equal{#1}{11}}
+ {
+  \tdeiaPaintVariable{Periodicidad}{0.00}{0.20}{0.40}{0.60}{0.80}{1.00}
+  \tdeiaPaintSet{(0,0)(0,1)(0.2,1)(0.4,0)}
+  \tdeiaPaintSet{(0.2,0)(0.4,1)(0.6,1)(0.8,0)}
+  \tdeiaPaintSet{(0.6,0)(0.8,1)(1,1)(1,0)}
+  \tdeiaPaintLabel{0}{Irregular o aperiódico y discontinuo}
+  \tdeiaPaintLabel{1}{Periódico}
+  \tdeiaPaintLabel{2}{Continuo}
+ }{}
+ \ifthenelse{\equal{#1}{12}}
+ {
+  \tdeiaPaintVariable{Recuperabilidad}{0.00}{0.20}{0.40}{0.60}{0.80}{1.00}
+  \tdeiaPaintSet{(0,0)(0,1)(0.143,1)(0.286,0)}
+  \tdeiaPaintSet{(0.143,0)(0.286,1)(0.429,1)(0.571,0)}
+  \tdeiaPaintSet{(0.429,0)(0.571,1)(0.714,1)(0.857,0)}
+  \tdeiaPaintSet{(0.714,0)(0.857,1)(1,1)(1,0)}
+  \tdeiaPaintLabel{0}{Recuparable de manera inmediata}
+  \tdeiaPaintLabel{1}{Recuperable a medio plazo}
+  \tdeiaPaintLabel{2}{Mitigable}
+  \tdeiaPaintLabel{3}{Irrecuperable}
+ }{}
+ \ifthenelse{\equal{#1}{13}}
+ {
+  \tdeiaPaintVariable{Importancia}{-1.00}{-0.60}{-0.20}{0.20}{0.60}{1.00}
+  \tdeiaPaintSet{(0,0)(0,1)(0.077,1)(0.154,0)}
+  \tdeiaPaintSet{(0.077,0)(0.154,1)(0.231,1)(0.3075,0)}
+  \tdeiaPaintSet{(0.231,0)(0.3075,1)(0.3845,1)(0.4615,0)}
+  \tdeiaPaintSet{(0.3845,0)(0.4615,1)(0.5385,1)(0.6155,0)}
+  \tdeiaPaintSet{(0.5385,0)(0.6155,1)(0.6925,1)(0.769,0)}
+  \tdeiaPaintSet{(0.6925,0)(0.769,1)(0.846,1)(0.923,0)}
+  \tdeiaPaintSet{(0.846,0)(0.923,1)(1,1)(1,0)}
+  \tdeiaPaintLabel{0}{Extremadamente Perjudicial}
+  \tdeiaPaintLabel{1}{Muy Perjudicial}
+  \tdeiaPaintLabel{2}{Perjudicial}
+  \tdeiaPaintLabel{3}{Irrelevante}
+  \tdeiaPaintLabel{4}{Beneficiosa}
+  \tdeiaPaintLabel{5}{Muy beneficiosa}
+  \tdeiaPaintLabel{6}{Extremadamente beneficiosa}
+ }{}
+ \ifthenelse{\equal{#1}{14}}
+ {
+  \tdeiaPaintVariable{Importancia media}{-1.00}{-0.60}{-0.20}{0.20}{0.60}{1.00}
+  \tdeiaPaintSet{(0,0)(0,1)(0.077,1)(0.154,0)}
+  \tdeiaPaintSet{(0.077,0)(0.154,1)(0.231,1)(0.3075,0)}
+  \tdeiaPaintSet{(0.231,0)(0.3075,1)(0.3845,1)(0.4615,0)}
+  \tdeiaPaintSet{(0.3845,0)(0.4615,1)(0.5385,1)(0.6155,0)}
+  \tdeiaPaintSet{(0.5385,0)(0.6155,1)(0.6925,1)(0.769,0)}
+  \tdeiaPaintSet{(0.6925,0)(0.769,1)(0.846,1)(0.923,0)}
+  \tdeiaPaintSet{(0.846,0)(0.923,1)(1,1)(1,0)}
+  \tdeiaPaintLabel{0}{Extremadamente Perjudicial}
+  \tdeiaPaintLabel{1}{Muy Perjudicial}
+  \tdeiaPaintLabel{2}{Perjudicial}
+  \tdeiaPaintLabel{3}{Irrelevante}
+  \tdeiaPaintLabel{4}{Beneficiosa}
+  \tdeiaPaintLabel{5}{Muy beneficiosa}
+  \tdeiaPaintLabel{6}{Extremadamente beneficiosa}
+ }{}
+ \ifthenelse{\equal{#1}{15}}
+ {
+  \tdeiaPaintVariable{Importancia ponderada}{-1.00}{-0.60}{-0.20}{0.20}{0.60}{1.00}
+  \tdeiaPaintSet{(0,0)(0,1)(0.077,1)(0.154,0)}
+  \tdeiaPaintSet{(0.077,0)(0.154,1)(0.231,1)(0.3075,0)}
+  \tdeiaPaintSet{(0.231,0)(0.3075,1)(0.3845,1)(0.4615,0)}
+  \tdeiaPaintSet{(0.3845,0)(0.4615,1)(0.5385,1)(0.6155,0)}
+  \tdeiaPaintSet{(0.5385,0)(0.6155,1)(0.6925,1)(0.769,0)}
+  \tdeiaPaintSet{(0.6925,0)(0.769,1)(0.846,1)(0.923,0)}
+  \tdeiaPaintSet{(0.846,0)(0.923,1)(1,1)(1,0)}
+  \tdeiaPaintLabel{0}{Extremadamente Perjudicial}
+  \tdeiaPaintLabel{1}{Muy Perjudicial}
+  \tdeiaPaintLabel{2}{Perjudicial}
+  \tdeiaPaintLabel{3}{Irrelevante}
+  \tdeiaPaintLabel{4}{Beneficiosa}
+  \tdeiaPaintLabel{5}{Muy beneficiosa}
+  \tdeiaPaintLabel{6}{Extremadamente beneficiosa}
+ }{}
+ \ifthenelse{\equal{#1}{16}}
+ {
+  \tdeiaPaintVariable{Importancia máxima}{-1.00}{-0.60}{-0.20}{0.20}{0.60}{1.00}
+  \tdeiaPaintSet{(0,0)(0,1)(0.077,1)(0.154,0)}
+  \tdeiaPaintSet{(0.077,0)(0.154,1)(0.231,1)(0.3075,0)}
+  \tdeiaPaintSet{(0.231,0)(0.3075,1)(0.3845,1)(0.4615,0)}
+  \tdeiaPaintSet{(0.3845,0)(0.4615,1)(0.5385,1)(0.6155,0)}
+  \tdeiaPaintSet{(0.5385,0)(0.6155,1)(0.6925,1)(0.769,0)}
+  \tdeiaPaintSet{(0.6925,0)(0.769,1)(0.846,1)(0.923,0)}
+  \tdeiaPaintSet{(0.846,0)(0.923,1)(1,1)(1,0)}
+  \tdeiaPaintLabel{0}{Extremadamente Perjudicial}
+  \tdeiaPaintLabel{1}{Muy Perjudicial}
+  \tdeiaPaintLabel{2}{Perjudicial}
+  \tdeiaPaintLabel{3}{Irrelevante}
+  \tdeiaPaintLabel{4}{Beneficiosa}
+  \tdeiaPaintLabel{5}{Muy beneficiosa}
+  \tdeiaPaintLabel{6}{Extremadamente beneficiosa}
+ }{}
+ \ifthenelse{\equal{#1}{17}}
+ {
+  \tdeiaPaintVariable{Importancia mínima}{-1.00}{-0.60}{-0.20}{0.20}{0.60}{1.00}
+  \tdeiaPaintSet{(0,0)(0,1)(0.077,1)(0.154,0)}
+  \tdeiaPaintSet{(0.077,0)(0.154,1)(0.231,1)(0.3075,0)}
+  \tdeiaPaintSet{(0.231,0)(0.3075,1)(0.3845,1)(0.4615,0)}
+  \tdeiaPaintSet{(0.3845,0)(0.4615,1)(0.5385,1)(0.6155,0)}
+  \tdeiaPaintSet{(0.5385,0)(0.6155,1)(0.6925,1)(0.769,0)}
+  \tdeiaPaintSet{(0.6925,0)(0.769,1)(0.846,1)(0.923,0)}
+  \tdeiaPaintSet{(0.846,0)(0.923,1)(1,1)(1,0)}
+  \tdeiaPaintLabel{0}{Extremadamente Perjudicial}
+  \tdeiaPaintLabel{1}{Muy Perjudicial}
+  \tdeiaPaintLabel{2}{Perjudicial}
+  \tdeiaPaintLabel{3}{Irrelevante}
+  \tdeiaPaintLabel{4}{Beneficiosa}
+  \tdeiaPaintLabel{5}{Muy beneficiosa}
+  \tdeiaPaintLabel{6}{Extremadamente beneficiosa}
+ }{}
+}
+
+\newcommand{\tdeiaPaintMyGradBlock}[1]
+{
+ \ifthenelse{\equal{#1}{aggregations}}
+{
+  \tdeiaPaintSubBlockGrad{FF0000}{FFFFFF}{0}{0.5}
+  \tdeiaPaintSubBlockGrad{FFFFFF}{0000FF}{0.5}{1}
+}{}
+ \ifthenelse{\equal{#1}{effects}}
+{
+  \tdeiaPaintSubBlockGrad{FF0000}{FFFFFF}{0}{0.5}
+  \tdeiaPaintSubBlockGrad{FFFFFF}{0000FF}{0.5}{1}
+}{}
+ \ifthenelse{\equal{#1}{propierties}}
+{
+  \tdeiaPaintSubBlockGrad{FFFFFF}{FF0000}{0}{1}
+}{}
+}

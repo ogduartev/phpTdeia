@@ -1,0 +1,166 @@
+\newcommand{\tdeiaWriteMyImportance}[1]
+{
+ \ifthenelse{\equal{#1}{1}}
+ {
+  \tdeiaWriteImportance{13}{1}{Texto de prueba}{Perjudicial}{muy posiblemente (1.00) Perjudicial, posiblemente (0.50) Muy Perjudicial}{-0.330}{0.247}
+ }{}
+ \ifthenelse{\equal{#1}{2}}
+ {
+  \tdeiaWriteImportance{13}{2}{Texto de prueba}{Perjudicial}{muy posiblemente (1.00) Perjudicial, posiblemente (0.60) Irrelevante}{-0.257}{0.234}
+ }{}
+ \ifthenelse{\equal{#1}{3}}
+ {
+  \tdeiaWriteImportance{13}{3}{Texto de prueba}{Perjudicial}{muy posiblemente (1.00) Perjudicial, muy posiblemente (0.80) Muy Perjudicial}{-0.410}{0.247}
+ }{}
+ \ifthenelse{\equal{#1}{4}}
+ {
+  \tdeiaWriteImportance{13}{4}{Texto de prueba}{Perjudicial}{muy posiblemente (1.00) Perjudicial, muy posiblemente (0.80) Irrelevante}{-0.215}{0.226}
+ }{}
+ \ifthenelse{\equal{#1}{5}}
+ {
+  \tdeiaWriteImportance{13}{5}{Texto de prueba}{Beneficiosa}{posiblemente (0.40) Irrelevante, muy posiblemente (1.00) Beneficiosa}{0.288}{0.239}
+ }{}
+ \ifthenelse{\equal{#1}{6}}
+ {
+  \tdeiaWriteImportance{13}{6}{Texto de prueba}{Beneficiosa}{posiblemente (0.60) Muy beneficiosa, muy posiblemente (1.00) Beneficiosa}{0.368}{0.240}
+ }{}
+ \ifthenelse{\equal{#1}{7}}
+ {
+  \tdeiaWriteImportance{13}{7}{Texto de prueba}{Perjudicial}{muy posiblemente (1.00) Perjudicial, muy posiblemente (0.80) Irrelevante}{-0.215}{0.226}
+ }{}
+ \ifthenelse{\equal{#1}{8}}
+ {
+  \tdeiaWriteImportance{13}{8}{Texto de prueba}{Perjudicial}{muy posiblemente (1.00) Perjudicial, muy posiblemente (0.80) Irrelevante}{-0.215}{0.226}
+ }{}
+ \ifthenelse{\equal{#1}{9}}
+ {
+  \tdeiaWriteImportance{13}{9}{Texto de prueba}{Perjudicial}{muy posiblemente (1.00) Perjudicial, muy posiblemente (0.70) Muy Perjudicial}{-0.376}{0.247}
+ }{}
+ \ifthenelse{\equal{#1}{10}}
+ {
+  \tdeiaWriteImportance{13}{10}{Texto de prueba}{Perjudicial}{muy posiblemente (1.00) Perjudicial, muy posiblemente (0.90) Muy Perjudicial}{-0.456}{0.247}
+ }{}
+ \ifthenelse{\equal{#1}{11}}
+ {
+  \tdeiaWriteImportance{13}{11}{Texto de prueba}{Perjudicial}{muy posiblemente (1.00) Perjudicial, posiblemente (0.50) Muy Perjudicial}{-0.330}{0.247}
+ }{}
+ \ifthenelse{\equal{#1}{12}}
+ {
+  \tdeiaWriteImportance{13}{12}{Texto de prueba}{Perjudicial}{muy posiblemente (1.00) Perjudicial, muy posiblemente (0.70) Muy Perjudicial}{-0.376}{0.247}
+ }{}
+ \ifthenelse{\equal{#1}{13}}
+ {
+  \tdeiaWriteImportance{13}{13}{Texto de prueba}{Muy Perjudicial}{muy posiblemente (0.80) Perjudicial, muy posiblemente (1.00) Muy Perjudicial}{-0.498}{0.240}
+ }{}
+ \ifthenelse{\equal{#1}{14}}
+ {
+  \tdeiaWriteImportance{13}{14}{Texto de prueba}{Perjudicial}{muy posiblemente (1.00) Perjudicial, posiblemente (0.40) Muy Perjudicial, posiblemente (0.40) Irrelevante}{-0.302}{0.234}
+ }{}
+ \ifthenelse{\equal{#1}{15}}
+ {
+  \tdeiaWriteImportance{13}{15}{Texto de prueba}{Perjudicial}{muy posiblemente (1.00) Perjudicial, posiblemente (0.60) Muy Perjudicial}{-0.368}{0.240}
+ }{}
+ \ifthenelse{\equal{#1}{16}}
+ {
+  \tdeiaWriteImportance{13}{16}{Texto de prueba}{Perjudicial}{muy posiblemente (1.00) Perjudicial, posiblemente (0.60) Muy Perjudicial}{-0.368}{0.240}
+ }{}
+ \ifthenelse{\equal{#1}{18}}
+ {
+  \tdeiaWriteImportance{13}{18}{}{Irrelevante}{muy posiblemente (1.00) Perjudicial, muy posiblemente (1.00) Muy Perjudicial, muy posiblemente (1.00) Irrelevante, muy posiblemente (1.00) Extremadamente Perjudicial}{-0.500}{1.000}
+ }{}
+}
+
+\newcommand{\tdeiaWriteImportanceInSummary}[1]
+{
+ \ifthenelse{\equal{#1}{1}}
+ {
+  \tdeiaWriteMyImportanceInSummary{4}{F 1.1.1.}{10}{A 1.2.2.}{1}{Perjudicial}{Texto de prueba}{-0.330}{F 1.1.1.-A 1.2.2.}
+ }{}
+ \ifthenelse{\equal{#1}{2}}
+ {
+  \tdeiaWriteMyImportanceInSummary{4}{F 1.1.1.}{13}{A 2.1.1.}{2}{Perjudicial}{Texto de prueba}{-0.257}{F 1.1.1.-A 2.1.1.}
+ }{}
+ \ifthenelse{\equal{#1}{3}}
+ {
+  \tdeiaWriteMyImportanceInSummary{4}{F 1.1.1.}{14}{A 2.1.2.}{3}{Perjudicial}{Texto de prueba}{-0.410}{F 1.1.1.-A 2.1.2.}
+ }{}
+ \ifthenelse{\equal{#1}{4}}
+ {
+  \tdeiaWriteMyImportanceInSummary{5}{F 1.1.2.}{4}{A 1.1.1.}{4}{Perjudicial}{Texto de prueba}{-0.215}{F 1.1.2.-A 1.1.1.}
+ }{}
+ \ifthenelse{\equal{#1}{5}}
+ {
+  \tdeiaWriteMyImportanceInSummary{6}{F 1.1.3.}{9}{A 1.2.1.}{5}{Beneficiosa}{Texto de prueba}{0.288}{F 1.1.3.-A 1.2.1.}
+ }{}
+ \ifthenelse{\equal{#1}{6}}
+ {
+  \tdeiaWriteMyImportanceInSummary{7}{F 1.1.4.}{4}{A 1.1.1.}{6}{Beneficiosa}{Texto de prueba}{0.368}{F 1.1.4.-A 1.1.1.}
+ }{}
+ \ifthenelse{\equal{#1}{7}}
+ {
+  \tdeiaWriteMyImportanceInSummary{9}{F 1.2.1.}{9}{A 1.2.1.}{7}{Perjudicial}{Texto de prueba}{-0.215}{F 1.2.1.-A 1.2.1.}
+ }{}
+ \ifthenelse{\equal{#1}{8}}
+ {
+  \tdeiaWriteMyImportanceInSummary{10}{F 1.2.2.}{5}{A 1.1.2.}{8}{Perjudicial}{Texto de prueba}{-0.215}{F 1.2.2.-A 1.1.2.}
+ }{}
+ \ifthenelse{\equal{#1}{9}}
+ {
+  \tdeiaWriteMyImportanceInSummary{10}{F 1.2.2.}{7}{A 1.1.4.}{9}{Perjudicial}{Texto de prueba}{-0.376}{F 1.2.2.-A 1.1.4.}
+ }{}
+ \ifthenelse{\equal{#1}{10}}
+ {
+  \tdeiaWriteMyImportanceInSummary{13}{F 2.1.1.}{15}{A 2.1.3.}{10}{Perjudicial}{Texto de prueba}{-0.456}{F 2.1.1.-A 2.1.3.}
+ }{}
+ \ifthenelse{\equal{#1}{11}}
+ {
+  \tdeiaWriteMyImportanceInSummary{14}{F 2.1.2.}{16}{A 2.1.4.}{11}{Perjudicial}{Texto de prueba}{-0.330}{F 2.1.2.-A 2.1.4.}
+ }{}
+ \ifthenelse{\equal{#1}{12}}
+ {
+  \tdeiaWriteMyImportanceInSummary{15}{F 2.1.3.}{18}{A 2.2.1.}{12}{Perjudicial}{Texto de prueba}{-0.376}{F 2.1.3.-A 2.2.1.}
+ }{}
+ \ifthenelse{\equal{#1}{13}}
+ {
+  \tdeiaWriteMyImportanceInSummary{16}{F 2.1.4.}{19}{A 2.2.2.}{13}{Muy Perjudicial}{Texto de prueba}{-0.498}{F 2.1.4.-A 2.2.2.}
+ }{}
+ \ifthenelse{\equal{#1}{14}}
+ {
+  \tdeiaWriteMyImportanceInSummary{18}{F 2.2.1.}{6}{A 1.1.3.}{14}{Perjudicial}{Texto de prueba}{-0.302}{F 2.2.1.-A 1.1.3.}
+ }{}
+ \ifthenelse{\equal{#1}{15}}
+ {
+  \tdeiaWriteMyImportanceInSummary{18}{F 2.2.1.}{13}{A 2.1.1.}{15}{Perjudicial}{Texto de prueba}{-0.368}{F 2.2.1.-A 2.1.1.}
+ }{}
+ \ifthenelse{\equal{#1}{16}}
+ {
+  \tdeiaWriteMyImportanceInSummary{19}{F 2.2.2.}{5}{A 1.1.2.}{16}{Perjudicial}{Texto de prueba}{-0.368}{F 2.2.2.-A 1.1.2.}
+ }{}
+ \ifthenelse{\equal{#1}{18}}
+ {
+  \tdeiaWriteMyImportanceInSummary{3}{F 1.1.}{2}{A 1.}{18}{Irrelevante}{}{-0.500}{la prueba}
+ }{}
+}
+
+\newcommand{\tdeiaWriteImportanceSummary}
+{
+  \begin{tdeiaWriteMyImportanceSummary}
+    \tdeiaWriteImportanceInSummary{1}
+    \tdeiaWriteImportanceInSummary{2}
+    \tdeiaWriteImportanceInSummary{3}
+    \tdeiaWriteImportanceInSummary{4}
+    \tdeiaWriteImportanceInSummary{5}
+    \tdeiaWriteImportanceInSummary{6}
+    \tdeiaWriteImportanceInSummary{7}
+    \tdeiaWriteImportanceInSummary{8}
+    \tdeiaWriteImportanceInSummary{9}
+    \tdeiaWriteImportanceInSummary{10}
+    \tdeiaWriteImportanceInSummary{11}
+    \tdeiaWriteImportanceInSummary{12}
+    \tdeiaWriteImportanceInSummary{13}
+    \tdeiaWriteImportanceInSummary{14}
+    \tdeiaWriteImportanceInSummary{15}
+    \tdeiaWriteImportanceInSummary{16}
+    \tdeiaWriteImportanceInSummary{18}
+  \end{tdeiaWriteMyImportanceSummary}
+}

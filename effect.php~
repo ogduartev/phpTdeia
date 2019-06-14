@@ -1,0 +1,36 @@
+<?php
+require_once('propierty.php');
+require_once('importance.php');
+
+class effect
+{
+  function create($project_id,$factor_id,$action_id)
+  {
+      // crear efecto
+      $name="nn";
+      $description="";
+      $nature=-1;
+      $sql="INSERT INTO effects(project_id,factor_id,action_id,name,description,nature) 
+                        VALUES(".$project_id.",".$factor_id.",".$action_id.",'".$name."','".$description."',".$nature.")";
+      mysql_query($sql) or die(mysql_error()."error : ".$sql);
+      $effect_id=mysql_insert_id();
+      
+      // crear las propiedades
+/*      $sql="SELECT id FROM effect_propierties WHERE project_id='".$project_id."'";
+      $result=mysql_query($sql) or die(mysql_error()."error : ".$sql);
+      if($result and mysql_num_rows($result)>0)
+      {
+        while($linea=mysql_fetch_array($result,MYSQL_ASSOC))
+        {
+          $P=new propierty();
+          $P->create($effect_id,$linea['id'],$cuts);
+        }
+      }
+*/            
+      // crear la importancia
+//      $IM=new importance();
+//      $IM->insert_single_importance($project_id,$effect_id,2);
+  }
+}
+
+?>

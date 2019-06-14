@@ -1,0 +1,76 @@
+\documentclass[A4,10pt]{book}
+\input{../inc/preamble.tex}
+\input{../inc/mainTexts.tex}
+\input{actions.tex}
+\input{aggregationsFig.tex}
+\input{aggregators.tex}
+\input{descriptions.tex}
+\input{effectpropierties.tex}
+\input{factors.tex}
+\input{importancesFig.tex}
+\input{inputsFig.tex}
+\input{variables.tex}
+\input{variablesFig.tex}
+
+\begin{document}
+
+\tableofcontents
+\listoftables
+\listoffigures
+
+\chapter[Metodolog\'ia]{Metodología}
+
+\section{Cálculo de la importancia}
+
+\tdeiaMethodologyImportance{}
+
+\tdeiaMethodologyAggregators{}
+
+\tdeiaMethodologyEffectPropierties{}
+
+\chapter{Proyecto}
+
+\tdeiaProjectFactors{}
+
+%\tdeiaProjectActions{}
+
+% \chapter{Otra cosa}
+%  
+%  
+%  \begin{pspicture}(0,0)(10,12)%\psgrid
+%   \rput[bl](0,9){\tdeiaPaintMyVariable{2}}
+%   \rput[bl](0,5) {\tdeiaPaintMyVariable{14}}
+%   \rput[bl](0,1) {\tdeiaPaintMyVariable{24}}
+%  \end{pspicture}
+% 
+%  \newpage
+%  
+%  \begin{pspicture}(0,0)(10,12)%\psgrid
+%   \rput[bl](0,9){\tdeiaPaintMyInput{1}}
+%   \rput[bl](0,5){\tdeiaPaintMyInput{2}}
+%  \end{pspicture}
+% 
+%  \newpage
+%  
+%  \begin{pspicture}(0,0)(10,12)%\psgrid
+%   \rput[bl](0,9){\tdeiaPaintMyImportance{1}}
+%   \rput[bl](0,5){\tdeiaPaintMyImportance{12}}
+%  \end{pspicture}
+% 
+%  \newpage
+%  
+%  \begin{pspicture}(0,0)(10,12)%\psgrid
+%   \rput[bl](0,9){\tdeiaPaintMyAggregation{1}}
+%   \rput[bl](0,5){\tdeiaPaintMyAggregation{7}}
+%  \end{pspicture}
+% 
+%  \newpage
+%  
+%  \tdeiaDescription{aggregators}{1}
+%  \tdeiaDescription{variables}{2}
+%  \tdeiaDescription{variables}{24}
+% 
+%  \newpage
+%    
+ 
+\end{document}

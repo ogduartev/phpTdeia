@@ -1,0 +1,6 @@
+email	active	firstname	lastname	password
+emailAdministrator	1	Oscar	Administrator	password
+emailManager	1	Oscar	Manager	password
+emailLeader	1	Oscar	Leader	password
+emailExpert	1	Oscar	Expert	password
+emailViewer	1	Oscar	Viewer	password

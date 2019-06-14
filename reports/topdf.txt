@@ -1,0 +1,8 @@
+cd example$1
+cp ../doc.tex $2.tex
+latex $2 >/dev/null
+latex $2 >/dev/null
+dvips $2.dvi
+ps2pdf $2.ps
+cd ..
+

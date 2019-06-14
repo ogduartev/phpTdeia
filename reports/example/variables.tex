@@ -1,0 +1,71 @@
+\newcommand{\tdeiaWriteMyVariable}[1]
+{
+ \ifthenelse{\equal{#1}{1}}
+ {
+  \tdeiaWriteVariable{1}{Intensidad}{0}{1}
+ }{}
+ \ifthenelse{\equal{#1}{2}}
+ {
+  \tdeiaWriteVariable{2}{Extensión}{0}{1}
+ }{}
+ \ifthenelse{\equal{#1}{3}}
+ {
+  \tdeiaWriteVariable{3}{Extensión crítica}{0}{1}
+ }{}
+ \ifthenelse{\equal{#1}{4}}
+ {
+  \tdeiaWriteVariable{4}{Momento}{0}{1}
+ }{}
+ \ifthenelse{\equal{#1}{5}}
+ {
+  \tdeiaWriteVariable{5}{Momento crítico}{0}{1}
+ }{}
+ \ifthenelse{\equal{#1}{6}}
+ {
+  \tdeiaWriteVariable{6}{Persistencia}{0}{1}
+ }{}
+ \ifthenelse{\equal{#1}{7}}
+ {
+  \tdeiaWriteVariable{7}{Reversibilidad}{0}{1}
+ }{}
+ \ifthenelse{\equal{#1}{8}}
+ {
+  \tdeiaWriteVariable{8}{Sinergía}{0}{1}
+ }{}
+ \ifthenelse{\equal{#1}{9}}
+ {
+  \tdeiaWriteVariable{9}{Acumulación}{0}{1}
+ }{}
+ \ifthenelse{\equal{#1}{10}}
+ {
+  \tdeiaWriteVariable{10}{Efecto}{0}{1}
+ }{}
+ \ifthenelse{\equal{#1}{11}}
+ {
+  \tdeiaWriteVariable{11}{Periodicidad}{0}{1}
+ }{}
+ \ifthenelse{\equal{#1}{12}}
+ {
+  \tdeiaWriteVariable{12}{Recuperabilidad}{0}{1}
+ }{}
+ \ifthenelse{\equal{#1}{13}}
+ {
+  \tdeiaWriteVariable{13}{Importancia}{-1}{1}
+ }{}
+ \ifthenelse{\equal{#1}{14}}
+ {
+  \tdeiaWriteVariable{14}{Importancia media}{-1}{1}
+ }{}
+ \ifthenelse{\equal{#1}{15}}
+ {
+  \tdeiaWriteVariable{15}{Importancia ponderada}{-1}{1}
+ }{}
+ \ifthenelse{\equal{#1}{16}}
+ {
+  \tdeiaWriteVariable{16}{Importancia máxima}{-1}{1}
+ }{}
+ \ifthenelse{\equal{#1}{17}}
+ {
+  \tdeiaWriteVariable{17}{Importancia mínima}{-1}{1}
+ }{}
+}

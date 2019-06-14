@@ -1,0 +1,752 @@
+\usepackage[spanish,es-nodecimaldot]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc} 
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+% comentar para edición tipo libro
+\usepackage[letterpaper,top=3.0cm,left=3cm,right=3cm,bottom=2.5cm]{geometry}
+\usepackage{typearea}
+\usepackage{pstricks,pst-all,pst-circ,pst-3dplot,pst-grad}
+\usepackage{listings}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue,filecolor=blue]{hyperref}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{framed}
+\usepackage{mdframed}
+\usepackage[hyperref,framed]{ntheorem}
+\usepackage{array}
+\usepackage{verbatim}
+\usepackage{fancyvrb}
+\usepackage{chapterbib}
+\usepackage{ifthen}
+\usepackage{calc}
+\usepackage{lscape}
+\usepackage{rotating}
+\usepackage{url}
+\usepackage{enumerate}
+\usepackage{subfigure}
+\usepackage{rotating}
+\usepackage{colortbl}
+\usepackage{draftwatermark}
+\usepackage{paralist}
+\usepackage{thm-restate}
+\usepackage[maxfloats=25]{morefloats}
+
+
+\usepackage{hyperref}
+\makeatletter
+\newcommand*{\MyUrl}{\begingroup\@makeother\#\@MyUrl}
+\newcommand*{\@MyUrl}[1]{%
+  \href{#1}{$\circlearrowright$}%
+  \endgroup}
+\makeatother
+
+
+%\SetWatermarkText{\includegraphics{figs/escudo}}
+%\SetWatermarkScale{1.0}
+%\SetWatermarkAngle{0}
+\SetWatermarkText{TDEIA}
+\SetWatermarkScale{0.75}
+\SetWatermarkAngle{45}
+
+%%%%%%%%%%%%%%%  pandoc  %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newlength{\tempX}
+\newlength{\tempY}
+\newlength{\tempXX}
+\newlength{\tempYY}
+\newcommand{\tdeiaAdjustpagesize}[2]
+{
+  \setlength{\tempX}{#1}
+  \setlength{\tempY}{#2}
+  \setlength{\tempXX}{730mm}
+  \setlength{\tempYY}{520mm}
+  \ifthenelse{\tempX>\tempXX \OR \tempY>\tempYY}{\tdeiaNewpagesize{A0}}
+  {
+    \setlength{\tempXX}{520mm}
+    \setlength{\tempYY}{340mm}
+    \ifthenelse{\tempX>\tempXX \OR \tempY>\tempYY}{\tdeiaNewpagesize{A1}}
+    {
+      \setlength{\tempXX}{360mm}
+      \setlength{\tempYY}{260mm}
+      \ifthenelse{\tempX>\tempXX \OR \tempY>\tempYY}{\tdeiaNewpagesize{A2}}
+      {
+        \setlength{\tempXX}{176mm}
+        \setlength{\tempYY}{135mm}
+        \ifthenelse{\tempX>\tempXX \OR \tempY>\tempYY}{\tdeiaNewpagesize{A3}}
+        {
+          \tdeiaNewpagesize{letter}
+        }
+      }
+    }
+  }
+}
+
+\newcommand{\tdeiaNewpagesize}[1]
+{
+  \clearpage
+  \KOMAoptions{paper=#1,pagesize}
+  \recalctypearea
+  \ifthenelse{\equal{#1}{A0}}
+  {
+    \newgeometry{height=1100mm,width=780mm,layoutvoffset=-550mm,layouthoffset=320mm,hcentering=true}
+  }{}
+  \ifthenelse{\equal{#1}{A1}}
+  {
+    \newgeometry{textheight=730mm,textwidth=520mm,layoutvoffset=-300mm,layouthoffset=200mm,hcentering=true}
+  }{}
+  \ifthenelse{\equal{#1}{A2}}
+  {
+    \newgeometry{textheight=520mm,textwidth=340mm,layoutvoffset=-180mm,layouthoffset=100mm,hcentering=true}
+  }{}
+  \ifthenelse{\equal{#1}{A3}}
+  {
+    \newgeometry{textheight=360mm,textwidth=260mm,layoutvoffset=-80mm,layouthoffset=40mm,hcentering=true}
+  }{}
+  \ifthenelse{\equal{#1}{letter}}
+  {
+    \restoregeometry
+  }{}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\newlength{\tam}
+\newlength{\tamA}
+\newlength{\tamB}
+\newlength{\tamC}
+\newcommand{\tdeiaPaintSet}[1]
+{
+  \psline[linecolor=blue]#1
+}
+\newcommand{\tdeiaPaintVariable}[7]
+{
+  \scriptsize
+  \sf
+  \rput[bl](0.1,2.3){#1}
+  \psline{->}(0,0)(5.2,0)
+  \psline{->}(0,0)(0,2.2)
+  \psline{-}(-.1,0.5)(.1,0.5)
+  \psline{-}(-.1,1.0)(.1,1.0)
+  \psline{-}(-.1,1.5)(.1,1.5)
+  \psline{-}(-.1,2.0)(.1,2.0)
+  \rput[r](-.2,0.0){$0.00$}
+  \rput[r](-.2,0.5){$0.25$}
+  \rput[r](-.2,1.0){$0.50$}
+  \rput[r](-.2,1.5){$0.75$}
+  \rput[r](-.2,2.0){$1.00$}
+  \rput[t](0,-0.2){#2}
+  \rput[t](1,-0.2){#3}
+  \rput[t](2,-0.2){#4}
+  \rput[t](3,-0.2){#5}
+  \rput[t](4,-0.2){#6}
+  \rput[t](5,-0.2){#7}
+  \psset{yunit=2cm}
+  \psset{xunit=5cm}
+  \psline{-}(0.2,.05)(0.2,-.05)
+  \psline{-}(0.4,.05)(0.4,-.05)
+  \psline{-}(0.6,.05)(0.6,-.05)
+  \psline{-}(0.8,.05)(0.8,-.05)
+  \psline{-}(1.0,.05)(1.0,-.05)
+}
+\newcommand{\tdeiaPaintVariableTitle}[1]
+{
+  \scriptsize
+  \sf
+  \rput[tl](0.1,2.9){#1}
+}
+\newcommand{\tdeiaPaintLabel}[2]
+{
+  \psset{unit=1cm}
+  \rput(6,2)
+  {
+    \psset{yunit=0.3cm}
+    \rput[tl](0,-#1){\scriptsize{\sf #2}}
+  }
+}
+\newcommand{\tdeiaPaintInputSet}[1]
+{
+  \psset{yunit=2cm}
+  \psset{xunit=5cm}
+  \psline[linecolor=red,fillstyle=hlines,hatchcolor=red]#1
+}
+\newcommand{\tdeiaPaintImportanceSet}[1]
+{
+  \psset{yunit=2cm}
+  \psset{xunit=5cm}
+  \psline[linecolor=brown,fillstyle=hlines,hatchcolor=brown]#1
+}
+\newcommand{\tdeiaPaintAggregationSet}[1]
+{
+  \psset{yunit=2cm}
+  \psset{xunit=5cm}
+  \psline[linecolor=black,fillstyle=hlines,hatchcolor=black]#1
+}
+
+\newenvironment{tdeiaDescriptionContent}{}{}
+
+\newcommand{\tdeiaWriteEffectPropierty}[6]
+{
+ {
+  \scriptsize
+  \sf
+  \begin{table}
+   \centering
+  \caption[Explicación de la propiedad `#2']{Explicación de la propiedad `#2' usada para evaluar cada efecto}
+  \label{tab:effect_propierty_#1} 
+  \begin{tabular}{|*{3}{p{4cm}|}} \hline
+   \multicolumn{3}{|c|}{#2} \\ \hline
+   {\em Sentido:} \ifthenelse{\equal{#3}{1}}{Creciente}{Decreciente} 
+   & {\em Peso:} $#4$ & $\theta=#5$ \\ \hline 
+   \multicolumn{3}{|p{12cm}|}{\em{Descripción:}} \\
+   \multicolumn{3}{|p{12cm}|}{\tdeiaDescription{effect_propierties}{#1}} \\ \hline
+   \multicolumn{3}{|p{12cm}|}{\rule{0cm}{0.25cm}} \\ %\hline
+   \multicolumn{3}{|p{12cm}|}{\em{Variable lingüística}} \\ \hline %
+   \tdeiaWriteMyVariable{#6}
+  }
+}
+
+\newcommand{\tdeiaWriteVariable}[4]
+{
+   {\em Nombre:} #2 & {\em Mínimo:} $#3$ & {\em Máximo:} $#4$  \\ \hline 
+   \multicolumn{3}{|p{12cm}|}{\em{Significado de las etiquetas:}} \\
+   \multicolumn{3}{|p{12cm}|}{\tdeiaDescription{variables}{#1}} \\ \hline
+   \multicolumn{3}{|c|}{\begin{pspicture}(0,0)(10,4)\rput[bl](1,1){\tdeiaPaintMyVariable{#1}}\end{pspicture}} \\ \hline
+  \end{tabular}
+  \end{table}
+}
+
+\newcommand{\tdeiaWriteMyEffectPropiertyInSummary}[5]
+{
+ #2 & 
+ \ifthenelse{\equal{#3}{1}}{Creciente}{Decreciente}  & 
+ #4 & \ref{tab:effect_propierty_#1} & \pageref{tab:effect_propierty_#1}  \\ \hline 
+}
+
+\newenvironment{tdeiaEffectPropiertiesSummary}
+{
+  \begin{table}
+   \scriptsize
+   \sf
+   \centering
+   \caption[Resumen de las propiedades usadas]{Resumen de las propiedades utilizadas para valorar la importancia de cada efecto}
+   \label{tab:effect_propierties_summary}
+   \begin{tabular}{|p{3cm}|p{2cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|}\hline
+   Nombre & Sentido & Peso & Cuadro & Página \\ \hline 
+}
+{
+   \end{tabular}
+  \end{table}
+}
+
+\newcommand{\tdeiaWriteMyAggregatorInSummary}[3]
+{
+  #1 (Ver cuadro \ref{tab:aggregatorVar#3}) &
+  \ifthenelse{\equal{#2}{simple_average}}{ Promedio simple & \tdeiaMethodologyAggregatorSimpleAverage{#3}}{}
+  \ifthenelse{\equal{#2}{weighted_average}}{ Promedio ponderado & \tdeiaMethodologyAggregatorWeightedAverage{#3}}{}
+  \ifthenelse{\equal{#2}{minimum}}{ Mínimo  & \tdeiaMethodologyAggregatorMinimum{#3}}{}
+  \ifthenelse{\equal{#2}{maximum}}{ Máximo  & \tdeiaMethodologyAggregatorMaximum{#3}}{}
+  \\ \hline
+}
+
+\newcommand{\tdeiaWriteAggregator}[2]
+{
+  \ifthenelse{\equal{#1}{linear_combination}}{\tdeiaMethodologyImportanceLinearCombination{#1}}{}
+  \ifthenelse{\equal{#1}{simple_average}}{\tdeiaMethodologyAggregatorSimpleAverage{#1}}{}
+  \ifthenelse{\equal{#1}{weighted_average}}{\tdeiaMethodologyAggregatorWeightedAverage{#1}}{}
+  \ifthenelse{\equal{#1}{minimum}}{\tdeiaMethodologyAggregatorMinimum{#1}}{}
+  \ifthenelse{\equal{#1}{maximum}}{\tdeiaMethodologyAggregatorMaximum{#1}}{}
+}
+
+\newenvironment{tdeiaAggregatorsSummary}
+{
+  \begin{table}
+   \scriptsize
+   \sf
+   \centering
+   \caption[Operadores de agregación]{Operadores de agregación (agregadores) empleados para estimar la importancia combinada $IM_c$ de $M$ efectos individuales, cada uno de importancia $IM_i$}
+   \label{tab:aggregators_summary}
+   \begin{tabular}{|p{3cm}|p{2cm}|p{8cm}|}\hline
+   Nombre & Ecuación & Explicación \\ \hline 
+}
+{
+   \end{tabular}
+  \end{table}
+}
+
+\newcommand{\tdeiaWriteMyAggregatorInTableImp}[9]
+{
+  \begin{table}
+    \centering
+    \sf
+    \scriptsize
+    \caption{Variable Lingüística asociada a la '#2'}
+    \label{tab:importanceVar} 
+   \begin{tabular}{|p{10cm}|} \hline
+   \begin{center}\textbf{#2}\end{center} \\ \hline
+    \textit{Descripción:} \\ #4 \\ \hline 
+    \textit{Significado de las etiquetas:} \\ #7 \\ \hline 
+    \begin{pspicture}(0,0)(10,4)\rput[bl](1,1){\tdeiaPaintMyVariable{#5}}\end{pspicture} \\ \hline
+   \end{tabular}
+  \end{table}
+}
+
+\newcommand{\tdeiaWriteMyAggregatorInTableAgg}[9]
+{
+  \begin{table}
+    \centering
+    \sf
+    \scriptsize
+    \caption{Variable Lingüística asociada al agregador '#2'}
+    \label{tab:aggregatorVar#1} 
+   \begin{tabular}{|p{10cm}|} \hline
+   \begin{center}\textbf{#2}\end{center} \\ \hline
+    \textit{Descripción:} \\ #4 \\ \hline 
+    \textit{Significado de las etiquetas:} \\ #7 \\ \hline 
+    \begin{pspicture}(0,0)(10,4)\rput[bl](1,1){\tdeiaPaintMyVariable{#5}}\end{pspicture} \\ \hline
+   \end{tabular}
+  \end{table}
+}
+
+\newlength{\tdeiaFactorPositionX}
+\newlength{\tdeiaFactorPositionDx}
+\newlength{\tdeiaFactorPositionY}
+\newlength{\tdeiaFactorPositionDy}
+\newlength{\tdeiaTmp}
+
+\newcommand{\tdeiaPaintFactorNode}[5]
+{
+  \setlength{\tdeiaFactorPositionDx}{1cm}
+  \setlength{\tdeiaFactorPositionDy}{-0.6cm}
+  
+  \setlength{\tdeiaFactorPositionX}{#3\tdeiaFactorPositionDx}
+  \rput[bl](\tdeiaFactorPositionX,\tdeiaFactorPositionY)
+  {
+    \begin{tabular}{|p{4cm}|p{0.75cm}|p{0.75cm}|}\hline
+     \rule{0cm}{0.3cm}\cellcolor{gray!25} \hyperref[sec:factor#1]{#2} & \cellcolor{gray!50}#4 &\cellcolor{gray!50} #5 \\ \hline
+    \end{tabular}
+  }
+ 
+  \setlength{\tdeiaTmp}{\tdeiaFactorPositionX}
+  \addtolength{\tdeiaTmp}{0.3cm}
+  \pnode(\tdeiaTmp,\tdeiaFactorPositionY){Fo#1}
+
+  \setlength{\tdeiaTmp}{\tdeiaFactorPositionY}
+  \addtolength{\tdeiaTmp}{0.3cm}
+  \pnode(\tdeiaFactorPositionX,\tdeiaTmp){Ff#1}
+  
+  \addtolength{\tdeiaFactorPositionY}{\tdeiaFactorPositionDy}
+}
+
+\newcommand{\tdeiaPaintFactorConnection}[2]
+{
+  \ncangle[angleA=-90,angleB=180]{-}{Fo#1}{Ff#2}
+}
+
+\newcommand{\tdeiaPaintFactorTree}[2]
+{
+\setlength{\tdeiaFactorPositionDx}{1.0cm}
+\setlength{\tdeiaFactorPositionDy}{-0.6cm}
+\setlength{\tempX}{#1\tdeiaFactorPositionDx}
+\addtolength{\tempX}{5.5cm}
+\addtolength{\tempX}{\tdeiaFactorPositionDx}
+\setlength{\tempY}{-#2\tdeiaFactorPositionDy}
+\addtolength{\tempY}{0.3cm}
+\addtolength{\tempY}{-\tdeiaFactorPositionDy}
+\tdeiaAdjustpagesize{\tempX}{\tempY}
+
+\begin{figure}
+ \centering
+ \sf
+ \scriptsize
+ \begin{pspicture}(0,2\tdeiaFactorPositionDy)(\tempX,\tempY)%\psgrid
+  \setlength{\tdeiaFactorPositionY}{-#2\tdeiaFactorPositionDy}
+  \addtolength{\tdeiaFactorPositionY}{\tdeiaFactorPositionDy}
+  \tdeiaPaintMyFactorAllNodes{}
+
+  \addtolength{\tdeiaFactorPositionY}{\tdeiaFactorPositionDy}
+  \rput[bl](\tdeiaFactorPositionDx,\tdeiaFactorPositionY)
+  {
+    \begin{tabular}{|p{2cm}|p{2.75cm}|p{2.75cm}|}
+    \multicolumn{3}{l}{Convención:} \\ \hline
+     \rule{0cm}{0.3cm}\cellcolor{gray!25} Nombre & \cellcolor{gray!50}Peso relativo al ambiente&\cellcolor{gray!50}Peso relativo al padre \\ \hline
+    \end{tabular}
+  }
+ \end{pspicture}
+ \caption{Árbol de factores ambientales}
+ \label{fig:factortree}
+\end{figure}
+\tdeiaAdjustpagesize{0mm}{0mm}
+}
+
+\newcommand{\tdeiaWriteFactor}[5]
+{
+ \subsection{#2}
+ \label{sec:factor#1}
+  \begin{center}
+   \sf \small
+   \begin{tabular}{|*{2}{p{6cm}|}}\hline
+    \multicolumn{2}{|p{10cm}|}{\textit{Nombre: }#2} \\ \hline
+    \multicolumn{2}{|p{10cm}|}{\textit{Nivel: }#3} \\ 
+    \multicolumn{2}{|p{10cm}|}{\textit{Peso respecto al padre: }#4} \\ 
+    \multicolumn{2}{|p{10cm}|}{\textit{Peso respecto al nodo raíz: }#5} \\ \hline
+    \textit{Nodos padre:} & \textit{Nodos hijo} \\ 
+    \begin{itemize}
+      \tdeiaWriteMyFactorUp{#1}
+    \end{itemize}
+    &
+    \begin{itemize}
+     \tdeiaWriteMyFactorDown{#1}
+    \end{itemize}
+     \\ \hline
+   \end{tabular}
+  \end{center}
+  \tdeiaDescription{factors}{#1}
+}
+
+\newcommand{\tdeiaWriteFactorDown}[2]
+{
+  \item #2 (Sección \ref{sec:factor#1})
+}
+
+\newcommand{\tdeiaWriteFactorUp}[2]
+{
+  \item #2 (Sección \ref{sec:factor#1})
+}
+
+\newcommand{\tdeiaWriteFactorNoParent}{\item Es el nodo raíz. No tiene padres.}
+\newcommand{\tdeiaWriteFactorNoChildren}{\item Es un nodo hoja. No tiene hijos.}
+
+%%%%%%%%%%%%%%%%%%%%%%
+
+\newlength{\tdeiaActionPositionX}
+\newlength{\tdeiaActionPositionDx}
+\newlength{\tdeiaActionPositionY}
+\newlength{\tdeiaActionPositionDy}
+%\newlength{\tdeiaTmp}
+
+\newcommand{\tdeiaPaintActionNode}[3]
+{
+  \setlength{\tdeiaActionPositionDx}{1cm}
+  \setlength{\tdeiaActionPositionDy}{-0.6cm}
+  
+  \setlength{\tdeiaActionPositionX}{#3\tdeiaActionPositionDx}
+  \rput[bl](\tdeiaActionPositionX,\tdeiaActionPositionY)
+  {
+    \begin{tabular}{|p{4cm}|}\hline
+     \rule{0cm}{0.3cm}\cellcolor{gray!25} \hyperref[sec:action#1]{#2} \\ \hline
+    \end{tabular}
+  }
+ 
+  \setlength{\tdeiaTmp}{\tdeiaActionPositionX}
+  \addtolength{\tdeiaTmp}{0.3cm}
+  \pnode(\tdeiaTmp,\tdeiaActionPositionY){Fo#1}
+
+  \setlength{\tdeiaTmp}{\tdeiaActionPositionY}
+  \addtolength{\tdeiaTmp}{0.3cm}
+  \pnode(\tdeiaActionPositionX,\tdeiaTmp){Ff#1}
+  
+  \addtolength{\tdeiaActionPositionY}{\tdeiaActionPositionDy}
+}
+
+\newcommand{\tdeiaPaintActionConnection}[2]
+{
+  \ncangle[angleA=-90,angleB=180]{-}{Fo#1}{Ff#2}
+}
+
+\newcommand{\tdeiaPaintActionTree}[2]
+{
+ \setlength{\tdeiaActionPositionDx}{1.0cm}
+ \setlength{\tdeiaActionPositionDy}{-0.6cm}
+ \setlength{\tempX}{#1\tdeiaActionPositionDx}
+ \addtolength{\tempX}{5.5cm}
+ \addtolength{\tempX}{\tdeiaActionPositionDx}
+ \setlength{\tempY}{-#2\tdeiaActionPositionDy}
+ \addtolength{\tempY}{0.3cm}
+ \addtolength{\tempY}{-\tdeiaActionPositionDy}
+ \tdeiaAdjustpagesize{\tempX}{\tempY}
+
+\begin{figure}
+ \centering
+ \sf
+ \scriptsize
+ 
+ \begin{pspicture}(0,2\tdeiaActionPositionDy)(\tempX,\tempY)%\psgrid
+  \setlength{\tdeiaActionPositionY}{-#2\tdeiaActionPositionDy}
+  \tdeiaPaintMyActionAllNodes{}
+ \end{pspicture}
+
+ \caption{Árbol de acciones del proyecto}
+ \label{fig:actiontree}
+\end{figure}
+ \tdeiaAdjustpagesize{0mm}{0mm}
+}
+
+\newcommand{\tdeiaWriteAction}[3]
+{
+ \subsection{#2}
+  \label{sec:action#1}
+ \begin{center}
+  \sf \small
+  \begin{tabular}{|*{2}{p{6cm}|}}\hline
+   \multicolumn{2}{|p{10cm}|}{\textit{Nombre: }#2} \\ \hline
+   \multicolumn{2}{|p{10cm}|}{\textit{Nivel: }#3} \\ \hline
+   \textit{Nodos padre:} & \textit{Nodos hijo} \\ 
+   \begin{itemize}
+     \tdeiaWriteMyActionUp{#1}
+   \end{itemize}
+   &
+   \begin{itemize}
+    \tdeiaWriteMyActionDown{#1}
+   \end{itemize}
+    \\ \hline
+  \end{tabular}
+ \end{center}
+ 
+ \tdeiaDescription{actions}{#1}
+}
+
+\newcommand{\tdeiaWriteActionDown}[2]
+{
+  \item #2 (Sección \ref{sec:action#1})
+}
+
+\newcommand{\tdeiaWriteActionUp}[2]
+{
+  \item #2 (Sección \ref{sec:action#1})
+}
+
+\newcommand{\tdeiaWriteActionNoParent}{\item Es el nodo raíz. No tiene padres.}
+\newcommand{\tdeiaWriteActionNoChildren}{\item Es un nodo hoja. No tiene hijos.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\tdeiaWriteInputsHead}[6]
+{
+ \caption{Valoración de las propiedades del efecto `#2' y de su importancia}
+ \label{tab:effectInputs#1} \\ \hline 
+ \multicolumn{4}{|p{17cm}|}{\textit{Nombre:} #2} \\ \hline
+ \multicolumn{4}{|p{17cm}|}{\textit{Factor:} #4 (Sección \ref{sec:factor#3})} \\ \hline
+ \multicolumn{4}{|p{17cm}|}{\textit{Action:} #6 (Sección \ref{sec:action#5})} \\ \hline 
+ \multicolumn{4}{|p{17cm}|}{\textit{Descripción del efecto:}} \\  
+ \multicolumn{4}{|p{17cm}|}{\tdeiaDescription{effects}{#1}} \\ \hline 
+ \textbf{Propiedad} & \textbf{Tipo y Valor} & \textbf{Justificación} & \textbf{Gráfico} \\ \hline \endfirsthead
+ \hline
+ \multicolumn{4}{|p{17cm}|}{\textit{Nombre:} #2} \\ \hline
+ \textbf{Propiedad} & \textbf{Tipo y Valor} & \textbf{Justificación} & \textbf{Gráfico} \\ \hline  \endhead
+}
+
+\newcommand{\tdeiaInputType}[2]
+{
+  \ifthenelse{\equal{#1}{number}}{Número}{}
+  \ifthenelse{\equal{#1}{interval}}{Intervalo}{}
+  \ifthenelse{\equal{#1}{fuzzy_number}}{Número difuso}{}
+  \ifthenelse{\equal{#1}{label}}
+  {
+    \ifthenelse{\equal{#2}{0}}{Etiqueta}{Etiqueta con modificador}
+  }{}
+}
+
+\newcommand{\tdeiaWriteInput}[6]
+{
+  #2 (cuadro \ref{tab:effect_propierty_#1}) &
+  \begin{minipage}{3cm}
+    \tdeiaInputType{#4}{#5}: #6
+  \end{minipage}
+ &
+  \begin{minipage}{4cm}
+    \tdeiaDescription{inputs}{#3}    
+  \end{minipage}
+ &
+  \scalebox{0.6}
+  {
+   \begin{pspicture}(0,0)(10,3)%\psgrid
+    \rput[bl](1,0){\tdeiaPaintMyInput{#3}}
+   \end{pspicture}
+  }
+  \\ \hline
+}
+
+\newcommand{\tdeiaWriteImportance}[7]
+{
+  \textbf{Importancia} &
+  \textbf{Valor} &
+  \textbf{Análisis} &
+  \textbf{Gráfico} \\ \hline
+  cuadro \ref{tab:importanceVar} &
+  \begin{minipage}{3cm}
+    \textit{Interpretación:} \textbf{#4}\\
+    \textit{Valor:} \textbf{#6}\\
+    \textit{Ambigüedad:} \textbf{#7} \\ \\
+    \textit{#5}\\
+  \end{minipage}
+ &
+   #3
+ &
+  \scalebox{0.6}
+  {
+   \begin{pspicture}(0,0)(10,3)%\psgrid
+    \rput[bl](1,0){\tdeiaPaintMyImportance{#2}}
+   \end{pspicture}
+  }
+  \\ \hline
+}
+
+\newenvironment{tdeiaWriteEffectInputs}[2]
+{
+ \begin{landscape}
+  \sf
+  \scriptsize
+  \begin{longtable}{|p{2cm}|p{3cm}|p{5cm}|p{7cm}|}
+}
+{
+  \end{longtable}
+ \end{landscape}
+ \clearpage
+}
+
+%%%%%%%%%%% MATRIX
+
+\newlength{\cellX}
+\newlength{\cellY}
+\newlength{\cellXH}
+\newlength{\cellYH}
+\newlength{\tableX}
+\newlength{\tableY}
+
+
+\newcommand{\tablePage}[2]
+{
+  \setlength{\cellX}{1.25cm}
+  \setlength{\cellXH}{2.0cm}
+  \setlength{\cellY}{0.5cm}
+  \setlength{\cellYH}{0.5cm}
+  \setlength{\tableX}{#1\cellX}
+  \addtolength{\tableX}{\cellXH}
+  \addtolength{\tableX}{\cellX}
+  \setlength{\tableY}{#2\cellY}
+  \addtolength{\tableY}{\cellYH}
+  \addtolength{\tableY}{\cellY}
+  %%% figure
+  \addtolength{\tableY}{4cm}
+  %%%
+  \ifthenelse{\tableX > \tableY \AND \tableX > \textwidth}
+  {
+    \tdeiaAdjustpagesize{\tableX}{\tableY}
+  }
+  {
+    \tdeiaAdjustpagesize{\tableX}{\tableY}
+  }
+}
+
+\newenvironment{tdeiaMatrix}[7]
+{
+  \def\fooVID{#6}
+  \def\fooVTY{#7}
+  \setlength\tabcolsep{0cm}
+  \ifthenelse{\tableX > \tableY \AND \tableX > \textwidth}
+  {
+    \begin{sidewaystable} 
+  }
+  {
+    \begin{table} 
+  }
+  \centering
+  \caption{Matriz de #3. Profundidad $#4\times #5$ (Factors $\times$ Acciones)}
+  %\label{tab:matrix#5-#4} FALTA
+  \tiny \sf
+  \begin{tabular}{|p{\cellXH}|*{#1}{p{\cellX}|}p{\cellX}|}\hline
+}
+{
+  \end{tabular}
+  \ifthenelse{\equal{\fooVID}{0}}
+  {
+  }
+  {
+    \\
+    \begin{pspicture}(0,-1)(8,3.0)%\psgrid
+      \tdeiaPaintMyGradBlock{\fooVTY}
+      \tdeiaPaintMyVariable{\fooVID}   
+    \end{pspicture}
+  }
+
+  \ifthenelse{\tableX > \tableY \AND \tableX > \textwidth}
+  {
+    \end{sidewaystable}
+  }
+  {
+    \end{table}
+  }
+}
+
+
+\newlength{\dxBlock}
+\newlength{\dyBlock}
+
+\newcommand{\tdeiaPaintSubBlockGrad}[4]
+{
+  \setlength{\dxBlock}{5cm}
+  \setlength{\dyBlock}{-0.5cm}
+  \definecolor{colbegin}{HTML}{#1}
+  \definecolor{colend}{HTML}{#2}
+  \psframe[fillstyle=gradient,gradbegin=colbegin,gradend=colend,gradmidpoint=1.0,gradangle=90,linewidth=0pt,linestyle=none]
+  (#3\dxBlock,0)(#4\dxBlock,\dyBlock)
+}
+
+
+\newcommand{\tdeiaMatrixEmptyCell}{}
+
+\newcommand{\tdeiaMatrixHeaderColCell}[1]{\rule{0cm}{\cellY}\textbf{#1}}
+\newcommand{\tdeiaMatrixHeaderTotalCell}[1]{\textbf{#1}}
+\newcommand{\tdeiaMatrixHeaderRowCell}[1]{\rule{0cm}{\cellY}\textbf{#1}}
+\newcommand{\tdeiaMatrixHeaderRowCellMulti}[2]
+{
+% \multirow{#2}{\cellXH}{ \rule{0cm}{#2\cellY}\textbf{#1}}
+ \rule{0cm}{\cellY}\textbf{#1}
+}
+
+\newcommand{\tdeiaMatrixRowTotalCell}[1]{\rule{0cm}{\cellY}\textbf{#1}}
+\newcommand{\tdeiaMatrixCellContent}[1]{#1}
+\newcommand{\tdeiaIndividualCellContent}[1]{#1}
+\newcommand{\tdeiaColorCell}[1]{\cellcolor[HTML]{#1}\rule{0cm}{0cm}}
+
+
+\newcommand{\tdeiaTableSectionCellType}[1]{\part{#1}}
+\newcommand{\tdeiaTableSectionType}[1]{\chapter{#1}}
+\newcommand{\tdeiaTableSectionAgg}[1]{\section{#1}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newenvironment{tdeiaWriteMyImportanceSummary}
+{
+  \begin{landscape}
+   \sf
+   \scriptsize
+   \begin{longtable}{|p{3cm}|p{3cm}|p{3cm}|p{2cm}|p{4cm}|}
+   \caption{Resumen de efectos individuales y sus importancias} 
+   \label{tab:effectSummary}
+   \\ \hline
+   \textbf{Factor} & \textbf{Acción} & \textbf{Efecto} & \textbf{Importancia} & \textbf{Análisis} \\ \hline \endhead
+}
+{
+   \end{longtable}
+  \end{landscape}
+}
+
+\newcommand{\tdeiaWriteMyImportanceInSummary}[9]
+{
+#2 (Sección \ref{sec:factor#1}) & 
+#4 (Sección \ref{sec:action#3}) & 
+#9 (Cuadro \ref{tab:effectInputs#5}) &
+ #6 ($#8$) & 
+ #7 
+ \\ \hline
+}

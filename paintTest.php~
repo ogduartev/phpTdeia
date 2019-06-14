@@ -1,0 +1,77 @@
+<?php
+require_once("paint.php");
+
+class test
+{
+  function conectar()
+  {
+   if($link=mysql_connect("localhost","root","rootpassword"))
+    {
+      $sql="USE `tdeia`;";
+      if(!mysql_query($sql))
+      {
+        echo "No existe la base de datos ".$this->base;
+        return $link;
+      }
+    }else
+    {
+      return FALSE;
+    }
+    return $link;
+  }
+  
+}
+
+//print_r($_GET);return;
+
+$optimism=0.5;
+$r=1;
+$flagDefaultInput=true;
+$T=new test();
+if($T->conectar())
+{
+  header('Content-Type: image/png'); 
+  $file="";
+  $img = imagecreatetruecolor(840,300);
+  imagefill($img,0,0,imagecolorallocate($img,0xFF,0xFF,0xFF));
+  
+  $P=new paint();
+
+//  $V=new variable();
+//  $V->readDB(14);
+//  $P->paintVariable($V,$img,0.5,false,"importance_cuts","importance_id",1);
+//  $P->paintVariable($V,$img,0.5,true,"aggregation_cuts","aggregation_id",4);
+//  $P->paintVariable($V$img,0.5,false,"input_cuts","input_id",3);
+//  $P->paintEffectPropierty(1,$img,$optimism,$r);
+  
+  $type=$_GET['typeId'];
+  switch($type)
+  {
+    case 'aggregations' :
+                        $P->paintAggregation($_GET['varId'],$img,$optimism,$r);
+                        break;
+    case 'importance' :
+                        $P->paintImportance($_GET['varId'],$img,$optimism,$r);
+                        break;
+    case 'propierties' :
+                        $P->paintPropierty($_GET['varId'],$img,$optimism,$r);
+                        break;
+    case 'effect_propierty' :
+                        $P->paintEffectPropierty($_GET['varId'],$img,$optimism,$r);
+                        break;
+    default : break;
+  }
+  
+  
+  
+  if($file=="")
+  {
+    imagepng($img);
+  }else
+  {
+    imagepng($img,$file);
+  }
+}
+
+
+?>

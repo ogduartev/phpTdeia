@@ -1,0 +1,6 @@
+name	description	group	user
+Proyecto de prueba	Sin descripción	administrator	emailAdministrator
+Proyecto de prueba	Sin descripción	manager	emailManager
+Proyecto de prueba	Sin descripción	leader	emailLeader
+Proyecto de prueba	Sin descripción	expert	emailExpert
+Proyecto de prueba	Sin descripción	viewer	emailViewer

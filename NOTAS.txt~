@@ -1,0 +1,25 @@
+por hacer:
+  OJO:
+    falta editar las variables de aggregator y effect_propierties
+    falta la edición de effect_propierties
+
+  íconos de los nodos de los árboles
+  
+  ícono de la aplicación
+  
+  nombre de la aplicación ('eia' suena a sufijo griego) (Leia, on Line Environmentel Impact Assessment)
+  
+  todo  administración de grupos y usuarios
+
+
+ideas:
+
+   menu de factores como svg. se pueden trazar líneas. usar drag-drop- click: una pestaña de edición: nombre, peso, descripción ¿y mover?
+   
+   matriz: usar herencia para evitar los switch-case : implica modificar login.php
+   
+   edición de importancia: mostrar taba con todas las propiedades asociadas
+   
+   input.php : funciones set . implica modificar edit_input.php
+   
+   

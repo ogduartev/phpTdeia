@@ -1,0 +1,205 @@
+<?php
+require_once("functions.php");
+require_once("variable.php");
+
+class aggregation
+{
+  var $equation;
+  var $functionName;
+  var $importancesID;
+  var $variableID;
+  
+  function findDown($id,$table,$IDo)
+  {
+    $ID=$IDo;
+    $sql="SELECT id FROM ".$table."s WHERE ".$table."_id='".$id."'";
+    $result=mysql_query($sql) or die(mysql_error()."error : ".$sql);
+    if($result and mysql_num_rows($result)>0)
+    {
+      while($linea=mysql_fetch_array($result,MYSQL_ASSOC))
+      {
+        $ID[]=$linea['id'];
+        $ID=$this->findDown($linea['id'],$table,$ID);
+      }
+    }
+    return $ID; 
+  }
+  
+  function getImportancesID($aggregation_id)
+  {
+    $this->functionName="";
+    $sql="SELECT aggregations.id,equation,factor_id,action_id,variables.id AS VID FROM aggregations 
+                        INNER JOIN aggregators ON aggregations.aggregator_id=aggregators.id
+                        INNER JOIN variables ON variables.aggregator_id=aggregators.id
+                        WHERE aggregations.id='".$aggregation_id."' LIMIT 1";
+    $result=mysql_query($sql) or die(mysql_error()."error : ".$sql);
+    if($result and mysql_num_rows($result)>0)
+    {
+      $linea=mysql_fetch_array($result,MYSQL_ASSOC);
+      $this->functionName=$linea['equation'];
+      $this->variableID=$linea['VID'];
+      $factors=array();
+      $factors[]=$linea['factor_id'];
+      $factors=$this->findDown($linea['factor_id'],"factor",$factors);
+      $actions=array();
+      $actions[]=$linea['action_id'];
+      $actions=$this->findDown($linea['action_id'],"action",$actions);
+    }
+    $this->importancesID=array();
+    foreach($factors as $fid)
+    {
+      foreach($actions as $aid)
+      {
+        $sql="SELECT importances.id AS ID FROM importances 
+                                               INNER JOIN effects ON importances.effect_id=effects.id
+                                               WHERE action_id='".$aid."'
+                                               AND factor_id='".$fid."'";
+        $result=mysql_query($sql) or die(mysql_error()."error : ".$sql);
+        if($result and mysql_num_rows($result)>0)
+        {
+          while($linea=mysql_fetch_array($result,MYSQL_ASSOC))
+          {
+            $this->importancesID[]=$linea['ID'];
+          }
+        }
+      }
+    }    
+  }
+  
+  function getImportancesFN()
+  {
+    $X=array();
+    foreach($this->importancesID as $ID)
+    {
+      $FN=new fuzzy_number;
+      $FN->read("importance_cuts","importance_id",$ID);
+      $X[]=$FN;
+    }
+    return $X;
+  }
+  
+  function createFunction()
+  {
+    $numberOfArgs=count($this->importancesID);
+    unset($this->equation);
+    switch($this->functionName)
+    {
+      default:
+      case "simple_average" : 
+           $a0=0;
+           $a=array();
+           for($i=0;$i<$numberOfArgs;$i++)
+           {
+             $a[]=1.0/$numberOfArgs;
+           }
+           $this->equation=new linear_combination($a0,$a);
+           break;
+      case "weighted_average" : 
+           $a0=0;
+           $a=array();
+           $suma=0;
+           foreach($this->importancesID as $iID)
+           {
+             $sql="SELECT weight FROM factors
+                                      INNER JOIN effects ON effects.factor_id=factors.id
+                                      INNER JOIN importances ON importances.effect_id=effects.id
+                                      WHERE importances.id='".$iID."'";
+             $result=mysql_query($sql) or die(mysql_error()."error : ".$sql);
+             if($result and mysql_num_rows($result)>0)
+             {
+               $linea=mysql_fetch_array($result,MYSQL_ASSOC);
+               $a[]=$linea['weight'];
+               $suma+=$linea['weight'];
+             }
+           }
+           foreach($a as $k=>$v)
+           {
+             $a[$k]=$v/$suma;
+           }
+           $this->equation=new linear_combination($a0,$a);
+           break;
+      case "maximum" : 
+           $a=array();
+           for($i=0;$i<$numberOfArgs;$i++)
+           {
+             $a[]=1.0;
+           }
+           $this->equation=new maximum($a);
+           break;
+      case "minimum" : 
+           $a=array();
+           for($i=0;$i<$numberOfArgs;$i++)
+           {
+             $a[]=1.0;
+           }
+           $this->equation=new minimum($a);
+           break;
+    }
+  }
+  
+  function deleteAggregation($aggregation_id)
+  {
+    $sql="DELETE FROM aggregations WHERE id='".$aggregation_id."'";
+    mysql_query($sql) or die(mysql_error()."error : ".$sql);
+  }
+  
+  function updateAggregation($aggregation_id,$cuts)
+  {
+    $this->getImportancesID($aggregation_id);
+    $numberOfArgs=count($this->importancesID);
+    if($numberOfArgs==0)
+    {
+      $this->deleteAggregation($aggregation_id);
+//      $Y=new fuzzy_number();
+//      $Y->trapezoid(0,0,0,0);
+    }else
+    {
+      $X=$this->getImportancesFN();
+      $this->createFunction();
+      $Y=$this->equation->fuzzy_direct($X,$cuts);
+      $Y->write("aggregation_cuts","aggregation_id",$aggregation_id);
+    }
+  }  
+  
+  function latex($functionName,$agg_id)
+  {
+    $tex="";
+    $eq=0;
+    $a0=0;
+    $a=array();
+    switch($functionName)
+    {
+      default:
+      case "simple_average" : 
+           $tex.="La ecuación empleada corresponde a un promedio simple:\n\\begin{equation}\\label{equ:aggregator".$agg_id."}\n y=\\frac{1}{N}\\sum_{i=1}^{N}{x_{i}}\n\\end{equation}\n";
+           $tex.="Esta estrategia de agregación da igual valor a cada uno de los efectos agregados\n";
+           break;
+      case "weighted_average" : 
+           $eq=new linear_combination($a0,$a);
+           $tex.="La ecuación empleada corresponde a un promedio ponderado:\n\\begin{equation}\\label{equ:aggregator".$agg_id."} \n".$eq->latex()."\n\\]\n";
+           $tex.="En esta ecuación, cada peso \$w_{i}\$ es proporcional al peso relativo del factor ambiental que se impactado.";
+           $tex.=" En otras palabras, si el efecto \$i\$ sucede sobre un factor ambiental cuyo peso relativo es \$p_{i}\$, entonces el valor del peso \$w_{i}\$ está dado por:\n";
+           $tex.="\\[\nw_{i}=\\frac{p_{i}}{\\sum_{i=1}^{N}p_{i}}\\end{equation}\n";
+           break;
+      case "maximum" : 
+           $eq=new maximum($a);
+           $tex.="La ecuación extrae el valor máximo de las variables:\n\\begin{equation}\\label{equ:aggregator".$agg_id."}\n ".$eq->latex()."\n\\end{equation}\n";
+           $tex.="Si la variable asociada toma valores negativos para los efectos perjudiciales, entonces, esta agregación es `optimista', en el sentido de que toma la importancia menos perjudicial.";
+           $tex.=" En caso contrario, esta agregación es `pesimista', en el sentido de que toma la importancia mas perjudicial.";
+           break;
+      case "minimum" : 
+           $eq=new minimum($a);
+           $tex.="La ecuación extrae el valor mínimo de las variables:\n\\begin{equation}\\label{equ:aggregator".$agg_id."}\n ".$eq->latex()."\n\\end{equation}\n";
+           $tex.="Si la variable asociada toma valores positivos para los efectos perjudiciales, entonces, esta agregación es `optimista', en el sentido de que toma la importancia menos perjudicial.";
+           $tex.=" En caso contrario, esta agregación es `pesimista', en el sentido de que toma la importancia mas perjudicial.";
+           break;
+    }
+    
+    return $tex;
+  }
+}
+
+
+
+
+?>

@@ -1,0 +1,205 @@
+<?php
+require_once('xmlthing.class.php');
+require_once('config/config.class.php');
+
+class block
+{
+  var $Xml;
+  var $strings;
+  var $configurationSettings;
+
+  function block()
+  {
+    if(!isset($_SESSION))
+    {
+      session_start();
+    }
+    $conf = new configuration();
+    $this->configurationSettings=$conf->readconfig('phpTDEIAconfig.txt');
+    require_once("locale/".$this->configurationSettings['locale'].".inc");
+    $this->strings=strings();
+  }
+
+  function connect()
+  {
+    $username="";
+    $userpass="";
+    if(isset($_SESSION) and $_SESSION['TDEIA_SESSION_TDEIA'])
+    {
+      $username=$this->configurationSettings['DBadmin'];
+      $userpass=$this->configurationSettings['DBadminpass'];
+    }else
+    {
+      $username=$this->configurationSettings['DBuser'];
+      $userpass=$this->configurationSettings['DBuserpass'];
+    }
+   if($link=mysql_connect($this->configurationSettings['DBserver'],$username,$userpass))
+    {
+      $sql="USE ".$this->configurationSettings['DBname'];
+      if(!mysql_query($sql))
+      {
+        echo $this->text('about_No_Database_connection');
+        return FALSE;
+      }
+    }else
+    {
+      return FALSE;
+    }
+    return $link;
+  }
+  
+  function text($str)
+  {
+    if(isset($this->strings[$str]))
+    {
+      return $this->strings[$str];
+    }else
+    {
+      return $str;
+    }
+  }
+  
+  function posttoget()
+  {
+    $str="";
+    unset($_POST['varId']);
+    foreach($_POST as $K=>$V)
+    {
+      $str.="&".$K."=".$V;
+    }
+    return $str;
+  }
+
+  function posttoinput($prefix)
+  {
+    $str="";
+//    unset($_POST['varId']);
+    foreach($_POST as $K=>$V)
+    {
+      $str.="<input type=\"hidden\" name=\"".$K."\" id=\"".$prefix.$K."\" value=\"".$V."\">\n";
+    }
+    return $str;
+  }
+
+  
+  function opener()
+  {
+    echo "<html>\n";
+    echo " <header>\n";
+    echo "  <title>\n";
+    echo "  </title>\n";
+    echo "  <meta HTTP-EQUIV=\"Content-Type\" CONTENT=\"text/html; charset=utf-8\" />\n";
+    echo "  <link rel=\"stylesheet\" type=\"text/css\" href=\"themes/".$this->configurationSettings['theme']."/style.css\" />\n";
+    echo "  <link rel=\"stylesheet\" type=\"text/css\" href=\"themes/".$this->configurationSettings['theme']."/styleMatrix.css\" />\n";
+    echo "  <link rel=\"shortcut icon\" href=\"themes/".$this->configurationSettings['theme']."/img/favicon.gif\" />\n";
+    echo "  <script type=\"text/javascript\" src=\"js/jscolor/jscolor.js\"></script>\n";
+    echo " </header>\n";
+  }
+
+  function closer()
+  {
+    echo "</html>\n";
+  }
+
+  function htmlSimpleOpen($Xml,$nivel)
+  {
+    for($i=0;$i<$nivel;$i++){echo "  ";}
+    echo "<".$Xml['type']." id='".$Xml['id']."' class='".$Xml['class']."'>\n";
+    if(isset($Xml['action']))
+    {
+      $X=new $Xml['action']();
+      $X->display();
+    }
+    return;    
+  }
+
+  function htmlSimpleClose($Xml,$nivel)
+  {
+    for($i=0;$i<$nivel;$i++){echo "  ";}
+    echo "</".$Xml['type'].">\n";
+    return;    
+  }
+
+  function htmlBlock($Xml,$nivel)
+  {
+    if(!is_array($Xml)){return;}
+    if(isset($Xml['attributes'])){$this->htmlSimpleOpen($Xml['attributes'],$nivel);}
+    foreach($Xml as $K=>$bl)
+    {
+      $this->htmlBlock($bl,$nivel+1);
+    }
+    if(isset($Xml['attributes'])){$this->htmlSimpleClose($Xml['attributes'],$nivel);}
+  }
+
+  function html($xmlFN)
+  {
+    $this->readXml($xmlFN);
+    $this->opener();
+    $this->htmlBlock($this->Xml['block'],0);
+    $this->closer();
+  }
+  
+  function readXml($fn)
+  {
+    $xmlstr=file_get_contents($fn,FILE_TEXT);
+    $xml = new XMLThing($xmlstr);
+    $this->Xml = $xml->parse(); 
+  }
+  
+  function allow($action,$object)
+  {
+    if(!isset($_SESSION["TDEIA_SESSION_TDEIA"])){return false;}
+    if(!isset($_SESSION["TDEIA_project_id"]) or ($_SESSION["TDEIA_project_id"]<1)){return false;}
+    if(!isset($_SESSION["TDEIA_user_id"]) or ($_SESSION["TDEIA_user_id"]<1)){return false;}
+    $project_id=$_SESSION["TDEIA_project_id"];
+    $user_id=$_SESSION["TDEIA_user_id"];
+    $sql="SELECT permissions.id FROM permissions
+                        INNER JOIN groups_permissions ON permissions.id=groups_permissions.permission_id
+                        INNER JOIN groups ON groups_permissions.group_id=groups.id
+                        INNER JOIN projects_users ON groups.id=projects_users.group_id
+                        WHERE project_id='".$project_id."'
+                        AND user_id='".$user_id."'
+                        AND action='".$action."'
+                        AND object='".$object."'
+                        AND active=1";
+    $result=mysql_query($sql) or die(mysql_error()."error : ".$sql);                        
+    if($result and mysql_num_rows($result)>0)
+    {
+      return true;
+    }
+    return false;
+  }
+  
+  function allowAny($object)
+  {
+    if(!isset($_SESSION["TDEIA_SESSION_TDEIA"])){return false;}
+    if(!isset($_SESSION["TDEIA_project_id"]) or ($_SESSION["TDEIA_project_id"]<1)){return false;}
+    if(!isset($_SESSION["TDEIA_user_id"]) or ($_SESSION["TDEIA_user_id"]<1)){return false;}
+    $project_id=$_SESSION["TDEIA_project_id"];
+    $user_id=$_SESSION["TDEIA_user_id"];
+    $sql="SELECT permissions.id FROM permissions
+                        INNER JOIN groups_permissions ON permissions.id=groups_permissions.permission_id
+                        INNER JOIN groups ON groups_permissions.group_id=groups.id
+                        INNER JOIN projects_users ON groups.id=projects_users.group_id
+                        WHERE project_id='".$project_id."'
+                        AND user_id='".$user_id."'
+                        AND object='".$object."'
+                        AND active=1";
+    $result=mysql_query($sql) or die(mysql_error()."error : ".$sql);                        
+    if($result and mysql_num_rows($result)>0)
+    {
+      return true;
+    }
+    return false;
+  }
+
+  function allowCreate($object){return $this->allow("CREATE",$object);}
+  function allowRead($object){  return $this->allow("READ"  ,$object);}
+  function allowUpdate($object){return $this->allow("UPDATE",$object);}
+  function allowDelete($object){return $this->allow("DELETE",$object);}
+  
+  function display()
+  {
+  }
+}
+?>

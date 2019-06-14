@@ -1,0 +1,20 @@
+# Default configuration file for TDEIA matrix, tree, effect classes
+:menuTreeMarginLeft = 5
+:menuTreeMarginTop = 5
+:menuTreeTab = 20
+:menuTreeNodeHeight = 18
+:scrollThick = 15
+:factorWidth = 100
+:actionHeight = 20
+:cellWidth = 50
+:cellHeight = 20
+:matrixWidth = 520
+:matrixHeight = 330
+:colorAggregations = #FF0000,#FFFFFF,#0000FF
+:colorImportance = #FF0000,#FFFFFF,#0000FF
+:colorPropierties = #FFFFFF,#FF0000
+:effectCellOffset = 40
+:effectCellHeight = 20
+
+
+

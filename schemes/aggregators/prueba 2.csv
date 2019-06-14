@@ -1,0 +1,6 @@
+NAME	DESCRIPTION	IMP	EQUATION	MIN	MAX	LABEL	L0	R0	L1	R1	LABEL	L0	R0	L1	R1	LABEL	L0	R0	L1	R1	LABEL	L0	R0	L1	R1	LABEL	L0	R0	L1	R1
+Importancia	Importancia de un efecto	1	linear_combination	-1	1	Muy Perjudicial	-1	-0.692	-1	-0.846	Perjudicial	-0.846	-0.385	-0.692	-0.538	Leve	-0.538	-0.077	-0.385	-0.231	Neutra	-0.231	0.231	-0.077	0.077	Beneficiosa	0.077	1	0.231	1
+Importancia media	Promedio de importancias	0	simple_average	-1	1	Muy Perjudicial	-1	-0.692	-1	-0.846	Perjudicial	-0.846	-0.385	-0.692	-0.538	Leve	-0.538	-0.077	-0.385	-0.231	Neutra	-0.231	0.231	-0.077	0.077	Beneficiosa	0.077	1	0.231	1
+Importancia ponderada	Promedio de importancias ponderado por el peso del factor	0	weighted_average	-1	1	Muy Perjudicial	-1	-0.692	-1	-0.846	Perjudicial	-0.846	-0.385	-0.692	-0.538	Leve	-0.538	-0.077	-0.385	-0.231	Neutra	-0.231	0.231	-0.077	0.077	Beneficiosa	0.077	1	0.231	1
+Importancia dulce	Mayor importancia	0	maximum	-1	1	Muy Perjudicial	-1	-0.692	-1	-0.846	Perjudicial	-0.846	-0.385	-0.692	-0.538	Leve	-0.538	-0.077	-0.385	-0.231	Neutra	-0.231	0.231	-0.077	0.077	Beneficiosa	0.077	1	0.231	1
+Importancia ácida	Mínima importancia	0	minimum	-1	1	Muy Perjudicial	-1	-0.692	-1	-0.846	Perjudicial	-0.846	-0.385	-0.692	-0.538	Leve	-0.538	-0.077	-0.385	-0.231	Neutra	-0.231	0.231	-0.077	0.077	Beneficiosa	0.077	1	0.231	1

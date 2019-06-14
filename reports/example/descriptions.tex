@@ -1,0 +1,1813 @@
+\newcommand{\tdeiaDescription}[2]
+{
+ \ifthenelse{\equal{#1}{projects}}{\tdeiaDescriptionProject{#2}}{}
+ \ifthenelse{\equal{#1}{aggregators}}{\tdeiaDescriptionAggregator{#2}}{}
+ \ifthenelse{\equal{#1}{factors}}{\tdeiaDescriptionFactor{#2}}{}
+ \ifthenelse{\equal{#1}{actions}}{\tdeiaDescriptionAction{#2}}{}
+ \ifthenelse{\equal{#1}{effects}}{\tdeiaDescriptionEffect{#2}}{}
+ \ifthenelse{\equal{#1}{effect_propierties}}{\tdeiaDescriptionEffectPropierty{#2}}{}
+ \ifthenelse{\equal{#1}{inputs}}{\tdeiaDescriptionInput{#2}}{}
+ \ifthenelse{\equal{#1}{variables}}{\tdeiaDescriptionVariable{#2}}{}
+}
+
+\newcommand{\tdeiaDescriptionProject}[1]
+{
+ \ifthenelse{\equal{#1}{1}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+}
+
+\newcommand{\tdeiaDescriptionAggregator}[1]
+{
+ \ifthenelse{\equal{#1}{1}}
+ {
+\begin{tdeiaDescriptionContent}
+Importancia de un efecto
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{2}}
+ {
+\begin{tdeiaDescriptionContent}
+Promedio de importancias
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{3}}
+ {
+\begin{tdeiaDescriptionContent}
+Promedio de importancias ponderado por el peso del factor
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{4}}
+ {
+\begin{tdeiaDescriptionContent}
+Mayor importancia
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{5}}
+ {
+\begin{tdeiaDescriptionContent}
+Mínima importancia
+\end{tdeiaDescriptionContent}
+ }{}
+}
+
+\newcommand{\tdeiaDescriptionFactor}[1]
+{
+ \ifthenelse{\equal{#1}{1}}
+ {
+\begin{tdeiaDescriptionContent}
+No description
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{2}}
+ {
+\begin{tdeiaDescriptionContent}
+No description
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{3}}
+ {
+\begin{tdeiaDescriptionContent}
+No description
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{4}}
+ {
+\begin{tdeiaDescriptionContent}
+No description
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{5}}
+ {
+\begin{tdeiaDescriptionContent}
+No description
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{6}}
+ {
+\begin{tdeiaDescriptionContent}
+No description
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{7}}
+ {
+\begin{tdeiaDescriptionContent}
+No description
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{8}}
+ {
+\begin{tdeiaDescriptionContent}
+No description
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{9}}
+ {
+\begin{tdeiaDescriptionContent}
+No description
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{10}}
+ {
+\begin{tdeiaDescriptionContent}
+No description
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{11}}
+ {
+\begin{tdeiaDescriptionContent}
+No description
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{12}}
+ {
+\begin{tdeiaDescriptionContent}
+No description
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{13}}
+ {
+\begin{tdeiaDescriptionContent}
+No description
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{14}}
+ {
+\begin{tdeiaDescriptionContent}
+No description
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{15}}
+ {
+\begin{tdeiaDescriptionContent}
+No description
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{16}}
+ {
+\begin{tdeiaDescriptionContent}
+No description
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{17}}
+ {
+\begin{tdeiaDescriptionContent}
+No description
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{18}}
+ {
+\begin{tdeiaDescriptionContent}
+No description
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{19}}
+ {
+\begin{tdeiaDescriptionContent}
+No description
+\end{tdeiaDescriptionContent}
+ }{}
+}
+
+\newcommand{\tdeiaDescriptionAction}[1]
+{
+ \ifthenelse{\equal{#1}{1}}
+ {
+\begin{tdeiaDescriptionContent}
+No description
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{2}}
+ {
+\begin{tdeiaDescriptionContent}
+No description
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{3}}
+ {
+\begin{tdeiaDescriptionContent}
+No description
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{4}}
+ {
+\begin{tdeiaDescriptionContent}
+No description
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{5}}
+ {
+\begin{tdeiaDescriptionContent}
+No description
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{6}}
+ {
+\begin{tdeiaDescriptionContent}
+No description
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{7}}
+ {
+\begin{tdeiaDescriptionContent}
+No description
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{8}}
+ {
+\begin{tdeiaDescriptionContent}
+No description
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{9}}
+ {
+\begin{tdeiaDescriptionContent}
+No description
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{10}}
+ {
+\begin{tdeiaDescriptionContent}
+No description
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{11}}
+ {
+\begin{tdeiaDescriptionContent}
+No description
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{12}}
+ {
+\begin{tdeiaDescriptionContent}
+No description
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{13}}
+ {
+\begin{tdeiaDescriptionContent}
+No description
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{14}}
+ {
+\begin{tdeiaDescriptionContent}
+No description
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{15}}
+ {
+\begin{tdeiaDescriptionContent}
+No description
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{16}}
+ {
+\begin{tdeiaDescriptionContent}
+No description
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{17}}
+ {
+\begin{tdeiaDescriptionContent}
+No description
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{18}}
+ {
+\begin{tdeiaDescriptionContent}
+No description
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{19}}
+ {
+\begin{tdeiaDescriptionContent}
+No description
+\end{tdeiaDescriptionContent}
+ }{}
+}
+
+\newcommand{\tdeiaDescriptionEffect}[1]
+{
+ \ifthenelse{\equal{#1}{1}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{2}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{3}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{4}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{5}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{6}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{7}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{8}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{9}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{10}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{11}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{12}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{13}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{14}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{15}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{16}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{18}}
+ {
+\begin{tdeiaDescriptionContent}
+
+\end{tdeiaDescriptionContent}
+ }{}
+}
+
+\newcommand{\tdeiaDescriptionEffectPropierty}[1]
+{
+ \ifthenelse{\equal{#1}{1}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{2}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{3}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{4}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{5}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{6}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{7}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{8}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{9}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{10}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{11}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{12}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+}
+
+\newcommand{\tdeiaDescriptionInput}[1]
+{
+ \ifthenelse{\equal{#1}{1}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{2}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{3}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{4}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{5}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{6}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{7}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{8}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{9}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{10}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{11}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{12}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{13}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{14}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{15}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{16}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{17}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{18}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{19}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{20}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{21}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{22}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{23}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{24}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{25}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{26}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{27}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{28}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{29}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{30}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{31}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{32}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{33}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{34}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{35}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{36}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{37}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{38}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{39}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{40}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{41}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{42}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{43}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{44}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{45}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{46}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{47}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{48}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{49}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{50}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{51}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{52}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{53}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{54}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{55}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{56}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{57}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{58}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{59}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{60}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{61}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{62}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{63}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{64}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{65}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{66}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{67}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{68}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{69}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{70}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{71}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{72}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{73}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{74}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{75}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{76}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{77}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{78}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{79}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{80}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{81}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{82}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{83}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{84}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{85}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{86}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{87}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{88}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{89}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{90}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{91}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{92}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{93}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{94}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{95}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{96}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{97}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{98}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{99}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{100}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{101}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{102}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{103}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{104}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{105}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{106}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{107}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{108}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{109}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{110}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{111}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{112}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{113}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{114}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{115}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{116}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{117}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{118}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{119}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{120}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{121}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{122}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{123}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{124}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{125}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{126}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{127}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{128}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{129}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{130}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{131}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{132}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{133}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{134}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{135}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{136}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{137}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{138}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{139}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{140}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{141}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{142}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{143}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{144}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{145}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{146}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{147}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{148}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{149}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{150}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{151}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{152}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{153}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{154}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{155}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{156}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{157}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{158}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{159}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{160}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{161}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{162}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{163}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{164}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{165}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{166}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{167}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{168}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{169}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{170}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{171}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{172}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{173}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{174}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{175}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{176}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{177}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{178}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{179}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{180}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{181}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{182}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{183}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{184}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{185}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{186}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{187}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{188}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{189}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{190}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{191}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{192}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{205}}
+ {
+\begin{tdeiaDescriptionContent}
+
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{206}}
+ {
+\begin{tdeiaDescriptionContent}
+
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{207}}
+ {
+\begin{tdeiaDescriptionContent}
+
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{208}}
+ {
+\begin{tdeiaDescriptionContent}
+
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{209}}
+ {
+\begin{tdeiaDescriptionContent}
+
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{210}}
+ {
+\begin{tdeiaDescriptionContent}
+
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{211}}
+ {
+\begin{tdeiaDescriptionContent}
+
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{212}}
+ {
+\begin{tdeiaDescriptionContent}
+
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{213}}
+ {
+\begin{tdeiaDescriptionContent}
+
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{214}}
+ {
+\begin{tdeiaDescriptionContent}
+
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{215}}
+ {
+\begin{tdeiaDescriptionContent}
+
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{216}}
+ {
+\begin{tdeiaDescriptionContent}
+
+\end{tdeiaDescriptionContent}
+ }{}
+}
+
+\newcommand{\tdeiaDescriptionVariable}[1]
+{
+ \ifthenelse{\equal{#1}{13}}
+ {
+\begin{tdeiaDescriptionContent}
+Importancia de un efecto
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{14}}
+ {
+\begin{tdeiaDescriptionContent}
+Promedio de importancias
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{15}}
+ {
+\begin{tdeiaDescriptionContent}
+Promedio de importancias ponderado por el peso del factor
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{16}}
+ {
+\begin{tdeiaDescriptionContent}
+Mayor importancia
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{17}}
+ {
+\begin{tdeiaDescriptionContent}
+Mínima importancia
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{1}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{2}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{3}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{4}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{5}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{6}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{7}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{8}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{9}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{10}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{11}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+ \ifthenelse{\equal{#1}{12}}
+ {
+\begin{tdeiaDescriptionContent}
+Sin descripción
+\end{tdeiaDescriptionContent}
+ }{}
+}
+
+\newcommand{\tdeiaDescriptionThisProject}
+{
+  \tdeiaDescriptionProject{1}
+}
+

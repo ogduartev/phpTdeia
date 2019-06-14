@@ -1,0 +1,23 @@
+<block id="tdeia" type="body" class="tdeia">
+  <block id="body" type="div" class="body">
+    <block id="logo" type="div" class="logo" action="logo"></block>
+    <block id="title_frame" type="div" class="title_frame">
+      <block id="title" type="div" class="title" action="title"></block>
+      <block id="user" type="div" class="user" action="user">
+        <block id="adminlogout" type="div" class="admin_logout" action="adminlogout"></block>
+      </block>
+    </block>
+    <block id="factors" type="div" class="menu_factors" action="menu_factors">
+      <block id="level_factors" type="div" class="levels" action="level_factors"></block>
+    </block>
+    <block id="actions" type="div" class="menu_actions" action="menu_actions">
+      <block id="level_actions" type="div" class="levels" action="level_actions"></block>
+    </block>
+    <block id="matrix" type="div" class="matriz" action="matrix">
+      <block id="matrixselector" type="div" class="matrixselector" action="matrixselector"></block>
+    </block>
+    <block id="edit_action" type="div" class="edit_action" action="edit_action"></block>
+    <block id="tdeia" type="div" class="main" action="tdeia"></block>
+  </block>
+</block>
+

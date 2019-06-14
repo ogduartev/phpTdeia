@@ -1,0 +1,421 @@
+\select@language {spanish}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {1.1}{\ignorespaces Variable Ling\IeC {\"u}\IeC {\'\i }stica asociada a la 'Importancia'}}{2}{table.1.1}
+\contentsline {table}{\numberline {1.2}{\ignorespaces Operadores de agregaci\IeC {\'o}n}}{3}{table.1.2}
+\contentsline {table}{\numberline {1.3}{\ignorespaces Variable Ling\IeC {\"u}\IeC {\'\i }stica asociada al agregador 'Importancia media'}}{4}{table.1.3}
+\contentsline {table}{\numberline {1.4}{\ignorespaces Variable Ling\IeC {\"u}\IeC {\'\i }stica asociada al agregador 'Importancia ponderada'}}{4}{table.1.4}
+\contentsline {table}{\numberline {1.5}{\ignorespaces Variable Ling\IeC {\"u}\IeC {\'\i }stica asociada al agregador 'Importancia m\IeC {\'a}xima'}}{5}{table.1.5}
+\contentsline {table}{\numberline {1.6}{\ignorespaces Variable Ling\IeC {\"u}\IeC {\'\i }stica asociada al agregador 'Importancia m\IeC {\'\i }nima'}}{5}{table.1.6}
+\contentsline {table}{\numberline {1.7}{\ignorespaces Resumen de las propiedades usadas}}{6}{table.1.7}
+\contentsline {table}{\numberline {1.8}{\ignorespaces Explicaci\IeC {\'o}n de la propiedad `Intensidad'}}{7}{table.1.8}
+\contentsline {table}{\numberline {1.9}{\ignorespaces Explicaci\IeC {\'o}n de la propiedad `Extensi\IeC {\'o}n'}}{7}{table.1.9}
+\contentsline {table}{\numberline {1.10}{\ignorespaces Explicaci\IeC {\'o}n de la propiedad `Extensi\IeC {\'o}n cr\IeC {\'\i }tica'}}{8}{table.1.10}
+\contentsline {table}{\numberline {1.11}{\ignorespaces Explicaci\IeC {\'o}n de la propiedad `Momento'}}{8}{table.1.11}
+\contentsline {table}{\numberline {1.12}{\ignorespaces Explicaci\IeC {\'o}n de la propiedad `Momento cr\IeC {\'\i }tico'}}{9}{table.1.12}
+\contentsline {table}{\numberline {1.13}{\ignorespaces Explicaci\IeC {\'o}n de la propiedad `Persistencia'}}{9}{table.1.13}
+\contentsline {table}{\numberline {1.14}{\ignorespaces Explicaci\IeC {\'o}n de la propiedad `Reversibilidad'}}{10}{table.1.14}
+\contentsline {table}{\numberline {1.15}{\ignorespaces Explicaci\IeC {\'o}n de la propiedad `Sinerg\IeC {\'\i }a'}}{10}{table.1.15}
+\contentsline {table}{\numberline {1.16}{\ignorespaces Explicaci\IeC {\'o}n de la propiedad `Acumulaci\IeC {\'o}n'}}{11}{table.1.16}
+\contentsline {table}{\numberline {1.17}{\ignorespaces Explicaci\IeC {\'o}n de la propiedad `Efecto'}}{11}{table.1.17}
+\contentsline {table}{\numberline {1.18}{\ignorespaces Explicaci\IeC {\'o}n de la propiedad `Periodicidad'}}{12}{table.1.18}
+\contentsline {table}{\numberline {1.19}{\ignorespaces Explicaci\IeC {\'o}n de la propiedad `Recuperabilidad'}}{12}{table.1.19}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1}{Resumen de efectos individuales y sus importancias}}{31}{table.3.1}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Matrices de N\IeC {\'u}mero de efectos, importancia y propiedades de efecto}}{32}{table.3.2}
+\contentsline {table}{\numberline {3.3}{Valoraci\IeC {\'o}n de las propiedades del efecto `F 1.1.1.-A 1.2.2.' y de su importancia}}{33}{table.3.3}
+\contentsline {table}{\numberline {3.4}{Valoraci\IeC {\'o}n de las propiedades del efecto `F 1.1.1.-A 2.1.1.' y de su importancia}}{36}{table.3.4}
+\contentsline {table}{\numberline {3.5}{Valoraci\IeC {\'o}n de las propiedades del efecto `F 1.1.1.-A 2.1.2.' y de su importancia}}{39}{table.3.5}
+\contentsline {table}{\numberline {3.6}{Valoraci\IeC {\'o}n de las propiedades del efecto `F 1.1.2.-A 1.1.1.' y de su importancia}}{42}{table.3.6}
+\contentsline {table}{\numberline {3.7}{Valoraci\IeC {\'o}n de las propiedades del efecto `F 1.1.3.-A 1.2.1.' y de su importancia}}{45}{table.3.7}
+\contentsline {table}{\numberline {3.8}{Valoraci\IeC {\'o}n de las propiedades del efecto `F 1.1.4.-A 1.1.1.' y de su importancia}}{48}{table.3.8}
+\contentsline {table}{\numberline {3.9}{Valoraci\IeC {\'o}n de las propiedades del efecto `F 1.2.1.-A 1.2.1.' y de su importancia}}{51}{table.3.9}
+\contentsline {table}{\numberline {3.10}{Valoraci\IeC {\'o}n de las propiedades del efecto `F 1.2.2.-A 1.1.2.' y de su importancia}}{54}{table.3.10}
+\contentsline {table}{\numberline {3.11}{Valoraci\IeC {\'o}n de las propiedades del efecto `F 1.2.2.-A 1.1.4.' y de su importancia}}{57}{table.3.11}
+\contentsline {table}{\numberline {3.12}{Valoraci\IeC {\'o}n de las propiedades del efecto `F 2.1.1.-A 2.1.3.' y de su importancia}}{60}{table.3.12}
+\contentsline {table}{\numberline {3.13}{Valoraci\IeC {\'o}n de las propiedades del efecto `F 2.1.2.-A 2.1.4.' y de su importancia}}{63}{table.3.13}
+\contentsline {table}{\numberline {3.14}{Valoraci\IeC {\'o}n de las propiedades del efecto `F 2.1.3.-A 2.2.1.' y de su importancia}}{66}{table.3.14}
+\contentsline {table}{\numberline {3.15}{Valoraci\IeC {\'o}n de las propiedades del efecto `F 2.1.4.-A 2.2.2.' y de su importancia}}{69}{table.3.15}
+\contentsline {table}{\numberline {3.16}{Valoraci\IeC {\'o}n de las propiedades del efecto `F 2.2.1.-A 1.1.3.' y de su importancia}}{72}{table.3.16}
+\contentsline {table}{\numberline {3.17}{Valoraci\IeC {\'o}n de las propiedades del efecto `F 2.2.1.-A 2.1.1.' y de su importancia}}{75}{table.3.17}
+\contentsline {table}{\numberline {3.18}{Valoraci\IeC {\'o}n de las propiedades del efecto `F 2.2.2.-A 1.1.2.' y de su importancia}}{78}{table.3.18}
+\contentsline {table}{\numberline {3.19}{Valoraci\IeC {\'o}n de las propiedades del efecto `la prueba' y de su importancia}}{81}{table.3.19}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces Matrices del agregador `Importancia media'}}{86}{table.4.1}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Matrices del agregador `Importancia ponderada'}}{86}{table.4.2}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Matrices del agregador `Importancia m\IeC {\'a}xima'}}{86}{table.4.3}
+\contentsline {table}{\numberline {4.4}{\ignorespaces Matrices del agregador `Importancia m\IeC {\'\i }nima'}}{86}{table.4.4}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {A.1}{\ignorespaces Matriz de Efectos. $(2 \times 1$)}}{90}{table.Alph1.1}
+\contentsline {table}{\numberline {A.2}{\ignorespaces Matriz de Efectos. $(3 \times 3$)}}{91}{table.Alph1.2}
+\contentsline {table}{\numberline {A.3}{\ignorespaces Matriz de Importancia. $(2 \times 1$)Etiqueta}}{92}{table.Alph1.3}
+\contentsline {table}{\numberline {A.4}{\ignorespaces Matriz de Importancia. $(3 \times 3$)Etiqueta}}{93}{table.Alph1.4}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {B.1}{\ignorespaces Matriz de Intensidad. $(2 \times 1$)Etiqueta}}{96}{table.Alph2.1}
+\contentsline {table}{\numberline {B.2}{\ignorespaces Matriz de Intensidad. $(3 \times 3$)Etiqueta}}{97}{table.Alph2.2}
+\contentsline {table}{\numberline {B.3}{\ignorespaces Matriz de Extension. $(2 \times 1$)Etiqueta}}{98}{table.Alph2.3}
+\contentsline {table}{\numberline {B.4}{\ignorespaces Matriz de Extension. $(3 \times 3$)Etiqueta}}{99}{table.Alph2.4}
+\contentsline {table}{\numberline {B.5}{\ignorespaces Matriz de Extension critica. $(2 \times 1$)Etiqueta}}{100}{table.Alph2.5}
+\contentsline {table}{\numberline {B.6}{\ignorespaces Matriz de Extension critica. $(3 \times 3$)Etiqueta}}{101}{table.Alph2.6}
+\contentsline {table}{\numberline {B.7}{\ignorespaces Matriz de Momento. $(2 \times 1$)Etiqueta}}{102}{table.Alph2.7}
+\contentsline {table}{\numberline {B.8}{\ignorespaces Matriz de Momento. $(3 \times 3$)Etiqueta}}{103}{table.Alph2.8}
+\contentsline {table}{\numberline {B.9}{\ignorespaces Matriz de Momento critico. $(2 \times 1$)Etiqueta}}{104}{table.Alph2.9}
+\contentsline {table}{\numberline {B.10}{\ignorespaces Matriz de Momento critico. $(3 \times 3$)Etiqueta}}{105}{table.Alph2.10}
+\contentsline {table}{\numberline {B.11}{\ignorespaces Matriz de Persistencia. $(2 \times 1$)Etiqueta}}{106}{table.Alph2.11}
+\contentsline {table}{\numberline {B.12}{\ignorespaces Matriz de Persistencia. $(3 \times 3$)Etiqueta}}{107}{table.Alph2.12}
+\contentsline {table}{\numberline {B.13}{\ignorespaces Matriz de Reversibilidad. $(2 \times 1$)Etiqueta}}{108}{table.Alph2.13}
+\contentsline {table}{\numberline {B.14}{\ignorespaces Matriz de Reversibilidad. $(3 \times 3$)Etiqueta}}{109}{table.Alph2.14}
+\contentsline {table}{\numberline {B.15}{\ignorespaces Matriz de Sinergia. $(2 \times 1$)Etiqueta}}{110}{table.Alph2.15}
+\contentsline {table}{\numberline {B.16}{\ignorespaces Matriz de Sinergia. $(3 \times 3$)Etiqueta}}{111}{table.Alph2.16}
+\contentsline {table}{\numberline {B.17}{\ignorespaces Matriz de Acumulacion. $(2 \times 1$)Etiqueta}}{112}{table.Alph2.17}
+\contentsline {table}{\numberline {B.18}{\ignorespaces Matriz de Acumulacion. $(3 \times 3$)Etiqueta}}{113}{table.Alph2.18}
+\contentsline {table}{\numberline {B.19}{\ignorespaces Matriz de Efecto. $(2 \times 1$)Etiqueta}}{114}{table.Alph2.19}
+\contentsline {table}{\numberline {B.20}{\ignorespaces Matriz de Efecto. $(3 \times 3$)Etiqueta}}{115}{table.Alph2.20}
+\contentsline {table}{\numberline {B.21}{\ignorespaces Matriz de Periodicidad. $(2 \times 1$)Etiqueta}}{116}{table.Alph2.21}
+\contentsline {table}{\numberline {B.22}{\ignorespaces Matriz de Periodicidad. $(3 \times 3$)Etiqueta}}{117}{table.Alph2.22}
+\contentsline {table}{\numberline {B.23}{\ignorespaces Matriz de Recuperabilidad. $(2 \times 1$)Etiqueta}}{118}{table.Alph2.23}
+\contentsline {table}{\numberline {B.24}{\ignorespaces Matriz de Recuperabilidad. $(3 \times 3$)Etiqueta}}{119}{table.Alph2.24}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {C.1}{\ignorespaces Matriz de Importancia media. $(0 \times 0$)Etiqueta}}{122}{table.Alph3.1}
+\contentsline {table}{\numberline {C.2}{\ignorespaces Matriz de Importancia media. $(0 \times 1$)Etiqueta}}{123}{table.Alph3.2}
+\contentsline {table}{\numberline {C.3}{\ignorespaces Matriz de Importancia media. $(0 \times 2$)Etiqueta}}{124}{table.Alph3.3}
+\contentsline {table}{\numberline {C.4}{\ignorespaces Matriz de Importancia media. $(0 \times 3$)Etiqueta}}{125}{table.Alph3.4}
+\contentsline {table}{\numberline {C.5}{\ignorespaces Matriz de Importancia media. $(1 \times 0$)Etiqueta}}{126}{table.Alph3.5}
+\contentsline {table}{\numberline {C.6}{\ignorespaces Matriz de Importancia media. $(1 \times 1$)Etiqueta}}{127}{table.Alph3.6}
+\contentsline {table}{\numberline {C.7}{\ignorespaces Matriz de Importancia media. $(1 \times 2$)Etiqueta}}{128}{table.Alph3.7}
+\contentsline {table}{\numberline {C.8}{\ignorespaces Matriz de Importancia media. $(1 \times 3$)Etiqueta}}{129}{table.Alph3.8}
+\contentsline {table}{\numberline {C.9}{\ignorespaces Matriz de Importancia media. $(2 \times 0$)Etiqueta}}{130}{table.Alph3.9}
+\contentsline {table}{\numberline {C.10}{\ignorespaces Matriz de Importancia media. $(2 \times 1$)Etiqueta}}{131}{table.Alph3.10}
+\contentsline {table}{\numberline {C.11}{\ignorespaces Matriz de Importancia media. $(2 \times 2$)Etiqueta}}{132}{table.Alph3.11}
+\contentsline {table}{\numberline {C.12}{\ignorespaces Matriz de Importancia media. $(2 \times 3$)Etiqueta}}{133}{table.Alph3.12}
+\contentsline {table}{\numberline {C.13}{\ignorespaces Matriz de Importancia media. $(3 \times 0$)Etiqueta}}{134}{table.Alph3.13}
+\contentsline {table}{\numberline {C.14}{\ignorespaces Matriz de Importancia media. $(3 \times 1$)Etiqueta}}{135}{table.Alph3.14}
+\contentsline {table}{\numberline {C.15}{\ignorespaces Matriz de Importancia media. $(3 \times 2$)Etiqueta}}{136}{table.Alph3.15}
+\contentsline {table}{\numberline {C.16}{\ignorespaces Matriz de Importancia media. $(3 \times 3$)Etiqueta}}{137}{table.Alph3.16}
+\contentsline {table}{\numberline {C.17}{\ignorespaces Matriz de Importancia ponderada. $(0 \times 0$)Etiqueta}}{138}{table.Alph3.17}
+\contentsline {table}{\numberline {C.18}{\ignorespaces Matriz de Importancia ponderada. $(0 \times 1$)Etiqueta}}{139}{table.Alph3.18}
+\contentsline {table}{\numberline {C.19}{\ignorespaces Matriz de Importancia ponderada. $(0 \times 2$)Etiqueta}}{140}{table.Alph3.19}
+\contentsline {table}{\numberline {C.20}{\ignorespaces Matriz de Importancia ponderada. $(0 \times 3$)Etiqueta}}{141}{table.Alph3.20}
+\contentsline {table}{\numberline {C.21}{\ignorespaces Matriz de Importancia ponderada. $(1 \times 0$)Etiqueta}}{142}{table.Alph3.21}
+\contentsline {table}{\numberline {C.22}{\ignorespaces Matriz de Importancia ponderada. $(1 \times 1$)Etiqueta}}{143}{table.Alph3.22}
+\contentsline {table}{\numberline {C.23}{\ignorespaces Matriz de Importancia ponderada. $(1 \times 2$)Etiqueta}}{144}{table.Alph3.23}
+\contentsline {table}{\numberline {C.24}{\ignorespaces Matriz de Importancia ponderada. $(1 \times 3$)Etiqueta}}{145}{table.Alph3.24}
+\contentsline {table}{\numberline {C.25}{\ignorespaces Matriz de Importancia ponderada. $(2 \times 0$)Etiqueta}}{146}{table.Alph3.25}
+\contentsline {table}{\numberline {C.26}{\ignorespaces Matriz de Importancia ponderada. $(2 \times 1$)Etiqueta}}{147}{table.Alph3.26}
+\contentsline {table}{\numberline {C.27}{\ignorespaces Matriz de Importancia ponderada. $(2 \times 2$)Etiqueta}}{148}{table.Alph3.27}
+\contentsline {table}{\numberline {C.28}{\ignorespaces Matriz de Importancia ponderada. $(2 \times 3$)Etiqueta}}{149}{table.Alph3.28}
+\contentsline {table}{\numberline {C.29}{\ignorespaces Matriz de Importancia ponderada. $(3 \times 0$)Etiqueta}}{150}{table.Alph3.29}
+\contentsline {table}{\numberline {C.30}{\ignorespaces Matriz de Importancia ponderada. $(3 \times 1$)Etiqueta}}{151}{table.Alph3.30}
+\contentsline {table}{\numberline {C.31}{\ignorespaces Matriz de Importancia ponderada. $(3 \times 2$)Etiqueta}}{152}{table.Alph3.31}
+\contentsline {table}{\numberline {C.32}{\ignorespaces Matriz de Importancia ponderada. $(3 \times 3$)Etiqueta}}{153}{table.Alph3.32}
+\contentsline {table}{\numberline {C.33}{\ignorespaces Matriz de Importancia maxima. $(0 \times 0$)Etiqueta}}{154}{table.Alph3.33}
+\contentsline {table}{\numberline {C.34}{\ignorespaces Matriz de Importancia maxima. $(0 \times 1$)Etiqueta}}{155}{table.Alph3.34}
+\contentsline {table}{\numberline {C.35}{\ignorespaces Matriz de Importancia maxima. $(0 \times 2$)Etiqueta}}{156}{table.Alph3.35}
+\contentsline {table}{\numberline {C.36}{\ignorespaces Matriz de Importancia maxima. $(0 \times 3$)Etiqueta}}{157}{table.Alph3.36}
+\contentsline {table}{\numberline {C.37}{\ignorespaces Matriz de Importancia maxima. $(1 \times 0$)Etiqueta}}{158}{table.Alph3.37}
+\contentsline {table}{\numberline {C.38}{\ignorespaces Matriz de Importancia maxima. $(1 \times 1$)Etiqueta}}{159}{table.Alph3.38}
+\contentsline {table}{\numberline {C.39}{\ignorespaces Matriz de Importancia maxima. $(1 \times 2$)Etiqueta}}{160}{table.Alph3.39}
+\contentsline {table}{\numberline {C.40}{\ignorespaces Matriz de Importancia maxima. $(1 \times 3$)Etiqueta}}{161}{table.Alph3.40}
+\contentsline {table}{\numberline {C.41}{\ignorespaces Matriz de Importancia maxima. $(2 \times 0$)Etiqueta}}{162}{table.Alph3.41}
+\contentsline {table}{\numberline {C.42}{\ignorespaces Matriz de Importancia maxima. $(2 \times 1$)Etiqueta}}{163}{table.Alph3.42}
+\contentsline {table}{\numberline {C.43}{\ignorespaces Matriz de Importancia maxima. $(2 \times 2$)Etiqueta}}{164}{table.Alph3.43}
+\contentsline {table}{\numberline {C.44}{\ignorespaces Matriz de Importancia maxima. $(2 \times 3$)Etiqueta}}{165}{table.Alph3.44}
+\contentsline {table}{\numberline {C.45}{\ignorespaces Matriz de Importancia maxima. $(3 \times 0$)Etiqueta}}{166}{table.Alph3.45}
+\contentsline {table}{\numberline {C.46}{\ignorespaces Matriz de Importancia maxima. $(3 \times 1$)Etiqueta}}{167}{table.Alph3.46}
+\contentsline {table}{\numberline {C.47}{\ignorespaces Matriz de Importancia maxima. $(3 \times 2$)Etiqueta}}{168}{table.Alph3.47}
+\contentsline {table}{\numberline {C.48}{\ignorespaces Matriz de Importancia maxima. $(3 \times 3$)Etiqueta}}{169}{table.Alph3.48}
+\contentsline {table}{\numberline {C.49}{\ignorespaces Matriz de Importancia minima. $(0 \times 0$)Etiqueta}}{170}{table.Alph3.49}
+\contentsline {table}{\numberline {C.50}{\ignorespaces Matriz de Importancia minima. $(0 \times 1$)Etiqueta}}{171}{table.Alph3.50}
+\contentsline {table}{\numberline {C.51}{\ignorespaces Matriz de Importancia minima. $(0 \times 2$)Etiqueta}}{172}{table.Alph3.51}
+\contentsline {table}{\numberline {C.52}{\ignorespaces Matriz de Importancia minima. $(0 \times 3$)Etiqueta}}{173}{table.Alph3.52}
+\contentsline {table}{\numberline {C.53}{\ignorespaces Matriz de Importancia minima. $(1 \times 0$)Etiqueta}}{174}{table.Alph3.53}
+\contentsline {table}{\numberline {C.54}{\ignorespaces Matriz de Importancia minima. $(1 \times 1$)Etiqueta}}{175}{table.Alph3.54}
+\contentsline {table}{\numberline {C.55}{\ignorespaces Matriz de Importancia minima. $(1 \times 2$)Etiqueta}}{176}{table.Alph3.55}
+\contentsline {table}{\numberline {C.56}{\ignorespaces Matriz de Importancia minima. $(1 \times 3$)Etiqueta}}{177}{table.Alph3.56}
+\contentsline {table}{\numberline {C.57}{\ignorespaces Matriz de Importancia minima. $(2 \times 0$)Etiqueta}}{178}{table.Alph3.57}
+\contentsline {table}{\numberline {C.58}{\ignorespaces Matriz de Importancia minima. $(2 \times 1$)Etiqueta}}{179}{table.Alph3.58}
+\contentsline {table}{\numberline {C.59}{\ignorespaces Matriz de Importancia minima. $(2 \times 2$)Etiqueta}}{180}{table.Alph3.59}
+\contentsline {table}{\numberline {C.60}{\ignorespaces Matriz de Importancia minima. $(2 \times 3$)Etiqueta}}{181}{table.Alph3.60}
+\contentsline {table}{\numberline {C.61}{\ignorespaces Matriz de Importancia minima. $(3 \times 0$)Etiqueta}}{182}{table.Alph3.61}
+\contentsline {table}{\numberline {C.62}{\ignorespaces Matriz de Importancia minima. $(3 \times 1$)Etiqueta}}{183}{table.Alph3.62}
+\contentsline {table}{\numberline {C.63}{\ignorespaces Matriz de Importancia minima. $(3 \times 2$)Etiqueta}}{184}{table.Alph3.63}
+\contentsline {table}{\numberline {C.64}{\ignorespaces Matriz de Importancia minima. $(3 \times 3$)Etiqueta}}{185}{table.Alph3.64}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {D.1}{\ignorespaces Matriz de Importancia. $(2 \times 1$)Valor}}{190}{table.Alph4.1}
+\contentsline {table}{\numberline {D.2}{\ignorespaces Matriz de Importancia. $(3 \times 3$)Valor}}{191}{table.Alph4.2}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {E.1}{\ignorespaces Matriz de Intensidad. $(2 \times 1$)Valor}}{194}{table.Alph5.1}
+\contentsline {table}{\numberline {E.2}{\ignorespaces Matriz de Intensidad. $(3 \times 3$)Valor}}{195}{table.Alph5.2}
+\contentsline {table}{\numberline {E.3}{\ignorespaces Matriz de Extension. $(2 \times 1$)Valor}}{196}{table.Alph5.3}
+\contentsline {table}{\numberline {E.4}{\ignorespaces Matriz de Extension. $(3 \times 3$)Valor}}{197}{table.Alph5.4}
+\contentsline {table}{\numberline {E.5}{\ignorespaces Matriz de Extension critica. $(2 \times 1$)Valor}}{198}{table.Alph5.5}
+\contentsline {table}{\numberline {E.6}{\ignorespaces Matriz de Extension critica. $(3 \times 3$)Valor}}{199}{table.Alph5.6}
+\contentsline {table}{\numberline {E.7}{\ignorespaces Matriz de Momento. $(2 \times 1$)Valor}}{200}{table.Alph5.7}
+\contentsline {table}{\numberline {E.8}{\ignorespaces Matriz de Momento. $(3 \times 3$)Valor}}{201}{table.Alph5.8}
+\contentsline {table}{\numberline {E.9}{\ignorespaces Matriz de Momento critico. $(2 \times 1$)Valor}}{202}{table.Alph5.9}
+\contentsline {table}{\numberline {E.10}{\ignorespaces Matriz de Momento critico. $(3 \times 3$)Valor}}{203}{table.Alph5.10}
+\contentsline {table}{\numberline {E.11}{\ignorespaces Matriz de Persistencia. $(2 \times 1$)Valor}}{204}{table.Alph5.11}
+\contentsline {table}{\numberline {E.12}{\ignorespaces Matriz de Persistencia. $(3 \times 3$)Valor}}{205}{table.Alph5.12}
+\contentsline {table}{\numberline {E.13}{\ignorespaces Matriz de Reversibilidad. $(2 \times 1$)Valor}}{206}{table.Alph5.13}
+\contentsline {table}{\numberline {E.14}{\ignorespaces Matriz de Reversibilidad. $(3 \times 3$)Valor}}{207}{table.Alph5.14}
+\contentsline {table}{\numberline {E.15}{\ignorespaces Matriz de Sinergia. $(2 \times 1$)Valor}}{208}{table.Alph5.15}
+\contentsline {table}{\numberline {E.16}{\ignorespaces Matriz de Sinergia. $(3 \times 3$)Valor}}{209}{table.Alph5.16}
+\contentsline {table}{\numberline {E.17}{\ignorespaces Matriz de Acumulacion. $(2 \times 1$)Valor}}{210}{table.Alph5.17}
+\contentsline {table}{\numberline {E.18}{\ignorespaces Matriz de Acumulacion. $(3 \times 3$)Valor}}{211}{table.Alph5.18}
+\contentsline {table}{\numberline {E.19}{\ignorespaces Matriz de Efecto. $(2 \times 1$)Valor}}{212}{table.Alph5.19}
+\contentsline {table}{\numberline {E.20}{\ignorespaces Matriz de Efecto. $(3 \times 3$)Valor}}{213}{table.Alph5.20}
+\contentsline {table}{\numberline {E.21}{\ignorespaces Matriz de Periodicidad. $(2 \times 1$)Valor}}{214}{table.Alph5.21}
+\contentsline {table}{\numberline {E.22}{\ignorespaces Matriz de Periodicidad. $(3 \times 3$)Valor}}{215}{table.Alph5.22}
+\contentsline {table}{\numberline {E.23}{\ignorespaces Matriz de Recuperabilidad. $(2 \times 1$)Valor}}{216}{table.Alph5.23}
+\contentsline {table}{\numberline {E.24}{\ignorespaces Matriz de Recuperabilidad. $(3 \times 3$)Valor}}{217}{table.Alph5.24}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {F.1}{\ignorespaces Matriz de Importancia media. $(0 \times 0$)Valor}}{220}{table.Alph6.1}
+\contentsline {table}{\numberline {F.2}{\ignorespaces Matriz de Importancia media. $(0 \times 1$)Valor}}{221}{table.Alph6.2}
+\contentsline {table}{\numberline {F.3}{\ignorespaces Matriz de Importancia media. $(0 \times 2$)Valor}}{222}{table.Alph6.3}
+\contentsline {table}{\numberline {F.4}{\ignorespaces Matriz de Importancia media. $(0 \times 3$)Valor}}{223}{table.Alph6.4}
+\contentsline {table}{\numberline {F.5}{\ignorespaces Matriz de Importancia media. $(1 \times 0$)Valor}}{224}{table.Alph6.5}
+\contentsline {table}{\numberline {F.6}{\ignorespaces Matriz de Importancia media. $(1 \times 1$)Valor}}{225}{table.Alph6.6}
+\contentsline {table}{\numberline {F.7}{\ignorespaces Matriz de Importancia media. $(1 \times 2$)Valor}}{226}{table.Alph6.7}
+\contentsline {table}{\numberline {F.8}{\ignorespaces Matriz de Importancia media. $(1 \times 3$)Valor}}{227}{table.Alph6.8}
+\contentsline {table}{\numberline {F.9}{\ignorespaces Matriz de Importancia media. $(2 \times 0$)Valor}}{228}{table.Alph6.9}
+\contentsline {table}{\numberline {F.10}{\ignorespaces Matriz de Importancia media. $(2 \times 1$)Valor}}{229}{table.Alph6.10}
+\contentsline {table}{\numberline {F.11}{\ignorespaces Matriz de Importancia media. $(2 \times 2$)Valor}}{230}{table.Alph6.11}
+\contentsline {table}{\numberline {F.12}{\ignorespaces Matriz de Importancia media. $(2 \times 3$)Valor}}{231}{table.Alph6.12}
+\contentsline {table}{\numberline {F.13}{\ignorespaces Matriz de Importancia media. $(3 \times 0$)Valor}}{232}{table.Alph6.13}
+\contentsline {table}{\numberline {F.14}{\ignorespaces Matriz de Importancia media. $(3 \times 1$)Valor}}{233}{table.Alph6.14}
+\contentsline {table}{\numberline {F.15}{\ignorespaces Matriz de Importancia media. $(3 \times 2$)Valor}}{234}{table.Alph6.15}
+\contentsline {table}{\numberline {F.16}{\ignorespaces Matriz de Importancia media. $(3 \times 3$)Valor}}{235}{table.Alph6.16}
+\contentsline {table}{\numberline {F.17}{\ignorespaces Matriz de Importancia ponderada. $(0 \times 0$)Valor}}{236}{table.Alph6.17}
+\contentsline {table}{\numberline {F.18}{\ignorespaces Matriz de Importancia ponderada. $(0 \times 1$)Valor}}{237}{table.Alph6.18}
+\contentsline {table}{\numberline {F.19}{\ignorespaces Matriz de Importancia ponderada. $(0 \times 2$)Valor}}{238}{table.Alph6.19}
+\contentsline {table}{\numberline {F.20}{\ignorespaces Matriz de Importancia ponderada. $(0 \times 3$)Valor}}{239}{table.Alph6.20}
+\contentsline {table}{\numberline {F.21}{\ignorespaces Matriz de Importancia ponderada. $(1 \times 0$)Valor}}{240}{table.Alph6.21}
+\contentsline {table}{\numberline {F.22}{\ignorespaces Matriz de Importancia ponderada. $(1 \times 1$)Valor}}{241}{table.Alph6.22}
+\contentsline {table}{\numberline {F.23}{\ignorespaces Matriz de Importancia ponderada. $(1 \times 2$)Valor}}{242}{table.Alph6.23}
+\contentsline {table}{\numberline {F.24}{\ignorespaces Matriz de Importancia ponderada. $(1 \times 3$)Valor}}{243}{table.Alph6.24}
+\contentsline {table}{\numberline {F.25}{\ignorespaces Matriz de Importancia ponderada. $(2 \times 0$)Valor}}{244}{table.Alph6.25}
+\contentsline {table}{\numberline {F.26}{\ignorespaces Matriz de Importancia ponderada. $(2 \times 1$)Valor}}{245}{table.Alph6.26}
+\contentsline {table}{\numberline {F.27}{\ignorespaces Matriz de Importancia ponderada. $(2 \times 2$)Valor}}{246}{table.Alph6.27}
+\contentsline {table}{\numberline {F.28}{\ignorespaces Matriz de Importancia ponderada. $(2 \times 3$)Valor}}{247}{table.Alph6.28}
+\contentsline {table}{\numberline {F.29}{\ignorespaces Matriz de Importancia ponderada. $(3 \times 0$)Valor}}{248}{table.Alph6.29}
+\contentsline {table}{\numberline {F.30}{\ignorespaces Matriz de Importancia ponderada. $(3 \times 1$)Valor}}{249}{table.Alph6.30}
+\contentsline {table}{\numberline {F.31}{\ignorespaces Matriz de Importancia ponderada. $(3 \times 2$)Valor}}{250}{table.Alph6.31}
+\contentsline {table}{\numberline {F.32}{\ignorespaces Matriz de Importancia ponderada. $(3 \times 3$)Valor}}{251}{table.Alph6.32}
+\contentsline {table}{\numberline {F.33}{\ignorespaces Matriz de Importancia maxima. $(0 \times 0$)Valor}}{252}{table.Alph6.33}
+\contentsline {table}{\numberline {F.34}{\ignorespaces Matriz de Importancia maxima. $(0 \times 1$)Valor}}{253}{table.Alph6.34}
+\contentsline {table}{\numberline {F.35}{\ignorespaces Matriz de Importancia maxima. $(0 \times 2$)Valor}}{254}{table.Alph6.35}
+\contentsline {table}{\numberline {F.36}{\ignorespaces Matriz de Importancia maxima. $(0 \times 3$)Valor}}{255}{table.Alph6.36}
+\contentsline {table}{\numberline {F.37}{\ignorespaces Matriz de Importancia maxima. $(1 \times 0$)Valor}}{256}{table.Alph6.37}
+\contentsline {table}{\numberline {F.38}{\ignorespaces Matriz de Importancia maxima. $(1 \times 1$)Valor}}{257}{table.Alph6.38}
+\contentsline {table}{\numberline {F.39}{\ignorespaces Matriz de Importancia maxima. $(1 \times 2$)Valor}}{258}{table.Alph6.39}
+\contentsline {table}{\numberline {F.40}{\ignorespaces Matriz de Importancia maxima. $(1 \times 3$)Valor}}{259}{table.Alph6.40}
+\contentsline {table}{\numberline {F.41}{\ignorespaces Matriz de Importancia maxima. $(2 \times 0$)Valor}}{260}{table.Alph6.41}
+\contentsline {table}{\numberline {F.42}{\ignorespaces Matriz de Importancia maxima. $(2 \times 1$)Valor}}{261}{table.Alph6.42}
+\contentsline {table}{\numberline {F.43}{\ignorespaces Matriz de Importancia maxima. $(2 \times 2$)Valor}}{262}{table.Alph6.43}
+\contentsline {table}{\numberline {F.44}{\ignorespaces Matriz de Importancia maxima. $(2 \times 3$)Valor}}{263}{table.Alph6.44}
+\contentsline {table}{\numberline {F.45}{\ignorespaces Matriz de Importancia maxima. $(3 \times 0$)Valor}}{264}{table.Alph6.45}
+\contentsline {table}{\numberline {F.46}{\ignorespaces Matriz de Importancia maxima. $(3 \times 1$)Valor}}{265}{table.Alph6.46}
+\contentsline {table}{\numberline {F.47}{\ignorespaces Matriz de Importancia maxima. $(3 \times 2$)Valor}}{266}{table.Alph6.47}
+\contentsline {table}{\numberline {F.48}{\ignorespaces Matriz de Importancia maxima. $(3 \times 3$)Valor}}{267}{table.Alph6.48}
+\contentsline {table}{\numberline {F.49}{\ignorespaces Matriz de Importancia minima. $(0 \times 0$)Valor}}{268}{table.Alph6.49}
+\contentsline {table}{\numberline {F.50}{\ignorespaces Matriz de Importancia minima. $(0 \times 1$)Valor}}{269}{table.Alph6.50}
+\contentsline {table}{\numberline {F.51}{\ignorespaces Matriz de Importancia minima. $(0 \times 2$)Valor}}{270}{table.Alph6.51}
+\contentsline {table}{\numberline {F.52}{\ignorespaces Matriz de Importancia minima. $(0 \times 3$)Valor}}{271}{table.Alph6.52}
+\contentsline {table}{\numberline {F.53}{\ignorespaces Matriz de Importancia minima. $(1 \times 0$)Valor}}{272}{table.Alph6.53}
+\contentsline {table}{\numberline {F.54}{\ignorespaces Matriz de Importancia minima. $(1 \times 1$)Valor}}{273}{table.Alph6.54}
+\contentsline {table}{\numberline {F.55}{\ignorespaces Matriz de Importancia minima. $(1 \times 2$)Valor}}{274}{table.Alph6.55}
+\contentsline {table}{\numberline {F.56}{\ignorespaces Matriz de Importancia minima. $(1 \times 3$)Valor}}{275}{table.Alph6.56}
+\contentsline {table}{\numberline {F.57}{\ignorespaces Matriz de Importancia minima. $(2 \times 0$)Valor}}{276}{table.Alph6.57}
+\contentsline {table}{\numberline {F.58}{\ignorespaces Matriz de Importancia minima. $(2 \times 1$)Valor}}{277}{table.Alph6.58}
+\contentsline {table}{\numberline {F.59}{\ignorespaces Matriz de Importancia minima. $(2 \times 2$)Valor}}{278}{table.Alph6.59}
+\contentsline {table}{\numberline {F.60}{\ignorespaces Matriz de Importancia minima. $(2 \times 3$)Valor}}{279}{table.Alph6.60}
+\contentsline {table}{\numberline {F.61}{\ignorespaces Matriz de Importancia minima. $(3 \times 0$)Valor}}{280}{table.Alph6.61}
+\contentsline {table}{\numberline {F.62}{\ignorespaces Matriz de Importancia minima. $(3 \times 1$)Valor}}{281}{table.Alph6.62}
+\contentsline {table}{\numberline {F.63}{\ignorespaces Matriz de Importancia minima. $(3 \times 2$)Valor}}{282}{table.Alph6.63}
+\contentsline {table}{\numberline {F.64}{\ignorespaces Matriz de Importancia minima. $(3 \times 3$)Valor}}{283}{table.Alph6.64}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {G.1}{\ignorespaces Matriz de Importancia. $(2 \times 1$)Valor / Ambig\IeC {\"u}edad}}{288}{table.Alph7.1}
+\contentsline {table}{\numberline {G.2}{\ignorespaces Matriz de Importancia. $(3 \times 3$)Valor / Ambig\IeC {\"u}edad}}{289}{table.Alph7.2}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {H.1}{\ignorespaces Matriz de Intensidad. $(2 \times 1$)Valor / Ambig\IeC {\"u}edad}}{292}{table.Alph8.1}
+\contentsline {table}{\numberline {H.2}{\ignorespaces Matriz de Intensidad. $(3 \times 3$)Valor / Ambig\IeC {\"u}edad}}{293}{table.Alph8.2}
+\contentsline {table}{\numberline {H.3}{\ignorespaces Matriz de Extension. $(2 \times 1$)Valor / Ambig\IeC {\"u}edad}}{294}{table.Alph8.3}
+\contentsline {table}{\numberline {H.4}{\ignorespaces Matriz de Extension. $(3 \times 3$)Valor / Ambig\IeC {\"u}edad}}{295}{table.Alph8.4}
+\contentsline {table}{\numberline {H.5}{\ignorespaces Matriz de Extension critica. $(2 \times 1$)Valor / Ambig\IeC {\"u}edad}}{296}{table.Alph8.5}
+\contentsline {table}{\numberline {H.6}{\ignorespaces Matriz de Extension critica. $(3 \times 3$)Valor / Ambig\IeC {\"u}edad}}{297}{table.Alph8.6}
+\contentsline {table}{\numberline {H.7}{\ignorespaces Matriz de Momento. $(2 \times 1$)Valor / Ambig\IeC {\"u}edad}}{298}{table.Alph8.7}
+\contentsline {table}{\numberline {H.8}{\ignorespaces Matriz de Momento. $(3 \times 3$)Valor / Ambig\IeC {\"u}edad}}{299}{table.Alph8.8}
+\contentsline {table}{\numberline {H.9}{\ignorespaces Matriz de Momento critico. $(2 \times 1$)Valor / Ambig\IeC {\"u}edad}}{300}{table.Alph8.9}
+\contentsline {table}{\numberline {H.10}{\ignorespaces Matriz de Momento critico. $(3 \times 3$)Valor / Ambig\IeC {\"u}edad}}{301}{table.Alph8.10}
+\contentsline {table}{\numberline {H.11}{\ignorespaces Matriz de Persistencia. $(2 \times 1$)Valor / Ambig\IeC {\"u}edad}}{302}{table.Alph8.11}
+\contentsline {table}{\numberline {H.12}{\ignorespaces Matriz de Persistencia. $(3 \times 3$)Valor / Ambig\IeC {\"u}edad}}{303}{table.Alph8.12}
+\contentsline {table}{\numberline {H.13}{\ignorespaces Matriz de Reversibilidad. $(2 \times 1$)Valor / Ambig\IeC {\"u}edad}}{304}{table.Alph8.13}
+\contentsline {table}{\numberline {H.14}{\ignorespaces Matriz de Reversibilidad. $(3 \times 3$)Valor / Ambig\IeC {\"u}edad}}{305}{table.Alph8.14}
+\contentsline {table}{\numberline {H.15}{\ignorespaces Matriz de Sinergia. $(2 \times 1$)Valor / Ambig\IeC {\"u}edad}}{306}{table.Alph8.15}
+\contentsline {table}{\numberline {H.16}{\ignorespaces Matriz de Sinergia. $(3 \times 3$)Valor / Ambig\IeC {\"u}edad}}{307}{table.Alph8.16}
+\contentsline {table}{\numberline {H.17}{\ignorespaces Matriz de Acumulacion. $(2 \times 1$)Valor / Ambig\IeC {\"u}edad}}{308}{table.Alph8.17}
+\contentsline {table}{\numberline {H.18}{\ignorespaces Matriz de Acumulacion. $(3 \times 3$)Valor / Ambig\IeC {\"u}edad}}{309}{table.Alph8.18}
+\contentsline {table}{\numberline {H.19}{\ignorespaces Matriz de Efecto. $(2 \times 1$)Valor / Ambig\IeC {\"u}edad}}{310}{table.Alph8.19}
+\contentsline {table}{\numberline {H.20}{\ignorespaces Matriz de Efecto. $(3 \times 3$)Valor / Ambig\IeC {\"u}edad}}{311}{table.Alph8.20}
+\contentsline {table}{\numberline {H.21}{\ignorespaces Matriz de Periodicidad. $(2 \times 1$)Valor / Ambig\IeC {\"u}edad}}{312}{table.Alph8.21}
+\contentsline {table}{\numberline {H.22}{\ignorespaces Matriz de Periodicidad. $(3 \times 3$)Valor / Ambig\IeC {\"u}edad}}{313}{table.Alph8.22}
+\contentsline {table}{\numberline {H.23}{\ignorespaces Matriz de Recuperabilidad. $(2 \times 1$)Valor / Ambig\IeC {\"u}edad}}{314}{table.Alph8.23}
+\contentsline {table}{\numberline {H.24}{\ignorespaces Matriz de Recuperabilidad. $(3 \times 3$)Valor / Ambig\IeC {\"u}edad}}{315}{table.Alph8.24}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {I.1}{\ignorespaces Matriz de Importancia media. $(0 \times 0$)Valor / Ambig\IeC {\"u}edad}}{318}{table.Alph9.1}
+\contentsline {table}{\numberline {I.2}{\ignorespaces Matriz de Importancia media. $(0 \times 1$)Valor / Ambig\IeC {\"u}edad}}{319}{table.Alph9.2}
+\contentsline {table}{\numberline {I.3}{\ignorespaces Matriz de Importancia media. $(0 \times 2$)Valor / Ambig\IeC {\"u}edad}}{320}{table.Alph9.3}
+\contentsline {table}{\numberline {I.4}{\ignorespaces Matriz de Importancia media. $(0 \times 3$)Valor / Ambig\IeC {\"u}edad}}{321}{table.Alph9.4}
+\contentsline {table}{\numberline {I.5}{\ignorespaces Matriz de Importancia media. $(1 \times 0$)Valor / Ambig\IeC {\"u}edad}}{322}{table.Alph9.5}
+\contentsline {table}{\numberline {I.6}{\ignorespaces Matriz de Importancia media. $(1 \times 1$)Valor / Ambig\IeC {\"u}edad}}{323}{table.Alph9.6}
+\contentsline {table}{\numberline {I.7}{\ignorespaces Matriz de Importancia media. $(1 \times 2$)Valor / Ambig\IeC {\"u}edad}}{324}{table.Alph9.7}
+\contentsline {table}{\numberline {I.8}{\ignorespaces Matriz de Importancia media. $(1 \times 3$)Valor / Ambig\IeC {\"u}edad}}{325}{table.Alph9.8}
+\contentsline {table}{\numberline {I.9}{\ignorespaces Matriz de Importancia media. $(2 \times 0$)Valor / Ambig\IeC {\"u}edad}}{326}{table.Alph9.9}
+\contentsline {table}{\numberline {I.10}{\ignorespaces Matriz de Importancia media. $(2 \times 1$)Valor / Ambig\IeC {\"u}edad}}{327}{table.Alph9.10}
+\contentsline {table}{\numberline {I.11}{\ignorespaces Matriz de Importancia media. $(2 \times 2$)Valor / Ambig\IeC {\"u}edad}}{328}{table.Alph9.11}
+\contentsline {table}{\numberline {I.12}{\ignorespaces Matriz de Importancia media. $(2 \times 3$)Valor / Ambig\IeC {\"u}edad}}{329}{table.Alph9.12}
+\contentsline {table}{\numberline {I.13}{\ignorespaces Matriz de Importancia media. $(3 \times 0$)Valor / Ambig\IeC {\"u}edad}}{330}{table.Alph9.13}
+\contentsline {table}{\numberline {I.14}{\ignorespaces Matriz de Importancia media. $(3 \times 1$)Valor / Ambig\IeC {\"u}edad}}{331}{table.Alph9.14}
+\contentsline {table}{\numberline {I.15}{\ignorespaces Matriz de Importancia media. $(3 \times 2$)Valor / Ambig\IeC {\"u}edad}}{332}{table.Alph9.15}
+\contentsline {table}{\numberline {I.16}{\ignorespaces Matriz de Importancia media. $(3 \times 3$)Valor / Ambig\IeC {\"u}edad}}{333}{table.Alph9.16}
+\contentsline {table}{\numberline {I.17}{\ignorespaces Matriz de Importancia ponderada. $(0 \times 0$)Valor / Ambig\IeC {\"u}edad}}{334}{table.Alph9.17}
+\contentsline {table}{\numberline {I.18}{\ignorespaces Matriz de Importancia ponderada. $(0 \times 1$)Valor / Ambig\IeC {\"u}edad}}{335}{table.Alph9.18}
+\contentsline {table}{\numberline {I.19}{\ignorespaces Matriz de Importancia ponderada. $(0 \times 2$)Valor / Ambig\IeC {\"u}edad}}{336}{table.Alph9.19}
+\contentsline {table}{\numberline {I.20}{\ignorespaces Matriz de Importancia ponderada. $(0 \times 3$)Valor / Ambig\IeC {\"u}edad}}{337}{table.Alph9.20}
+\contentsline {table}{\numberline {I.21}{\ignorespaces Matriz de Importancia ponderada. $(1 \times 0$)Valor / Ambig\IeC {\"u}edad}}{338}{table.Alph9.21}
+\contentsline {table}{\numberline {I.22}{\ignorespaces Matriz de Importancia ponderada. $(1 \times 1$)Valor / Ambig\IeC {\"u}edad}}{339}{table.Alph9.22}
+\contentsline {table}{\numberline {I.23}{\ignorespaces Matriz de Importancia ponderada. $(1 \times 2$)Valor / Ambig\IeC {\"u}edad}}{340}{table.Alph9.23}
+\contentsline {table}{\numberline {I.24}{\ignorespaces Matriz de Importancia ponderada. $(1 \times 3$)Valor / Ambig\IeC {\"u}edad}}{341}{table.Alph9.24}
+\contentsline {table}{\numberline {I.25}{\ignorespaces Matriz de Importancia ponderada. $(2 \times 0$)Valor / Ambig\IeC {\"u}edad}}{342}{table.Alph9.25}
+\contentsline {table}{\numberline {I.26}{\ignorespaces Matriz de Importancia ponderada. $(2 \times 1$)Valor / Ambig\IeC {\"u}edad}}{343}{table.Alph9.26}
+\contentsline {table}{\numberline {I.27}{\ignorespaces Matriz de Importancia ponderada. $(2 \times 2$)Valor / Ambig\IeC {\"u}edad}}{344}{table.Alph9.27}
+\contentsline {table}{\numberline {I.28}{\ignorespaces Matriz de Importancia ponderada. $(2 \times 3$)Valor / Ambig\IeC {\"u}edad}}{345}{table.Alph9.28}
+\contentsline {table}{\numberline {I.29}{\ignorespaces Matriz de Importancia ponderada. $(3 \times 0$)Valor / Ambig\IeC {\"u}edad}}{346}{table.Alph9.29}
+\contentsline {table}{\numberline {I.30}{\ignorespaces Matriz de Importancia ponderada. $(3 \times 1$)Valor / Ambig\IeC {\"u}edad}}{347}{table.Alph9.30}
+\contentsline {table}{\numberline {I.31}{\ignorespaces Matriz de Importancia ponderada. $(3 \times 2$)Valor / Ambig\IeC {\"u}edad}}{348}{table.Alph9.31}
+\contentsline {table}{\numberline {I.32}{\ignorespaces Matriz de Importancia ponderada. $(3 \times 3$)Valor / Ambig\IeC {\"u}edad}}{349}{table.Alph9.32}
+\contentsline {table}{\numberline {I.33}{\ignorespaces Matriz de Importancia maxima. $(0 \times 0$)Valor / Ambig\IeC {\"u}edad}}{350}{table.Alph9.33}
+\contentsline {table}{\numberline {I.34}{\ignorespaces Matriz de Importancia maxima. $(0 \times 1$)Valor / Ambig\IeC {\"u}edad}}{351}{table.Alph9.34}
+\contentsline {table}{\numberline {I.35}{\ignorespaces Matriz de Importancia maxima. $(0 \times 2$)Valor / Ambig\IeC {\"u}edad}}{352}{table.Alph9.35}
+\contentsline {table}{\numberline {I.36}{\ignorespaces Matriz de Importancia maxima. $(0 \times 3$)Valor / Ambig\IeC {\"u}edad}}{353}{table.Alph9.36}
+\contentsline {table}{\numberline {I.37}{\ignorespaces Matriz de Importancia maxima. $(1 \times 0$)Valor / Ambig\IeC {\"u}edad}}{354}{table.Alph9.37}
+\contentsline {table}{\numberline {I.38}{\ignorespaces Matriz de Importancia maxima. $(1 \times 1$)Valor / Ambig\IeC {\"u}edad}}{355}{table.Alph9.38}
+\contentsline {table}{\numberline {I.39}{\ignorespaces Matriz de Importancia maxima. $(1 \times 2$)Valor / Ambig\IeC {\"u}edad}}{356}{table.Alph9.39}
+\contentsline {table}{\numberline {I.40}{\ignorespaces Matriz de Importancia maxima. $(1 \times 3$)Valor / Ambig\IeC {\"u}edad}}{357}{table.Alph9.40}
+\contentsline {table}{\numberline {I.41}{\ignorespaces Matriz de Importancia maxima. $(2 \times 0$)Valor / Ambig\IeC {\"u}edad}}{358}{table.Alph9.41}
+\contentsline {table}{\numberline {I.42}{\ignorespaces Matriz de Importancia maxima. $(2 \times 1$)Valor / Ambig\IeC {\"u}edad}}{359}{table.Alph9.42}
+\contentsline {table}{\numberline {I.43}{\ignorespaces Matriz de Importancia maxima. $(2 \times 2$)Valor / Ambig\IeC {\"u}edad}}{360}{table.Alph9.43}
+\contentsline {table}{\numberline {I.44}{\ignorespaces Matriz de Importancia maxima. $(2 \times 3$)Valor / Ambig\IeC {\"u}edad}}{361}{table.Alph9.44}
+\contentsline {table}{\numberline {I.45}{\ignorespaces Matriz de Importancia maxima. $(3 \times 0$)Valor / Ambig\IeC {\"u}edad}}{362}{table.Alph9.45}
+\contentsline {table}{\numberline {I.46}{\ignorespaces Matriz de Importancia maxima. $(3 \times 1$)Valor / Ambig\IeC {\"u}edad}}{363}{table.Alph9.46}
+\contentsline {table}{\numberline {I.47}{\ignorespaces Matriz de Importancia maxima. $(3 \times 2$)Valor / Ambig\IeC {\"u}edad}}{364}{table.Alph9.47}
+\contentsline {table}{\numberline {I.48}{\ignorespaces Matriz de Importancia maxima. $(3 \times 3$)Valor / Ambig\IeC {\"u}edad}}{365}{table.Alph9.48}
+\contentsline {table}{\numberline {I.49}{\ignorespaces Matriz de Importancia minima. $(0 \times 0$)Valor / Ambig\IeC {\"u}edad}}{366}{table.Alph9.49}
+\contentsline {table}{\numberline {I.50}{\ignorespaces Matriz de Importancia minima. $(0 \times 1$)Valor / Ambig\IeC {\"u}edad}}{367}{table.Alph9.50}
+\contentsline {table}{\numberline {I.51}{\ignorespaces Matriz de Importancia minima. $(0 \times 2$)Valor / Ambig\IeC {\"u}edad}}{368}{table.Alph9.51}
+\contentsline {table}{\numberline {I.52}{\ignorespaces Matriz de Importancia minima. $(0 \times 3$)Valor / Ambig\IeC {\"u}edad}}{369}{table.Alph9.52}
+\contentsline {table}{\numberline {I.53}{\ignorespaces Matriz de Importancia minima. $(1 \times 0$)Valor / Ambig\IeC {\"u}edad}}{370}{table.Alph9.53}
+\contentsline {table}{\numberline {I.54}{\ignorespaces Matriz de Importancia minima. $(1 \times 1$)Valor / Ambig\IeC {\"u}edad}}{371}{table.Alph9.54}
+\contentsline {table}{\numberline {I.55}{\ignorespaces Matriz de Importancia minima. $(1 \times 2$)Valor / Ambig\IeC {\"u}edad}}{372}{table.Alph9.55}
+\contentsline {table}{\numberline {I.56}{\ignorespaces Matriz de Importancia minima. $(1 \times 3$)Valor / Ambig\IeC {\"u}edad}}{373}{table.Alph9.56}
+\contentsline {table}{\numberline {I.57}{\ignorespaces Matriz de Importancia minima. $(2 \times 0$)Valor / Ambig\IeC {\"u}edad}}{374}{table.Alph9.57}
+\contentsline {table}{\numberline {I.58}{\ignorespaces Matriz de Importancia minima. $(2 \times 1$)Valor / Ambig\IeC {\"u}edad}}{375}{table.Alph9.58}
+\contentsline {table}{\numberline {I.59}{\ignorespaces Matriz de Importancia minima. $(2 \times 2$)Valor / Ambig\IeC {\"u}edad}}{376}{table.Alph9.59}
+\contentsline {table}{\numberline {I.60}{\ignorespaces Matriz de Importancia minima. $(2 \times 3$)Valor / Ambig\IeC {\"u}edad}}{377}{table.Alph9.60}
+\contentsline {table}{\numberline {I.61}{\ignorespaces Matriz de Importancia minima. $(3 \times 0$)Valor / Ambig\IeC {\"u}edad}}{378}{table.Alph9.61}
+\contentsline {table}{\numberline {I.62}{\ignorespaces Matriz de Importancia minima. $(3 \times 1$)Valor / Ambig\IeC {\"u}edad}}{379}{table.Alph9.62}
+\contentsline {table}{\numberline {I.63}{\ignorespaces Matriz de Importancia minima. $(3 \times 2$)Valor / Ambig\IeC {\"u}edad}}{380}{table.Alph9.63}
+\contentsline {table}{\numberline {I.64}{\ignorespaces Matriz de Importancia minima. $(3 \times 3$)Valor / Ambig\IeC {\"u}edad}}{381}{table.Alph9.64}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {J.1}{\ignorespaces Matriz de Importancia. $(2 \times 1$)Colores}}{386}{table.Alph10.1}
+\contentsline {table}{\numberline {J.2}{\ignorespaces Matriz de Importancia. $(3 \times 3$)Colores}}{387}{table.Alph10.2}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {K.1}{\ignorespaces Matriz de Intensidad. $(2 \times 1$)Colores}}{390}{table.Alph11.1}
+\contentsline {table}{\numberline {K.2}{\ignorespaces Matriz de Intensidad. $(3 \times 3$)Colores}}{391}{table.Alph11.2}
+\contentsline {table}{\numberline {K.3}{\ignorespaces Matriz de Extension. $(2 \times 1$)Colores}}{392}{table.Alph11.3}
+\contentsline {table}{\numberline {K.4}{\ignorespaces Matriz de Extension. $(3 \times 3$)Colores}}{393}{table.Alph11.4}
+\contentsline {table}{\numberline {K.5}{\ignorespaces Matriz de Extension critica. $(2 \times 1$)Colores}}{394}{table.Alph11.5}
+\contentsline {table}{\numberline {K.6}{\ignorespaces Matriz de Extension critica. $(3 \times 3$)Colores}}{395}{table.Alph11.6}
+\contentsline {table}{\numberline {K.7}{\ignorespaces Matriz de Momento. $(2 \times 1$)Colores}}{396}{table.Alph11.7}
+\contentsline {table}{\numberline {K.8}{\ignorespaces Matriz de Momento. $(3 \times 3$)Colores}}{397}{table.Alph11.8}
+\contentsline {table}{\numberline {K.9}{\ignorespaces Matriz de Momento critico. $(2 \times 1$)Colores}}{398}{table.Alph11.9}
+\contentsline {table}{\numberline {K.10}{\ignorespaces Matriz de Momento critico. $(3 \times 3$)Colores}}{399}{table.Alph11.10}
+\contentsline {table}{\numberline {K.11}{\ignorespaces Matriz de Persistencia. $(2 \times 1$)Colores}}{400}{table.Alph11.11}
+\contentsline {table}{\numberline {K.12}{\ignorespaces Matriz de Persistencia. $(3 \times 3$)Colores}}{401}{table.Alph11.12}
+\contentsline {table}{\numberline {K.13}{\ignorespaces Matriz de Reversibilidad. $(2 \times 1$)Colores}}{402}{table.Alph11.13}
+\contentsline {table}{\numberline {K.14}{\ignorespaces Matriz de Reversibilidad. $(3 \times 3$)Colores}}{403}{table.Alph11.14}
+\contentsline {table}{\numberline {K.15}{\ignorespaces Matriz de Sinergia. $(2 \times 1$)Colores}}{404}{table.Alph11.15}
+\contentsline {table}{\numberline {K.16}{\ignorespaces Matriz de Sinergia. $(3 \times 3$)Colores}}{405}{table.Alph11.16}
+\contentsline {table}{\numberline {K.17}{\ignorespaces Matriz de Acumulacion. $(2 \times 1$)Colores}}{406}{table.Alph11.17}
+\contentsline {table}{\numberline {K.18}{\ignorespaces Matriz de Acumulacion. $(3 \times 3$)Colores}}{407}{table.Alph11.18}
+\contentsline {table}{\numberline {K.19}{\ignorespaces Matriz de Efecto. $(2 \times 1$)Colores}}{408}{table.Alph11.19}
+\contentsline {table}{\numberline {K.20}{\ignorespaces Matriz de Efecto. $(3 \times 3$)Colores}}{409}{table.Alph11.20}
+\contentsline {table}{\numberline {K.21}{\ignorespaces Matriz de Periodicidad. $(2 \times 1$)Colores}}{410}{table.Alph11.21}
+\contentsline {table}{\numberline {K.22}{\ignorespaces Matriz de Periodicidad. $(3 \times 3$)Colores}}{411}{table.Alph11.22}
+\contentsline {table}{\numberline {K.23}{\ignorespaces Matriz de Recuperabilidad. $(2 \times 1$)Colores}}{412}{table.Alph11.23}
+\contentsline {table}{\numberline {K.24}{\ignorespaces Matriz de Recuperabilidad. $(3 \times 3$)Colores}}{413}{table.Alph11.24}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {L.1}{\ignorespaces Matriz de Importancia media. $(0 \times 0$)Colores}}{416}{table.Alph12.1}
+\contentsline {table}{\numberline {L.2}{\ignorespaces Matriz de Importancia media. $(0 \times 1$)Colores}}{417}{table.Alph12.2}
+\contentsline {table}{\numberline {L.3}{\ignorespaces Matriz de Importancia media. $(0 \times 2$)Colores}}{418}{table.Alph12.3}
+\contentsline {table}{\numberline {L.4}{\ignorespaces Matriz de Importancia media. $(0 \times 3$)Colores}}{419}{table.Alph12.4}
+\contentsline {table}{\numberline {L.5}{\ignorespaces Matriz de Importancia media. $(1 \times 0$)Colores}}{420}{table.Alph12.5}
+\contentsline {table}{\numberline {L.6}{\ignorespaces Matriz de Importancia media. $(1 \times 1$)Colores}}{421}{table.Alph12.6}
+\contentsline {table}{\numberline {L.7}{\ignorespaces Matriz de Importancia media. $(1 \times 2$)Colores}}{422}{table.Alph12.7}
+\contentsline {table}{\numberline {L.8}{\ignorespaces Matriz de Importancia media. $(1 \times 3$)Colores}}{423}{table.Alph12.8}
+\contentsline {table}{\numberline {L.9}{\ignorespaces Matriz de Importancia media. $(2 \times 0$)Colores}}{424}{table.Alph12.9}
+\contentsline {table}{\numberline {L.10}{\ignorespaces Matriz de Importancia media. $(2 \times 1$)Colores}}{425}{table.Alph12.10}
+\contentsline {table}{\numberline {L.11}{\ignorespaces Matriz de Importancia media. $(2 \times 2$)Colores}}{426}{table.Alph12.11}
+\contentsline {table}{\numberline {L.12}{\ignorespaces Matriz de Importancia media. $(2 \times 3$)Colores}}{427}{table.Alph12.12}
+\contentsline {table}{\numberline {L.13}{\ignorespaces Matriz de Importancia media. $(3 \times 0$)Colores}}{428}{table.Alph12.13}
+\contentsline {table}{\numberline {L.14}{\ignorespaces Matriz de Importancia media. $(3 \times 1$)Colores}}{429}{table.Alph12.14}
+\contentsline {table}{\numberline {L.15}{\ignorespaces Matriz de Importancia media. $(3 \times 2$)Colores}}{430}{table.Alph12.15}
+\contentsline {table}{\numberline {L.16}{\ignorespaces Matriz de Importancia media. $(3 \times 3$)Colores}}{431}{table.Alph12.16}
+\contentsline {table}{\numberline {L.17}{\ignorespaces Matriz de Importancia ponderada. $(0 \times 0$)Colores}}{432}{table.Alph12.17}
+\contentsline {table}{\numberline {L.18}{\ignorespaces Matriz de Importancia ponderada. $(0 \times 1$)Colores}}{433}{table.Alph12.18}
+\contentsline {table}{\numberline {L.19}{\ignorespaces Matriz de Importancia ponderada. $(0 \times 2$)Colores}}{434}{table.Alph12.19}
+\contentsline {table}{\numberline {L.20}{\ignorespaces Matriz de Importancia ponderada. $(0 \times 3$)Colores}}{435}{table.Alph12.20}
+\contentsline {table}{\numberline {L.21}{\ignorespaces Matriz de Importancia ponderada. $(1 \times 0$)Colores}}{436}{table.Alph12.21}
+\contentsline {table}{\numberline {L.22}{\ignorespaces Matriz de Importancia ponderada. $(1 \times 1$)Colores}}{437}{table.Alph12.22}
+\contentsline {table}{\numberline {L.23}{\ignorespaces Matriz de Importancia ponderada. $(1 \times 2$)Colores}}{438}{table.Alph12.23}
+\contentsline {table}{\numberline {L.24}{\ignorespaces Matriz de Importancia ponderada. $(1 \times 3$)Colores}}{439}{table.Alph12.24}
+\contentsline {table}{\numberline {L.25}{\ignorespaces Matriz de Importancia ponderada. $(2 \times 0$)Colores}}{440}{table.Alph12.25}
+\contentsline {table}{\numberline {L.26}{\ignorespaces Matriz de Importancia ponderada. $(2 \times 1$)Colores}}{441}{table.Alph12.26}
+\contentsline {table}{\numberline {L.27}{\ignorespaces Matriz de Importancia ponderada. $(2 \times 2$)Colores}}{442}{table.Alph12.27}
+\contentsline {table}{\numberline {L.28}{\ignorespaces Matriz de Importancia ponderada. $(2 \times 3$)Colores}}{443}{table.Alph12.28}
+\contentsline {table}{\numberline {L.29}{\ignorespaces Matriz de Importancia ponderada. $(3 \times 0$)Colores}}{444}{table.Alph12.29}
+\contentsline {table}{\numberline {L.30}{\ignorespaces Matriz de Importancia ponderada. $(3 \times 1$)Colores}}{445}{table.Alph12.30}
+\contentsline {table}{\numberline {L.31}{\ignorespaces Matriz de Importancia ponderada. $(3 \times 2$)Colores}}{446}{table.Alph12.31}
+\contentsline {table}{\numberline {L.32}{\ignorespaces Matriz de Importancia ponderada. $(3 \times 3$)Colores}}{447}{table.Alph12.32}
+\contentsline {table}{\numberline {L.33}{\ignorespaces Matriz de Importancia maxima. $(0 \times 0$)Colores}}{448}{table.Alph12.33}
+\contentsline {table}{\numberline {L.34}{\ignorespaces Matriz de Importancia maxima. $(0 \times 1$)Colores}}{449}{table.Alph12.34}
+\contentsline {table}{\numberline {L.35}{\ignorespaces Matriz de Importancia maxima. $(0 \times 2$)Colores}}{450}{table.Alph12.35}
+\contentsline {table}{\numberline {L.36}{\ignorespaces Matriz de Importancia maxima. $(0 \times 3$)Colores}}{451}{table.Alph12.36}
+\contentsline {table}{\numberline {L.37}{\ignorespaces Matriz de Importancia maxima. $(1 \times 0$)Colores}}{452}{table.Alph12.37}
+\contentsline {table}{\numberline {L.38}{\ignorespaces Matriz de Importancia maxima. $(1 \times 1$)Colores}}{453}{table.Alph12.38}
+\contentsline {table}{\numberline {L.39}{\ignorespaces Matriz de Importancia maxima. $(1 \times 2$)Colores}}{454}{table.Alph12.39}
+\contentsline {table}{\numberline {L.40}{\ignorespaces Matriz de Importancia maxima. $(1 \times 3$)Colores}}{455}{table.Alph12.40}
+\contentsline {table}{\numberline {L.41}{\ignorespaces Matriz de Importancia maxima. $(2 \times 0$)Colores}}{456}{table.Alph12.41}
+\contentsline {table}{\numberline {L.42}{\ignorespaces Matriz de Importancia maxima. $(2 \times 1$)Colores}}{457}{table.Alph12.42}
+\contentsline {table}{\numberline {L.43}{\ignorespaces Matriz de Importancia maxima. $(2 \times 2$)Colores}}{458}{table.Alph12.43}
+\contentsline {table}{\numberline {L.44}{\ignorespaces Matriz de Importancia maxima. $(2 \times 3$)Colores}}{459}{table.Alph12.44}
+\contentsline {table}{\numberline {L.45}{\ignorespaces Matriz de Importancia maxima. $(3 \times 0$)Colores}}{460}{table.Alph12.45}
+\contentsline {table}{\numberline {L.46}{\ignorespaces Matriz de Importancia maxima. $(3 \times 1$)Colores}}{461}{table.Alph12.46}
+\contentsline {table}{\numberline {L.47}{\ignorespaces Matriz de Importancia maxima. $(3 \times 2$)Colores}}{462}{table.Alph12.47}
+\contentsline {table}{\numberline {L.48}{\ignorespaces Matriz de Importancia maxima. $(3 \times 3$)Colores}}{463}{table.Alph12.48}
+\contentsline {table}{\numberline {L.49}{\ignorespaces Matriz de Importancia minima. $(0 \times 0$)Colores}}{464}{table.Alph12.49}
+\contentsline {table}{\numberline {L.50}{\ignorespaces Matriz de Importancia minima. $(0 \times 1$)Colores}}{465}{table.Alph12.50}
+\contentsline {table}{\numberline {L.51}{\ignorespaces Matriz de Importancia minima. $(0 \times 2$)Colores}}{466}{table.Alph12.51}
+\contentsline {table}{\numberline {L.52}{\ignorespaces Matriz de Importancia minima. $(0 \times 3$)Colores}}{467}{table.Alph12.52}
+\contentsline {table}{\numberline {L.53}{\ignorespaces Matriz de Importancia minima. $(1 \times 0$)Colores}}{468}{table.Alph12.53}
+\contentsline {table}{\numberline {L.54}{\ignorespaces Matriz de Importancia minima. $(1 \times 1$)Colores}}{469}{table.Alph12.54}
+\contentsline {table}{\numberline {L.55}{\ignorespaces Matriz de Importancia minima. $(1 \times 2$)Colores}}{470}{table.Alph12.55}
+\contentsline {table}{\numberline {L.56}{\ignorespaces Matriz de Importancia minima. $(1 \times 3$)Colores}}{471}{table.Alph12.56}
+\contentsline {table}{\numberline {L.57}{\ignorespaces Matriz de Importancia minima. $(2 \times 0$)Colores}}{472}{table.Alph12.57}
+\contentsline {table}{\numberline {L.58}{\ignorespaces Matriz de Importancia minima. $(2 \times 1$)Colores}}{473}{table.Alph12.58}
+\contentsline {table}{\numberline {L.59}{\ignorespaces Matriz de Importancia minima. $(2 \times 2$)Colores}}{474}{table.Alph12.59}
+\contentsline {table}{\numberline {L.60}{\ignorespaces Matriz de Importancia minima. $(2 \times 3$)Colores}}{475}{table.Alph12.60}
+\contentsline {table}{\numberline {L.61}{\ignorespaces Matriz de Importancia minima. $(3 \times 0$)Colores}}{476}{table.Alph12.61}
+\contentsline {table}{\numberline {L.62}{\ignorespaces Matriz de Importancia minima. $(3 \times 1$)Colores}}{477}{table.Alph12.62}
+\contentsline {table}{\numberline {L.63}{\ignorespaces Matriz de Importancia minima. $(3 \times 2$)Colores}}{478}{table.Alph12.63}
+\contentsline {table}{\numberline {L.64}{\ignorespaces Matriz de Importancia minima. $(3 \times 3$)Colores}}{479}{table.Alph12.64}

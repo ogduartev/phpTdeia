@@ -1,0 +1,6 @@
+<block id="tdeia" type="body" class="tdeia">
+  <block id="body" type="div" class="body">
+    <block id="admin_login" type="div" class="login" action="adminlogin"></block>
+  </block>
+</block>
+

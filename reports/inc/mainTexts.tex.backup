@@ -1,0 +1,202 @@
+
+
+\newcommand{\tdeiaMethodologyEffectPropierties}
+{
+\subsection{Propiedades}
+\label{sec:methodologyEffectPropierties}
+  El cuadro \ref{tab:effect_propierties_summary} muestra el listado de las propiedades que se han empleado para estimar la importancia de cada uno de los efectos individuales. El contenido de cada columna se explica a continuación:
+  \begin{description}
+   \item[Nombre:] nombre asignado a la propiedad.
+   \item[Peso:] peso asignado a cada propiedad en el cálculo de la importancia de cada efecto.
+   \item[Cuadro:] enlace a un cuadro explicativo en el que se detalla el significado de cada una de las propiedades, así como las escala de valoración empleada.
+   \item[Página:] página en la que se encuentra el cuadro del ítem anterior.
+  \end{description}
+
+  \tdeiaWriteAllEffectPropiertiesSummary{}
+ 
+ \clearpage
+ 
+ \tdeiaWriteAllEffectPropierties{}
+}
+
+\newcommand{\tdeiaMethodologyImportance}
+{
+\subsection{Importancia de un efecto aislado}
+\label{sec:methodologyImportance}
+ La importancia de un efecto aislado es una medida empleada para poder comparar efectos disímiles que el proyecto tendrá sobre el ambiente.
+ 
+ \tdeiaWriteMyImportanceEquation{}
+ En donde
+ \begin{itemize}
+  \item $Im$ es la importancia de un efecto simple
+  \item $x_i$ es una colección de \textit{propiedades de efecto} que se deben valorar para poder determinar su importancia.
+  \item $N$ es el número de \textit{propiedades de efecto}.
+  \item $w_i$ es el peso relativo asigando a cada propiedad del efecto.
+ \end{itemize}
+ 
+La Importancia es una variable lingüística, cuya definición se muestra en el cuadro \ref{tab:importanceVar}.
+
+\tdeiaWriteAllAggregatorsTableImp{}
+ 
+El cuadro \ref{tab:effect_propierties_summary} resume el listado de propiedades de efecto empleadas en el presente estudio y su peso relativo. La sección \ref{sec:methodologyEffectPropierties} amplia la explicación de cada una de estas propiedades.
+} 
+
+\newcommand{\tdeiaMethodologyAggregators}
+{
+\subsection{Importancia combinada de varios efectos}
+\label{sec:methodologyAggregators}
+Para estimar la importancia combinada de varios efectos individuales se utilizan operadores de \textit{agregación de información} o \textit{agregadores}. En general, estos operadores utilizan la importancia de los efectos individuales para estimar la importancia combinada. El cuadro \ref{tab:aggregators_summary} muestra los operadores de agregación empleados. A cada uno de estos operadores se ha asociado una variable lingüística, que se presenta en los enlaces de la columna `variable' en dicho cuadro.
+
+ \tdeiaWriteAllAggregatorsSummary{}
+ 
+ \tdeiaWriteAllAggregatorsTableAgg{}
+ 
+}
+
+\newcommand{\tdeiaMethodologyImportanceLinearCombination}[1]
+{
+La ecuación empleada corresponde a un promedio ponderado:
+\begin{equation}
+\label{equ:aggregator#1}
+Im=\sum_{i=1}^{N}{w_{i}x_{i}}\qquad 0\leq w_{i}\leq 1 \qquad \sum_{i=1}^{N}w_{i}=1
+\end{equation}
+
+En esta ecuación, a cada variable $x_i$ se le asigna un peso fijo $w_{i}$. El cuadro \ref{tab:effect_propierties_summary} resume el listado de propiedades empleadas en el cálculo de la importancia.
+}
+
+\newcommand{\tdeiaMethodologyAggregatorSimpleAverage}[1]
+{
+La ecuación empleada corresponde a un promedio simple:
+\begin{equation}
+ \label{equ:aggregator#1}
+ Im_{c}=\frac{1}{M}\sum_{i=1}^{M}{Im_{i}}
+\end{equation}
+Esta estrategia de agregación da igual valor a cada uno de los efectos agregados.
+}
+
+\newcommand{\tdeiaMethodologyAggregatorWeightedAverage}[1]
+{
+La ecuación empleada corresponde a un promedio ponderado:
+\begin{equation}
+\label{equ:aggregator#1}
+Im_{c}=\sum_{i=1}^{M}{w_{i}Im_{i}}\qquad 0\leq w_{i}\leq 1 \qquad \sum_{i=1}^{M}w_{i}=1
+\end{equation}
+
+En esta ecuación, cada peso $w_{i}$ es proporcional al peso relativo del factor ambiental que se impactado. En otras palabras, si el efecto $i$ sucede sobre un factor ambiental cuyo peso relativo es $p_{i}$, entonces el valor del peso $w_{i}$ está dado por:
+
+\begin{equation}
+ w_{i}=\frac{p_{i}}{\sum_{i=1}^{M}p_{i}}
+\end{equation}
+}
+
+\newcommand{\tdeiaMethodologyAggregatorMaximum}[1]
+{
+La ecuación extrae el valor máximo de las variables:
+\begin{equation}
+ \label{equ:aggregator#1}
+ Im_{c}=\max\left(Im_{1},Im_{2},\cdots,Im_{M}\right)
+\end{equation}
+
+Si la variable asociada toma valores negativos para los efectos perjudiciales, entonces, esta agregación es `optimista', en el sentido de que toma la importancia menos perjudicial. En caso contrario, esta agregación es `pesimista', en el sentido de que toma la importancia mas perjudicial.
+}
+
+\newcommand{\tdeiaMethodologyAggregatorMinimum}[1]
+{
+La ecuación extrae el valor mínimo de las variables:
+\begin{equation}
+ \label{equ:aggregator#1}
+ Im_{c}=\min\left(Im_{1},Im_{2},\cdots,Im_{M}\right)
+\end{equation}
+
+Si la variable asociada toma valores negativos para los efectos perjudiciales, entonces, esta agregación es `optimista', en el sentido de que toma la importancia menos perjudicial. En caso contrario, esta agregación es `pesimista', en el sentido de que toma la importancia mas perjudicial.
+}
+
+\newcommand{\tdeiaProjectFactors}
+{
+\section{Factores}
+\label{sec:projectFactors}
+Para efectos del presente estudio se ha modelado el ambiente como un conjunto de sistemas y subsistemas anidados. La figura \ref{fig:factortree} muestra dicho modelo, en el que se observa su estructura de árbol. 
+
+A cada componente de este árbol se le ha asignado un peso que sirve para estimar la importancia relativa de dicho componente. La escala empleada es el intervalo $[0,1]$. En otras palabras, no hay pesos negativos, y la suma de todos los pesos es $1$. La figura \ref{fig:factortree} muestra en cada nodo la información de ese peso relativo de dos formas:
+\begin{itemize}
+ \item \textbf{Peso relativo al ambiente:} representa la importancia relativa respecto al ambiente considerado como un todo.
+ \item \textbf{Peso relativo al padre:} representa la importancia relativa respecto al componente ambiental al que pertenece, es decir, respecto al nodo inmediatamente superior (al modo padre).
+\end{itemize}
+
+Esta representación del ambiente es meramente instrumental y no implica un desconocimiento de las profundas relaciones que existen entre los componentes ambientales. La organización en una estructura de árbol facilita el análisis de los efectos ambientales, y no significa una subordinación de un componente en relación a otro.
+
+En las secciones siguientes se presenta el significado y estado actual de cada uno de los componentes ambientales.
+
+\tdeiaPaintMyFactorTree{}
+
+\tdeiaWriteAllFactors{}
+
+}
+
+\newcommand{\tdeiaProjectActions}
+{
+\section{Acciones}
+\label{sec:projectActions}
+
+Para efectos del presente estudio se ha modelado el proyecto como un conjunto de actividades y subactividades anidadas. La figura \ref{fig:actiontree} muestra dicho modelo, en el que se observa su estructura de árbol. En las secciones siguientes se presenta el significado y estado actual de cada uno de los componentes ambientales.
+
+\tdeiaPaintMyActionTree{}
+
+\tdeiaWriteAllActions{}
+}
+
+\renewcommand{\tdeiaMatrixHeaderTotalCell}{\textbf{TOTAL}}
+
+\renewcommand{\tdeiaTableSectionCellType}[1]
+{
+  \ifthenelse{\equal{#1}{Short}}           {\part{Tablas de etiquetas lingüística}}{}
+  \ifthenelse{\equal{#1}{Number}}          {\part{Tablas de valores representativos}}{}
+  \ifthenelse{\equal{#1}{Number/Ambiguity}}{\part{Tablas de valores representativos y ambigüedades}}{}
+  \ifthenelse{\equal{#1}{Color}}           {\part{Tablas de colores}}{}
+}
+
+\renewcommand{\tdeiaTableSectionType}[1]
+{
+  \ifthenelse{\equal{#1}{aggregations}}    {\chapter{Efectos combinados}}{}
+  \ifthenelse{\equal{#1}{effects}}         {\chapter{Efectos simples}}{}
+  \ifthenelse{\equal{#1}{propierties}}     {\chapter{Propiedades de los efectos}}{}
+}
+
+\newcommand{\tdeiaIndividualEffects}
+{
+El cuadro \ref{tab:effectSummary} resume los efectos individuales que se han identificado. El contenido de dicho cuadro se explica a continuación:
+\begin{itemize}
+ \item La primera columna muestra el factor ambiental que sufre el efecto, junto con un enlace a la sección de este documento en que se describe dicho factor.
+ \item La segunda columna muestra la acción del proyecto que causa el efecto, junto con un enlace a la sección de este documento en que se describe dicha acción.
+ \item La tercera columna muestra el nombre que se ha dado al efecto, junto con un enlace en el que se detalla la valoración que se ha hecho de cada una de los propiedades del efecto, y la estimación de su importancia, siguiendo la metodología empleada en la sección \ref{sec:methodologyImportance}.
+ \item La cuarta columna muestra el resultado de la valoración de la importancia de cada efecto en dos formatos: la interpretación lingüística corta y el valor representativo.
+ \item La quinta columna muestra el texto de análisis realizado sobre el efecto. 
+\end{itemize}
+
+Los efectos individuales, sus importancias y propiedades también se muestran en formato de matrices Factor/Acción. El Cuadro \ref{tab:matSummaryEffects} contiene un enlace a dichas matrices. Cada matriz se muesra en cuatro formatos diferentes:
+\begin{description}
+ \item [Etiquetas:] muestra la interpretación lingüística corta de la importancia o de la propiedad correspondiente.
+ \item [Valor:] muestra el valor representativo de la importancia o de la propiedad correspondiente\footnote{Con nivel de optimismo $\beta=0.5$ y exponente $r=1$.}.
+ \item [Valor/Ambigüedad:] muestra tanto el valor representativo como la ambigüedad de la importancia o de la propiedad correspondiente.
+ \item [Color:] muestra un color asignado dentro de una escala continua, asociada al valor representativo de la importancia o de la propiedad correspondiente.
+\end{description}
+
+\tdeiaWriteImportanceSummary{}
+
+\summaryEffectTables{}
+
+\tdeiaWriteAllEffectInputs{}
+
+}
+
+\newcommand{\tdeiaAggregations}
+{
+La sección \ref{sec:methodologyAggregators} y el cuadro \ref{tab::aggregators_summary} muestran los operadores de agregación empleados. La agregación se puede realizar en combinaciones de diferentes niveles de los árboles de factores (Figura \ref{fig:factortree}) y de acciones (Figura \ref{fig:actiontree}). Además, cada agregación se puede presentar de forma lingüística o numérica. Como resultado, la colección de matrices de agregación que arroja la metodología es muy numerosa.
+
+Los cuadros \firstAggregationSummary{} a \lastAggregationSummary{}
+
+
+\summaryAllAggregatorTables{}
+
+
+}

@@ -1,0 +1,381 @@
+        -Nombre: Intensidad
+        -Variable Lingüística: 
+          -Nombre: Intensidad
+          -Unidades: Sin Unidades
+          -Valor Mínimo: 0.000
+          -Valor Máximo: 1.000
+          -Etiquetas: 
+            -Etiqueta: Baja
+            -Número Difuso: 
+              -Alfa-Cortes: 
+                -L[0.000]=0.000 ; R[0.000]=0.222 
+                -L[1.000]=0.000 ; R[1.000]=0.111 
+              -ValorRepresentativo: 0.074
+              -Ambiguedad: 0.074
+            -Etiqueta: Media
+            -Número Difuso: 
+              -Alfa-Cortes: 
+                -L[0.000]=0.111 ; R[0.000]=0.444 
+                -L[1.000]=0.222 ; R[1.000]=0.333 
+              -ValorRepresentativo: 0.278
+              -Ambiguedad: 0.091
+            -Etiqueta: Alta
+            -Número Difuso: 
+              -Alfa-Cortes: 
+                -L[0.000]=0.333 ; R[0.000]=0.667 
+                -L[1.000]=0.444 ; R[1.000]=0.556 
+              -ValorRepresentativo: 0.500
+              -Ambiguedad: 0.091
+            -Etiqueta: Muy Alta
+            -Número Difuso: 
+              -Alfa-Cortes: 
+                -L[0.000]=0.556 ; R[0.000]=0.889 
+                -L[1.000]=0.667 ; R[1.000]=0.778 
+              -ValorRepresentativo: 0.722
+              -Ambiguedad: 0.091
+            -Etiqueta: Total
+            -Número Difuso: 
+              -Alfa-Cortes: 
+                -L[0.000]=0.778 ; R[0.000]=1.000 
+                -L[1.000]=0.889 ; R[1.000]=1.000 
+              -ValorRepresentativo: 0.927
+              -Ambiguedad: 0.074
+        -Valor de la Importancia: 
+          -Con Palabras: Nada
+        -Nombre: Extensión
+        -Variable Lingüística: 
+          -Nombre: Extensión
+          -Unidades: Sin Unidades
+          -Valor Mínimo: 0.000
+          -Valor Máximo: 1.000
+          -Etiquetas: 
+            -Etiqueta: Puntual
+            -Número Difuso: 
+              -Alfa-Cortes: 
+                -L[0.000]=0.000 ; R[0.000]=0.286 
+                -L[1.000]=0.000 ; R[1.000]=0.143 
+              -ValorRepresentativo: 0.095
+              -Ambiguedad: 0.095
+            -Etiqueta: Parcial
+            -Número Difuso: 
+              -Alfa-Cortes: 
+                -L[0.000]=0.143 ; R[0.000]=0.571 
+                -L[1.000]=0.286 ; R[1.000]=0.429 
+              -ValorRepresentativo: 0.357
+              -Ambiguedad: 0.118
+            -Etiqueta: Extensa
+            -Número Difuso: 
+              -Alfa-Cortes: 
+                -L[0.000]=0.429 ; R[0.000]=0.857 
+                -L[1.000]=0.571 ; R[1.000]=0.714 
+              -ValorRepresentativo: 0.643
+              -Ambiguedad: 0.118
+            -Etiqueta: Total
+            -Número Difuso: 
+              -Alfa-Cortes: 
+                -L[0.000]=0.714 ; R[0.000]=1.000 
+                -L[1.000]=0.857 ; R[1.000]=1.000 
+              -ValorRepresentativo: 0.906
+              -Ambiguedad: 0.095
+        -Valor de la Importancia: 
+          -Con Palabras: Nada
+        -Nombre: Extensión crítica
+        -Variable Lingüística: 
+          -Nombre: Extensión crítica
+          -Unidades: Sin Unidades
+          -Valor Mínimo: 0.000
+          -Valor Máximo: 1.000
+          -Etiquetas: 
+            -Etiqueta: Bajo
+            -Número Difuso: 
+              -Alfa-Cortes: 
+                -L[0.000]=0.000 ; R[0.000]=0.400 
+                -L[1.000]=0.000 ; R[1.000]=0.200 
+              -ValorRepresentativo: 0.132
+              -Ambiguedad: 0.132
+            -Etiqueta: Medio
+            -Número Difuso: 
+              -Alfa-Cortes: 
+                -L[0.000]=0.200 ; R[0.000]=0.800 
+                -L[1.000]=0.400 ; R[1.000]=0.600 
+              -ValorRepresentativo: 0.500
+              -Ambiguedad: 0.165
+            -Etiqueta: Alto
+            -Número Difuso: 
+              -Alfa-Cortes: 
+                -L[0.000]=0.600 ; R[0.000]=1.000 
+                -L[1.000]=0.800 ; R[1.000]=1.000 
+              -ValorRepresentativo: 0.868
+              -Ambiguedad: 0.132
+        -Valor de la Importancia: 
+          -Con Palabras: Nada
+        -Nombre: Momento
+        -Variable Lingüística: 
+          -Nombre: Momento
+          -Unidades: Sin Unidades
+          -Valor Mínimo: 0.000
+          -Valor Máximo: 1.000
+          -Etiquetas: 
+            -Etiqueta: Inmediato
+            -Número Difuso: 
+              -Alfa-Cortes: 
+                -L[0.000]=0.000 ; R[0.000]=0.125 
+                -L[1.000]=0.000 ; R[1.000]=0.075 
+              -ValorRepresentativo: 0.046
+              -Ambiguedad: 0.046
+            -Etiqueta: Medio Plazo
+            -Número Difuso: 
+              -Alfa-Cortes: 
+                -L[0.000]=0.075 ; R[0.000]=0.600 
+                -L[1.000]=0.125 ; R[1.000]=0.400 
+              -ValorRepresentativo: 0.287
+              -Ambiguedad: 0.178
+            -Etiqueta: Largo Plazo
+            -Número Difuso: 
+              -Alfa-Cortes: 
+                -L[0.000]=0.400 ; R[0.000]=1.000 
+                -L[1.000]=0.500 ; R[1.000]=1.000 
+              -ValorRepresentativo: 0.734
+              -Ambiguedad: 0.266
+        -Valor de la Importancia: 
+          -Con Palabras: Nada
+        -Nombre: Momento crítico
+        -Variable Lingüística: 
+          -Nombre: Momento crítico
+          -Unidades: Sin Unidades
+          -Valor Mínimo: 0.000
+          -Valor Máximo: 1.000
+          -Etiquetas: 
+            -Etiqueta: Bajo
+            -Número Difuso: 
+              -Alfa-Cortes: 
+                -L[0.000]=0.000 ; R[0.000]=0.400 
+                -L[1.000]=0.000 ; R[1.000]=0.200 
+              -ValorRepresentativo: 0.132
+              -Ambiguedad: 0.132
+            -Etiqueta: Medio
+            -Número Difuso: 
+              -Alfa-Cortes: 
+                -L[0.000]=0.200 ; R[0.000]=0.800 
+                -L[1.000]=0.400 ; R[1.000]=0.600 
+              -ValorRepresentativo: 0.500
+              -Ambiguedad: 0.165
+            -Etiqueta: Alto
+            -Número Difuso: 
+              -Alfa-Cortes: 
+                -L[0.000]=0.600 ; R[0.000]=1.000 
+                -L[1.000]=0.800 ; R[1.000]=1.000 
+              -ValorRepresentativo: 0.868
+              -Ambiguedad: 0.132
+        -Valor de la Importancia: 
+          -Con Palabras: Nada
+        -Nombre: Persistencia
+        -Variable Lingüística: 
+          -Nombre: Persistencia
+          -Unidades: Sin Unidades
+          -Valor Mínimo: 0.000
+          -Valor Máximo: 1.000
+          -Etiquetas: 
+            -Etiqueta: Fugaz
+            -Número Difuso: 
+              -Alfa-Cortes: 
+                -L[0.000]=0.000 ; R[0.000]=0.083 
+                -L[1.000]=0.000 ; R[1.000]=0.050 
+              -ValorRepresentativo: 0.030
+              -Ambiguedad: 0.030
+            -Etiqueta: Temporal
+            -Número Difuso: 
+              -Alfa-Cortes: 
+                -L[0.000]=0.050 ; R[0.000]=0.800 
+                -L[1.000]=0.083 ; R[1.000]=0.533 
+              -ValorRepresentativo: 0.346
+              -Ambiguedad: 0.274
+            -Etiqueta: Permanente
+            -Número Difuso: 
+              -Alfa-Cortes: 
+                -L[0.000]=0.600 ; R[0.000]=1.000 
+                -L[1.000]=0.800 ; R[1.000]=1.000 
+              -ValorRepresentativo: 0.868
+              -Ambiguedad: 0.132
+        -Valor de la Importancia: 
+          -Con Palabras: Nada
+        -Nombre: Reversibilidad
+        -Variable Lingüística: 
+          -Nombre: Reversibilidad
+          -Unidades: Sin Unidades
+          -Valor Mínimo: 0.000
+          -Valor Máximo: 1.000
+          -Etiquetas: 
+            -Etiqueta: Corto Plazo
+            -Número Difuso: 
+              -Alfa-Cortes: 
+                -L[0.000]=0.000 ; R[0.000]=0.083 
+                -L[1.000]=0.000 ; R[1.000]=0.050 
+              -ValorRepresentativo: 0.030
+              -Ambiguedad: 0.030
+            -Etiqueta: Medio Plazo
+            -Número Difuso: 
+              -Alfa-Cortes: 
+                -L[0.000]=0.050 ; R[0.000]=0.800 
+                -L[1.000]=0.083 ; R[1.000]=0.533 
+              -ValorRepresentativo: 0.346
+              -Ambiguedad: 0.273
+            -Etiqueta: Irreversible
+            -Número Difuso: 
+              -Alfa-Cortes: 
+                -L[0.000]=0.533 ; R[0.000]=1.000 
+                -L[1.000]=0.800 ; R[1.000]=1.000 
+              -ValorRepresentativo: 0.857
+              -Ambiguedad: 0.143
+        -Valor de la Importancia: 
+          -Con Palabras: Nada
+        -Nombre: Sinergía
+        -Variable Lingüística: 
+          -Nombre: Sinergía
+          -Unidades: Sin Unidades
+          -Valor Mínimo: 0.000
+          -Valor Máximo: 1.000
+          -Etiquetas: 
+            -Etiqueta: Sin sinergismo (simple)
+            -Número Difuso: 
+              -Alfa-Cortes: 
+                -L[0.000]=0.000 ; R[0.000]=0.400 
+                -L[1.000]=0.000 ; R[1.000]=0.200 
+              -ValorRepresentativo: 0.132
+              -Ambiguedad: 0.132
+            -Etiqueta: Sinérgico
+            -Número Difuso: 
+              -Alfa-Cortes: 
+                -L[0.000]=0.200 ; R[0.000]=0.800 
+                -L[1.000]=0.400 ; R[1.000]=0.600 
+              -ValorRepresentativo: 0.500
+              -Ambiguedad: 0.165
+            -Etiqueta: Muy Sinérgico
+            -Número Difuso: 
+              -Alfa-Cortes: 
+                -L[0.000]=0.600 ; R[0.000]=1.000 
+                -L[1.000]=0.800 ; R[1.000]=1.000 
+              -ValorRepresentativo: 0.868
+              -Ambiguedad: 0.132
+        -Valor de la Importancia: 
+          -Con Palabras: Nada
+        -Nombre: Acumulación
+        -Variable Lingüística: 
+          -Nombre: Acumulación
+          -Unidades: Sin Unidades
+          -Valor Mínimo: 0.000
+          -Valor Máximo: 1.000
+          -Etiquetas: 
+            -Etiqueta: Bajo
+            -Número Difuso: 
+              -Alfa-Cortes: 
+                -L[0.000]=0.000 ; R[0.000]=0.400 
+                -L[1.000]=0.000 ; R[1.000]=0.200 
+              -ValorRepresentativo: 0.132
+              -Ambiguedad: 0.132
+            -Etiqueta: Medio
+            -Número Difuso: 
+              -Alfa-Cortes: 
+                -L[0.000]=0.200 ; R[0.000]=0.800 
+                -L[1.000]=0.400 ; R[1.000]=0.600 
+              -ValorRepresentativo: 0.500
+              -Ambiguedad: 0.165
+            -Etiqueta: Alto
+            -Número Difuso: 
+              -Alfa-Cortes: 
+                -L[0.000]=0.600 ; R[0.000]=1.000 
+                -L[1.000]=0.800 ; R[1.000]=1.000 
+              -ValorRepresentativo: 0.868
+              -Ambiguedad: 0.132
+        -Valor de la Importancia: 
+          -Con Palabras: Nada
+        -Nombre: Efecto
+        -Variable Lingüística: 
+          -Nombre: Efecto
+          -Unidades: Sin Unidades
+          -Valor Mínimo: 0.000
+          -Valor Máximo: 1.000
+          -Etiquetas: 
+            -Etiqueta: Indirecto (secundario)
+            -Número Difuso: 
+              -Alfa-Cortes: 
+                -L[0.000]=0.000 ; R[0.000]=0.667 
+                -L[1.000]=0.000 ; R[1.000]=0.333 
+              -ValorRepresentativo: 0.221
+              -Ambiguedad: 0.221
+            -Etiqueta: Directo
+            -Número Difuso: 
+              -Alfa-Cortes: 
+                -L[0.000]=0.333 ; R[0.000]=1.000 
+                -L[1.000]=0.667 ; R[1.000]=1.000 
+              -ValorRepresentativo: 0.779
+              -Ambiguedad: 0.221
+        -Valor de la Importancia: 
+          -Con Palabras: Nada
+        -Nombre: Periodicidad
+        -Variable Lingüística: 
+          -Nombre: Periodicidad
+          -Unidades: Sin Unidades
+          -Valor Mínimo: 0.000
+          -Valor Máximo: 1.000
+          -Etiquetas: 
+            -Etiqueta: Irregular o aperiódico y discontinuo
+            -Número Difuso: 
+              -Alfa-Cortes: 
+                -L[0.000]=0.000 ; R[0.000]=0.400 
+                -L[1.000]=0.000 ; R[1.000]=0.200 
+              -ValorRepresentativo: 0.132
+              -Ambiguedad: 0.132
+            -Etiqueta: Periódico
+            -Número Difuso: 
+              -Alfa-Cortes: 
+                -L[0.000]=0.200 ; R[0.000]=0.800 
+                -L[1.000]=0.400 ; R[1.000]=0.600 
+              -ValorRepresentativo: 0.500
+              -Ambiguedad: 0.165
+            -Etiqueta: Continuo
+            -Número Difuso: 
+              -Alfa-Cortes: 
+                -L[0.000]=0.600 ; R[0.000]=1.000 
+                -L[1.000]=0.800 ; R[1.000]=1.000 
+              -ValorRepresentativo: 0.868
+              -Ambiguedad: 0.132
+        -Valor de la Importancia: 
+          -Con Palabras: Nada
+        -Nombre: Recuperabilidad
+        -Variable Lingüística: 
+          -Nombre: Recuperabilidad
+          -Unidades: Sin Unidades
+          -Valor Mínimo: 0.000
+          -Valor Máximo: 1.000
+          -Etiquetas: 
+            -Etiqueta: Recuparable de manera inmediata
+            -Número Difuso: 
+              -Alfa-Cortes: 
+                -L[0.000]=0.000 ; R[0.000]=0.286 
+                -L[1.000]=0.000 ; R[1.000]=0.143 
+              -ValorRepresentativo: 0.095
+              -Ambiguedad: 0.095
+            -Etiqueta: Recuperable a medio plazo
+            -Número Difuso: 
+              -Alfa-Cortes: 
+                -L[0.000]=0.143 ; R[0.000]=0.571 
+                -L[1.000]=0.286 ; R[1.000]=0.429 
+              -ValorRepresentativo: 0.357
+              -Ambiguedad: 0.118
+            -Etiqueta: Mitigable
+            -Número Difuso: 
+              -Alfa-Cortes: 
+                -L[0.000]=0.429 ; R[0.000]=0.857 
+                -L[1.000]=0.571 ; R[1.000]=0.714 
+              -ValorRepresentativo: 0.643
+              -Ambiguedad: 0.118
+            -Etiqueta: Irrecuperable
+            -Número Difuso: 
+              -Alfa-Cortes: 
+                -L[0.000]=0.714 ; R[0.000]=1.000 
+                -L[1.000]=0.857 ; R[1.000]=1.000 
+              -ValorRepresentativo: 0.906
+              -Ambiguedad: 0.095
+        -Valor de la Importancia: 
+          -Con Palabras: Nada

@@ -1,0 +1,120 @@
+<?php
+require_once("functions.php");
+require_once("variable.php");
+
+class aggregation
+{
+  var $equation;
+  var $functionName;
+  var $importancesID;
+  var $variableID;
+  
+  function findDown($id,$table,$IDo)
+  {
+    $ID=$IDo;
+    $sql="SELECT id FROM ".$table."s WHERE ".$table."_id='".$id."'";
+    $result=mysql_query($sql) or die(mysql_error()."error : ".$sql);
+    if($result and mysql_num_rows($result)>0)
+    {
+      while($linea=mysql_fetch_array($result,MYSQL_ASSOC))
+      {
+        $ID[]=$linea['id'];
+        $ID=$this->findDown($linea['id'],$table,$ID);
+      }
+    }
+    return $ID; 
+  }
+  
+  function getImportancesID($aggregation_id)
+  {
+    $this->functionName="";
+    $sql="SELECT aggregations.id,equation,factor_id,action_id,variable_id FROM aggregations 
+                        INNER JOIN aggregators ON aggregations.aggregator_id=aggregators.id
+                        WHERE aggregations.id='".$aggregation_id."' LIMIT 1";
+    $result=mysql_query($sql) or die(mysql_error()."error : ".$sql);
+    if($result and mysql_num_rows($result)>0)
+    {
+      $linea=mysql_fetch_array($result,MYSQL_ASSOC);
+      $this->functionName=$linea['equation'];
+      $this->variableID=$linea['variable_id'];
+      $factors=array();
+      $factors[]=$linea['factor_id'];
+      $factors=$this->findDown($linea['factor_id'],"factor",$factors);
+      $actions=array();
+      $actions[]=$linea['action_id'];
+      $actions=$this->findDown($linea['action_id'],"action",$actions);
+    }
+    $this->importancesID=array();
+    foreach($factors as $fid)
+    {
+      foreach($actions as $aid)
+      {
+        $sql="SELECT importances.id AS ID FROM importances 
+                                               INNER JOIN effects ON importances.effect_id=effects.id
+                                               WHERE action_id='".$aid."'
+                                               AND factor_id='".$fid."'";
+        $result=mysql_query($sql) or die(mysql_error()."error : ".$sql);
+        if($result and mysql_num_rows($result)>0)
+        {
+          while($linea=mysql_fetch_array($result,MYSQL_ASSOC))
+          {
+            $this->importancesID[]=$linea['ID'];
+          }
+        }
+      }
+    }    
+  }
+  
+  function getImportancesFN()
+  {
+    $X=array();
+    foreach($this->importancesID as $ID)
+    {
+      $FN=new fuzzy_number;
+      $FN->read("importance_cuts","importance_id",$ID);
+      $X[]=$FN;
+    }
+    return $X;
+  }
+  
+  function createFunction()
+  {
+    $numberOfArgs=count($this->importancesID);
+    unset($this->equation);
+    switch($this->functionName)
+    {
+      default:
+      case "simple_average" : 
+           $a0=0;
+           $a=array();
+           for($i=0;$i<$numberOfArgs;$i++)
+           {
+             $a[]=1.0/$numberOfArgs;
+           }
+           $this->equation=new linear_combination($a0,$a);
+           break;
+//      case "weighted_average" : 
+//      case "maximum" : 
+    }
+  }
+  
+  function updateAggregation($aggregation_id,$cuts)
+  {
+    $this->getImportancesID($aggregation_id);
+    $X=$this->getImportancesFN();
+    $this->createFunction();
+    $Y=$this->equation->fuzzy_direct($X,$cuts);
+    $Y->write("aggregation_cuts","aggregation_id",$aggregation_id);
+    $V=new variable();
+    $V->consistencies($this->variableID,$Y);
+    $sql="UPDATE aggregations SET short_interpretation=\"".$V->Short."\",
+                                  long_interpretation=\"".$V->Long."\"
+                                  WHERE id='$aggregation_id'";
+    mysql_query($sql) or die(mysql_error()."error : ".$sql);
+  }
+}
+
+
+
+
+?>
